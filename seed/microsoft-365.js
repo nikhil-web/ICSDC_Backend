@@ -10,8 +10,8 @@ module.exports = {
   heroTopBadge: '◆ Microsoft 365',
   heroStatusTitle: 'Enterprise Security',
   heroStatusSubtitle: 'ICSDC Managed Setup',
-  heroCtaPrimary: { label: 'Get Started With Microsoft 365', url: '#m365-plans' },
-  heroCtaSecondary: { label: 'View Plans', url: '#m365-plans' },
+  heroCtaPrimary: { text: 'Get Started With Microsoft 365', link: '#m365-plans' },
+  heroCtaSecondary: { text: 'View Plans', link: '#m365-plans' },
   pillars: [
     { title: 'Business Email & Calendar Management', desc: 'Professional Outlook email with custom domains, shared calendars, and reliable uptime to keep your communication organized and uninterrupted.' },
     { title: 'Real-Time Collaboration Tools', desc: 'Work together seamlessly using Microsoft Teams, SharePoint, and OneDrive — edit files, chat, and meet in real time from anywhere.' },
@@ -86,10 +86,10 @@ module.exports = {
     { title: 'Multi-Domain Backup Management', desc: 'Configure and manage backups for multiple Microsoft 365 domains, assign admin access, and control domain-specific backups with full flexibility.' }
   ],
   ctaBand1: {
-    heading: 'Simplify Your Microsoft 365 Setup With ICSDC',
-    subtext: 'Get expert guidance, secure configuration, and seamless onboarding — without the complexity of managing Microsoft 365 on your own.',
-    ctaPrimary: { label: 'Get Started With Microsoft 365', url: '#m365-plans' },
-    ctaSecondary: { label: 'Call +91 98109 58857', url: 'tel:+919810958857' }
+    title: 'Simplify Your Microsoft 365 Setup With ICSDC',
+    description: 'Get expert guidance, secure configuration, and seamless onboarding — without the complexity of managing Microsoft 365 on your own.',
+    ctaPrimary: { text: 'Get Started With Microsoft 365', link: '#m365-plans' },
+    ctaSecondary: { text: 'Call +91 98109 58857', link: 'tel:+919810958857' }
   },
   whoLabel: "WHO IT'S FOR",
   whoTitle: 'Who Should Choose Microsoft 365 Services?',
@@ -124,9 +124,9 @@ module.exports = {
     { question: 'Who manages billing and renewals?', answer: 'ICSDC manages billing, renewals, and reminders, ensuring uninterrupted service and better cost control for your organization.' }
   ],
   ctaBand2: {
-    heading: 'Ready to Move Smarter With Microsoft 365?',
-    subtext: 'Let ICSDC handle licensing, migration, security, and ongoing support while your teams focus on productivity and growth.',
-    ctaPrimary: { label: 'Get Started With ICSDC Microsoft 365 Today', url: '#m365-plans' },
-    ctaSecondary: { label: 'Talk to an Expert', url: '/contact' }
+    title: 'Ready to Move Smarter With Microsoft 365?',
+    description: 'Let ICSDC handle licensing, migration, security, and ongoing support while your teams focus on productivity and growth.',
+    ctaPrimary: { text: 'Get Started With ICSDC Microsoft 365 Today', link: '#m365-plans' },
+    ctaSecondary: { text: 'Talk to an Expert', link: '/contact' }
   }
 };

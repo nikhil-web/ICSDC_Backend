@@ -10,8 +10,8 @@ module.exports = {
   heroTopBadge: '☁ ICSDC Cloud Storage',
   heroStatusTitle: 'High Availability',
   heroStatusSubtitle: 'Fully Managed by ICSDC',
-  heroCtaPrimary: { label: 'Get Started With Cloud Storage', url: '#cs-plans' },
-  heroCtaSecondary: { label: 'View Storage Plans', url: '#cs-plans' },
+  heroCtaPrimary: { text: 'Get Started With Cloud Storage', link: '#cs-plans' },
+  heroCtaSecondary: { text: 'View Storage Plans', link: '#cs-plans' },
   pillars: [
     { title: 'Scalable Storage on Demand', desc: 'Easily increase or reduce storage capacity as your data grows — no migrations, no downtime, no complexity.' },
     { title: 'Secure by Design', desc: 'Your data is protected with encryption, access controls, and secure infrastructure built to meet modern security standards.' },
@@ -69,10 +69,10 @@ module.exports = {
     { title: 'Fully Managed by ICSDC', desc: 'ICSDC handles storage infrastructure maintenance, monitoring, and availability, allowing your team to focus on daily operations rather than storage management.' }
   ],
   ctaBand1: {
-    heading: 'Need a Secure, Scalable Place to Store Your Business Data?',
-    subtext: 'ICSDC Cloud Storage scales with your data, stays secure, and is fully managed — so you never have to worry about running out of space or managing infrastructure.',
-    ctaPrimary: { label: 'Get Started With Cloud Storage', url: '#cs-plans' },
-    ctaSecondary: { label: 'Call +91 98109 58857', url: 'tel:+919810958857' }
+    title: 'Need a Secure, Scalable Place to Store Your Business Data?',
+    description: 'ICSDC Cloud Storage scales with your data, stays secure, and is fully managed — so you never have to worry about running out of space or managing infrastructure.',
+    ctaPrimary: { text: 'Get Started With Cloud Storage', link: '#cs-plans' },
+    ctaSecondary: { text: 'Call +91 98109 58857', link: 'tel:+919810958857' }
   },
   whoLabel: "WHO IT'S FOR",
   whoTitle: 'Who Can Choose ICSDC Cloud Storage?',
@@ -107,9 +107,9 @@ module.exports = {
     { question: 'What happens if I need help or support?', answer: 'ICSDC provides support to assist with access issues, usage questions, and general guidance whenever needed.' }
   ],
   ctaBand2: {
-    heading: 'Start Storing Smarter With ICSDC Cloud Storage',
-    subtext: 'Scalable, secure, and fully managed cloud storage from ₹199/month. No hardware, no complexity — just reliable storage that grows with you.',
-    ctaPrimary: { label: 'Get Started With Cloud Storage', url: '#cs-plans' },
-    ctaSecondary: { label: 'Talk to an Expert', url: '/contact' }
+    title: 'Start Storing Smarter With ICSDC Cloud Storage',
+    description: 'Scalable, secure, and fully managed cloud storage from ₹199/month. No hardware, no complexity — just reliable storage that grows with you.',
+    ctaPrimary: { text: 'Get Started With Cloud Storage', link: '#cs-plans' },
+    ctaSecondary: { text: 'Talk to an Expert', link: '/contact' }
   }
 };

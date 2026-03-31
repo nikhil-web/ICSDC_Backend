@@ -22,54 +22,6 @@ const { runImport } = require('./strapiImport');
 
 const PAGES = [
   {
-    name: 'NVMe Dedicated Servers',
-    endpoint: 'nvme-dedicated-server-page',
-    uid: 'api::nvme-dedicated-server-page.nvme-dedicated-server-page',
-    data: require('./seed/nvme-dedicated-servers'),
-  },
-  {
-    name: 'cPanel Hosting',
-    endpoint: 'cpanel-hosting-page',
-    uid: 'api::cpanel-hosting-page.cpanel-hosting-page',
-    data: require('./seed/cpanel-hosting'),
-  },
-  {
-    name: 'Managed Cloud Hosting',
-    endpoint: 'managed-cloud-hosting-page',
-    uid: 'api::managed-cloud-hosting-page.managed-cloud-hosting-page',
-    data: require('./seed/managed-cloud-hosting'),
-  },
-  {
-    name: 'Managed VPS Hosting',
-    endpoint: 'managed-vps-hosting-page',
-    uid: 'api::managed-vps-hosting-page.managed-vps-hosting-page',
-    data: require('./seed/managed-vps-hosting'),
-  },
-  {
-    name: 'Google Cloud Hosting',
-    endpoint: 'google-cloud-hosting-page',
-    uid: 'api::google-cloud-hosting-page.google-cloud-hosting-page',
-    data: require('./seed/google-cloud-hosting'),
-  },
-  {
-    name: 'VPS Hosting Trial',
-    endpoint: 'vps-hosting-trial-page',
-    uid: 'api::vps-hosting-trial-page.vps-hosting-trial-page',
-    data: require('./seed/vps-hosting-trial'),
-  },
-  {
-    name: 'GPU Cloud Hosting',
-    endpoint: 'gpu-cloud-hosting-page',
-    uid: 'api::gpu-cloud-hosting-page.gpu-cloud-hosting-page',
-    data: require('./seed/gpu-cloud-hosting'),
-  },
-  {
-    name: 'Reseller Hosting',
-    endpoint: 'reseller-hosting-page',
-    uid: 'api::reseller-hosting-page.reseller-hosting-page',
-    data: require('./seed/reseller-hosting'),
-  },
-  {
     name: 'GPU Dedicated Server',
     endpoint: 'gpu-dedicated-server-page',
     uid: 'api::gpu-dedicated-server-page.gpu-dedicated-server-page',

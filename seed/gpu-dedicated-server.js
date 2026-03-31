@@ -10,8 +10,8 @@ module.exports = {
   heroTopBadge: '⚙ Bare-Metal GPU',
   heroStatusTitle: '99.9% Uptime',
   heroStatusSubtitle: 'Dedicated Resources',
-  heroCtaPrimary: { label: 'Explore GPU Dedicated Servers', url: '#gds-plans' },
-  heroCtaSecondary: { label: 'View GPU Plans', url: '#gds-plans' },
+  heroCtaPrimary: { text: 'Explore GPU Dedicated Servers', link: '#gds-plans' },
+  heroCtaSecondary: { text: 'View GPU Plans', link: '#gds-plans' },
   pillars: [
     { title: 'Dedicated GPU Compute Power', desc: 'Access full GPU resources exclusively allocated to your workloads, ensuring consistent performance without shared limitations.' },
     { title: 'High Memory & Fast Data Throughput', desc: 'Handle large datasets and parallel tasks efficiently with high-bandwidth memory and optimized data transfer.' },
@@ -84,10 +84,10 @@ module.exports = {
     { title: 'Financial Analytics & Fraud Detection', desc: 'GPU-accelerated models analyse large transaction datasets in near real time for fraud detection, risk analysis, and financial modelling.' }
   ],
   ctaBand1: {
-    heading: 'Ready to See if a GPU Dedicated Server Fits Your Workload?',
-    subtext: 'Talk to our GPU infrastructure experts and find the right configuration for your AI, rendering, or HPC needs.',
-    ctaPrimary: { label: 'Explore GPU Server Configs', url: '#gds-plans' },
-    ctaSecondary: { label: 'Call +91 98109 58857', url: 'tel:+919810958857' }
+    title: 'Ready to See if a GPU Dedicated Server Fits Your Workload?',
+    description: 'Talk to our GPU infrastructure experts and find the right configuration for your AI, rendering, or HPC needs.',
+    ctaPrimary: { text: 'Explore GPU Server Configs', link: '#gds-plans' },
+    ctaSecondary: { text: 'Call +91 98109 58857', link: 'tel:+919810958857' }
   },
   whyLabel: 'WHY ICSDC',
   whyTitle: 'Why Choose ICSDC GPU Dedicated Servers?',
@@ -133,9 +133,9 @@ module.exports = {
     { question: 'Is technical expertise required to manage a GPU Dedicated Server?', answer: 'Basic server management knowledge is recommended. However, ICSDC provides support to help with setup guidance, access issues, and general configuration questions.' }
   ],
   ctaBand2: {
-    heading: 'Take the Next Step Toward Faster, More Reliable Compute Performance',
-    subtext: 'Bare-metal NVIDIA GPU servers from ₹14,999/month. Full root access, ECC memory, no virtualization.',
-    ctaPrimary: { label: 'Get GPU Dedicated Server', url: '#gds-plans' },
-    ctaSecondary: { label: 'Talk to an Expert', url: '/contact' }
+    title: 'Take the Next Step Toward Faster, More Reliable Compute Performance',
+    description: 'Bare-metal NVIDIA GPU servers from ₹14,999/month. Full root access, ECC memory, no virtualization.',
+    ctaPrimary: { text: 'Get GPU Dedicated Server', link: '#gds-plans' },
+    ctaSecondary: { text: 'Talk to an Expert', link: '/contact' }
   }
 };
