@@ -39,6 +39,24 @@ const PAGES = [
     uid: 'api::cloud-storage-page.cloud-storage-page',
     data: require('./seed/cloud-storage'),
   },
+  {
+    name: 'Bare Metal Server',
+    endpoint: 'bare-metal-server-page',
+    uid: 'api::bare-metal-server-page.bare-metal-server-page',
+    data: require('./seed/bare-metal-server'),
+  },
+  {
+    name: 'Veeam Backup',
+    endpoint: 'veeam-backup-page',
+    uid: 'api::veeam-backup-page.veeam-backup-page',
+    data: require('./seed/veeam-backup'),
+  },
+  {
+    name: 'Virtual Machine',
+    endpoint: 'virtual-machine-page',
+    uid: 'api::virtual-machine-page.virtual-machine-page',
+    data: require('./seed/virtual-machine'),
+  },
 ];
 
 // Filter pages if CLI args provided (e.g. node import-pages.js "WordPress Hosting")
