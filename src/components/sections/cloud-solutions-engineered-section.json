@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_cloud_solutions_engineered_sections",
+  "info": {
+    "displayName": "Cloud Service"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "svgIcon": {
+      "type": "text"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "left-top",
+        "left-mid",
+        "left-bot",
+        "right-top",
+        "right-mid",
+        "right-bot",
+        "bottom-left",
+        "bottom-right"
+      ]
+    },
+    "animationDelay": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

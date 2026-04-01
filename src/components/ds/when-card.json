@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ds_when_cards",
+  "info": {
+    "displayName": "DS When Card",
+    "description": "Numbered card for 'When Do You Need' section"
+  },
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

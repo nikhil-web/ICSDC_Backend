@@ -1,0 +1,225 @@
+{
+  "kind": "singleType",
+  "collectionName": "dedicated_server_pages",
+  "info": {
+    "singularName": "dedicated-server-page",
+    "pluralName": "dedicated-server-pages",
+    "displayName": "Dedicated Server Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta"
+    },
+    "hero": {
+      "type": "component",
+      "component": "ds.hero-section"
+    },
+    "featureHighlights": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "pricingLabel": {
+      "type": "string"
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingSubtitle": {
+      "type": "text"
+    },
+    "pricingPlans": {
+      "type": "component",
+      "component": "ds.pricing-plan",
+      "repeatable": true
+    },
+    "pillarsLabel": {
+      "type": "string"
+    },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
+    "pillars": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band"
+    },
+    "securityLabel": {
+      "type": "string"
+    },
+    "securityTitle": {
+      "type": "string"
+    },
+    "securityDescription": {
+      "type": "text"
+    },
+    "shieldVisual": {
+      "type": "component",
+      "component": "ds.shield-visual"
+    },
+    "securityCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "servicesLabel": {
+      "type": "string"
+    },
+    "servicesTitle": {
+      "type": "string"
+    },
+    "servicesDescription": {
+      "type": "text"
+    },
+    "servicesImage": {
+      "type": "string"
+    },
+    "servicesImageAlt": {
+      "type": "string"
+    },
+    "serviceButtons": {
+      "type": "component",
+      "component": "ds.service-button",
+      "repeatable": true
+    },
+    "comparisonLabel": {
+      "type": "string"
+    },
+    "comparisonTitle": {
+      "type": "string"
+    },
+    "comparisonSubtitle": {
+      "type": "text"
+    },
+    "comparisonColumns": {
+      "type": "json"
+    },
+    "comparisonRows": {
+      "type": "component",
+      "component": "ds.comparison-row",
+      "repeatable": true
+    },
+    "performanceLabel": {
+      "type": "string"
+    },
+    "performanceTitle": {
+      "type": "string"
+    },
+    "performanceDescription": {
+      "type": "text"
+    },
+    "performanceChecklist": {
+      "type": "component",
+      "component": "ds.checklist-item",
+      "repeatable": true
+    },
+    "performanceCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link"
+    },
+    "performanceCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link"
+    },
+    "performanceStats": {
+      "type": "component",
+      "component": "ds.perf-stat",
+      "repeatable": true
+    },
+    "locationsLabel": {
+      "type": "string"
+    },
+    "locationsTitle": {
+      "type": "string"
+    },
+    "locationsDescription": {
+      "type": "text"
+    },
+    "locationTags": {
+      "type": "component",
+      "component": "ds.location-tag",
+      "repeatable": true
+    },
+    "locationPins": {
+      "type": "component",
+      "component": "ds.location-pin",
+      "repeatable": true
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenCards": {
+      "type": "component",
+      "component": "ds.when-card",
+      "repeatable": true
+    },
+    "useCasesLabel": {
+      "type": "string"
+    },
+    "useCasesTitle": {
+      "type": "string"
+    },
+    "useCasesSubtitle": {
+      "type": "text"
+    },
+    "useCaseCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "ds.testimonial-card",
+      "repeatable": true
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqContactTitle": {
+      "type": "string"
+    },
+    "faqContactDescription": {
+      "type": "text"
+    },
+    "faqContactBtnLabel": {
+      "type": "string"
+    },
+    "faqContactBtnUrl": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "ds.faq-entry",
+      "repeatable": true
+    },
+    "ctaBand2": {
+      "type": "component",
+      "component": "ds.cta-band"
+    },
+    "footer": {
+      "type": "component",
+      "component": "ds.footer-section"
+    }
+  }
+}

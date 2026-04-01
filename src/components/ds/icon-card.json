@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_ds_icon_cards",
+  "info": {
+    "displayName": "DS Icon Card",
+    "description": "Reusable icon + title + description card. Icon is a key name resolved on frontend via ICONS map."
+  },
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ds_os_options",
+  "info": {
+    "displayName": "DS OS Option",
+    "description": "Operating system option card with icon, name, and short description"
+  },
+  "attributes": {
+    "order": { "type": "integer", "default": 0 },
+    "icon": { "type": "string" },
+    "name": { "type": "string", "required": true },
+    "desc": { "type": "string" }
+  }
+}

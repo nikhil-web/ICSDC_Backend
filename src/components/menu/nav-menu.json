@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_menu_nav_menus",
+  "info": {
+    "displayName": "NavMenu"
+  },
+  "options": {},
+  "attributes": {
+    "lebel": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "cols": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "component",
+      "component": "menu.menu-item",
+      "repeatable": true
+    },
+    "sections": {
+      "type": "component",
+      "component": "menu.menu-section",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

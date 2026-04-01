@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_ds_hero_sections",
+  "info": {
+    "displayName": "DS Hero Section",
+    "description": "Hero section with eyebrow, title, price, CTA buttons, server rack, and uptime badge"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "string"
+    },
+    "priceCurrency": {
+      "type": "string",
+      "default": "&#8377;"
+    },
+    "priceUnit": {
+      "type": "string",
+      "default": "/mo"
+    },
+    "priceNote": {
+      "type": "string"
+    },
+    "ctaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link"
+    },
+    "ctaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link"
+    },
+    "serverRack": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.server-rack-unit"
+    },
+    "uptimeBadgeText": {
+      "type": "string"
+    },
+    "uptimeBadgeSub": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ds_service_buttons",
+  "info": {
+    "displayName": "DS Service Button",
+    "description": "Button for the More Services section"
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": ["outline", "primary"],
+      "default": "outline"
+    }
+  }
+}

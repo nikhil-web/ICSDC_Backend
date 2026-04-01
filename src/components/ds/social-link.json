@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ds_social_links",
+  "info": {
+    "displayName": "DS Social Link",
+    "description": "Social media link with platform name, URL, label, and optional SVG icon"
+  },
+  "attributes": {
+    "platform": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "svg": {
+      "type": "text"
+    }
+  }
+}

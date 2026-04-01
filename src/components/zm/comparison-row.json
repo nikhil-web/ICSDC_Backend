@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_zm_comparison_rows",
+  "info": {
+    "displayName": "Comparison Row",
+    "description": "Zimbra vs M365 comparison table row",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true
+    },
+    "zimbraValue": {
+      "type": "string",
+      "required": true
+    },
+    "zimbraStatus": {
+      "type": "enumeration",
+      "enum": ["check", "cross", "neutral"],
+      "default": "neutral",
+      "required": true
+    },
+    "m365Value": {
+      "type": "string",
+      "required": true
+    },
+    "m365Status": {
+      "type": "enumeration",
+      "enum": ["check", "cross", "neutral"],
+      "default": "neutral",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "singleType",
+  "collectionName": "forex_vps_pages",
+  "info": {
+    "singularName": "forex-vps-page",
+    "pluralName": "forex-vps-pages",
+    "displayName": "Forex VPS Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.seo-meta"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "featuresLabel": {
+      "type": "string"
+    },
+    "featuresTitle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "useCasesLabel": {
+      "type": "string"
+    },
+    "useCasesTitle": {
+      "type": "string"
+    },
+    "useCasesCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whoLabel": {
+      "type": "string"
+    },
+    "whoTitle": {
+      "type": "string"
+    },
+    "whoCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    }
+  }
+}

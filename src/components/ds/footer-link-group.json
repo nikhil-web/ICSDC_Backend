@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ds_footer_link_groups",
+  "info": {
+    "displayName": "DS Footer Link Group",
+    "description": "Footer column with title and list of links"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "groupId": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.footer-link"
+    }
+  }
+}

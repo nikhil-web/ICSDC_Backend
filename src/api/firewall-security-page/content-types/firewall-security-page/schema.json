@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "firewall_security_pages",
+  "info": {
+    "singularName": "firewall-security-page",
+    "pluralName": "firewall-security-pages",
+    "displayName": "Firewall Security Page"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
+    "heroTitle": { "type": "string" },
+    "heroSubtitle": { "type": "string" },
+    "heroDescription": { "type": "text" },
+    "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
+    "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
+    "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "strengthLabel": { "type": "string" },
+    "strengthTitle": { "type": "string" },
+    "strengthCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "adaptsLabel": { "type": "string" },
+    "adaptsTitle": { "type": "string" },
+    "adaptsCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "threatTitle": { "type": "string" },
+    "threatDesc": { "type": "text" },
+    "envLabel": { "type": "string" },
+    "envTitle": { "type": "string" },
+    "envCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
+    "servicesLabel": { "type": "string" },
+    "servicesTitle": { "type": "string" },
+    "servicesCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "useCasesLabel": { "type": "string" },
+    "useCasesTitle": { "type": "string" },
+    "useCasesCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
+    "testimonialTitle": { "type": "string" },
+    "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
+    "faqTitle": { "type": "string" },
+    "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
+    "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+  }
+}

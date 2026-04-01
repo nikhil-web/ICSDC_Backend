@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ds_seo_metas",
+  "info": {
+    "displayName": "DS SEO Meta",
+    "description": "SEO metadata for the dedicated server page"
+  },
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    }
+  }
+}

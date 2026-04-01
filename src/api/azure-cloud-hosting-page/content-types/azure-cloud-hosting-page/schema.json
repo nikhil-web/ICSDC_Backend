@@ -1,0 +1,162 @@
+{
+  "kind": "singleType",
+  "collectionName": "azure_cloud_hosting_pages",
+  "info": {
+    "singularName": "azure-cloud-hosting-page",
+    "pluralName": "azure-cloud-hosting-pages",
+    "displayName": "Azure Cloud Hosting Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroFormTitle": {
+      "type": "string"
+    },
+    "heroFormSubtitle": {
+      "type": "string"
+    },
+    "pillars": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "aboutImage": {
+      "type": "string"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDescription": {
+      "type": "text"
+    },
+    "advantagesLabel": {
+      "type": "string"
+    },
+    "advantagesTitle": {
+      "type": "string"
+    },
+    "advantagesSubtitle": {
+      "type": "text"
+    },
+    "advantages": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "comparisonLabel": {
+      "type": "string"
+    },
+    "comparisonTitle": {
+      "type": "string"
+    },
+    "comparisonSubtitle": {
+      "type": "text"
+    },
+    "comparisonColumns": {
+      "type": "json"
+    },
+    "comparisonRows": {
+      "type": "component",
+      "component": "ds.comparison-row",
+      "repeatable": true
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whySubtitle": {
+      "type": "text"
+    },
+    "whyCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "processLabel": {
+      "type": "string"
+    },
+    "processTitle": {
+      "type": "string"
+    },
+    "processSubtitle": {
+      "type": "text"
+    },
+    "processSteps": {
+      "type": "component",
+      "component": "ds.when-card",
+      "repeatable": true
+    },
+    "techLabel": {
+      "type": "string"
+    },
+    "techTitle": {
+      "type": "string"
+    },
+    "techSubtitle": {
+      "type": "text"
+    },
+    "techBadges": {
+      "type": "component",
+      "component": "shared.tech-badge",
+      "repeatable": true
+    },
+    "securityLabel": {
+      "type": "string"
+    },
+    "securityTitle": {
+      "type": "string"
+    },
+    "securityDescription": {
+      "type": "text"
+    },
+    "securityFeatures": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingDescription": {
+      "type": "text"
+    },
+    "pricingCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "repeatable": false
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "ds.testimonial-card",
+      "repeatable": true
+    },
+    "faq": {
+      "type": "component",
+      "component": "ds.faq-entry",
+      "repeatable": true
+    }
+  }
+}

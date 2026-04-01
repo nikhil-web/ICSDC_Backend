@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hero_hero_headings",
+  "info": {
+    "displayName": "Hero Heading"
+  },
+  "options": {},
+  "attributes": {
+    "mainHeading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_location_cards",
+  "info": {
+    "displayName": "Location Card",
+    "description": "Data center location with flag emoji and details",
+    "icon": "pinMap"
+  },
+  "attributes": {
+    "flag": { "type": "string", "required": true },
+    "name": { "type": "string", "required": true },
+    "description": { "type": "text" },
+    "order": { "type": "integer", "default": 0 }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_ds_perf_stats",
+  "info": {
+    "displayName": "DS Performance Stat",
+    "description": "Single performance metric (value + label)"
+  },
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

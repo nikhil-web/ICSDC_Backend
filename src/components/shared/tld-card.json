@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_tld_cards",
+  "info": {
+    "displayName": "TLD Card",
+    "description": "Domain TLD extension with price and badge",
+    "icon": "earth"
+  },
+  "attributes": {
+    "extension": { "type": "string", "required": true },
+    "price": { "type": "string", "required": true },
+    "badge": { "type": "string" },
+    "order": { "type": "integer", "default": 0 }
+  }
+}

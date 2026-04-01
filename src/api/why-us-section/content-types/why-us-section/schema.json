@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "why_us_sections",
+  "info": {
+    "singularName": "why-us-section",
+    "pluralName": "why-us-sections",
+    "displayName": "Why Us Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "component": "sections.why-us-card",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hero_hero_sub_headings",
+  "info": {
+    "displayName": "Hero Sub Heading"
+  },
+  "options": {},
+  "attributes": {
+    "Subheading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

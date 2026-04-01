@@ -1,0 +1,132 @@
+{
+  "kind": "singleType",
+  "collectionName": "aws_cloud_hosting_pages",
+  "info": {
+    "singularName": "aws-cloud-hosting-page",
+    "pluralName": "aws-cloud-hosting-pages",
+    "displayName": "AWS Cloud Hosting Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "repeatable": false
+    },
+    "heroEyebrow": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "pillars": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "aboutImage": {
+      "type": "string"
+    },
+    "aboutLabel": {
+      "type": "string"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDescription": {
+      "type": "text"
+    },
+    "aboutItems": {
+      "type": "component",
+      "component": "ds.when-card",
+      "repeatable": true
+    },
+    "strengthsLabel": {
+      "type": "string"
+    },
+    "strengthsTitle": {
+      "type": "string"
+    },
+    "strengthsSubtitle": {
+      "type": "text"
+    },
+    "strengths": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "servicesLabel": {
+      "type": "string"
+    },
+    "servicesTitle": {
+      "type": "string"
+    },
+    "servicesSubtitle": {
+      "type": "text"
+    },
+    "services": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "comparisonLabel": {
+      "type": "string"
+    },
+    "comparisonTitle": {
+      "type": "string"
+    },
+    "comparisonSubtitle": {
+      "type": "text"
+    },
+    "comparisonColumns": {
+      "type": "json"
+    },
+    "comparisonRows": {
+      "type": "component",
+      "component": "ds.comparison-row",
+      "repeatable": true
+    },
+    "ctaBand2": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "ds.testimonial-card",
+      "repeatable": true
+    },
+    "faq": {
+      "type": "component",
+      "component": "ds.faq-entry",
+      "repeatable": true
+    }
+  }
+}
