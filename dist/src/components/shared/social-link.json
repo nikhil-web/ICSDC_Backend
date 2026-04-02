@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_shared_social_links",
+    "info": {
+        "displayName": "Social Link",
+        "icon": "earth",
+        "description": "Social media link entry for the footer"
+    },
+    "attributes": {
+        "platform": {
+            "type": "enumeration",
+            "required": true,
+            "enum": [
+                "facebook",
+                "twitter",
+                "instagram",
+                "linkedin"
+            ]
+        },
+        "url": {
+            "type": "string",
+            "required": true
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}

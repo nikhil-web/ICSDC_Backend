@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_zm_feature_badges",
+    "info": {
+        "displayName": "Feature Badge",
+        "description": "Simple text badge for feature lists",
+        "icon": "check-circle"
+    },
+    "options": {},
+    "attributes": {
+        "text": {
+            "type": "string",
+            "required": true
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

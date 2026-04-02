@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_ds_checklist_items",
+    "info": {
+        "displayName": "DS Checklist Item",
+        "description": "Performance checklist item with bold label and description"
+    },
+    "attributes": {
+        "label": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

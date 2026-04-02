@@ -1,0 +1,29 @@
+{
+    "collectionName": "components_ds_footer_sections",
+    "info": {
+        "displayName": "DS Footer Section",
+        "description": "Complete footer with logo, address, socials, link groups, copyright"
+    },
+    "attributes": {
+        "logo": {
+            "type": "string"
+        },
+        "address": {
+            "type": "component",
+            "component": "ds.footer-address"
+        },
+        "socialLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.social-link"
+        },
+        "linkGroups": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.footer-link-group"
+        },
+        "copyrightText": {
+            "type": "string"
+        }
+    }
+}

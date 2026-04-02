@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_sections_contact_infos",
+    "info": {
+        "displayName": "Contact Info",
+        "icon": "phone",
+        "description": "Contact details used in the contact section and FAQ sidebar"
+    },
+    "attributes": {
+        "email": {
+            "type": "email"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "assistanceHours": {
+            "type": "string"
+        }
+    }
+}

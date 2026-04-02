@@ -1,0 +1,30 @@
+{
+    "kind": "singleType",
+    "collectionName": "navigations",
+    "info": {
+        "singularName": "navigation",
+        "pluralName": "navigations",
+        "displayName": "Navigation"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "navLogo": {
+            "type": "component",
+            "component": "menu.main-logo",
+            "repeatable": false
+        },
+        "menus": {
+            "type": "component",
+            "component": "menu.nav-menu",
+            "repeatable": true
+        },
+        "LoginButton": {
+            "type": "component",
+            "component": "buttons.button",
+            "repeatable": false
+        }
+    }
+}

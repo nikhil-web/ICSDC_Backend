@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_ds_related_cards",
+    "info": {
+        "displayName": "DS Related Card",
+        "description": "Related service card with title, description, and a CTA link"
+    },
+    "attributes": {
+        "order": { "type": "integer", "default": 0 },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "text", "required": true },
+        "btnLabel": { "type": "string" },
+        "btnUrl": { "type": "string" }
+    }
+}

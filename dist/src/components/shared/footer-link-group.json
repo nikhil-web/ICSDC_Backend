@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_shared_footer_link_groups",
+    "info": {
+        "displayName": "Footer Link Group",
+        "icon": "layer",
+        "description": "A titled column of links in the footer (Services, Company, Support, Legal)"
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "links": {
+            "type": "component",
+            "component": "shared.nav-link",
+            "repeatable": true
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}

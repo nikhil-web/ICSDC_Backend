@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_sections_text_images",
+    "info": {
+        "displayName": "Text + Image",
+        "icon": "landscape",
+        "description": "Reusable two-column text + image section (Less Complexity, Industry Validated)"
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "paragraph": {
+            "type": "richtext"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "kind": "singleType",
+    "collectionName": "acronis_backup_pages",
+    "info": {
+        "singularName": "acronis-backup-page",
+        "pluralName": "acronis-backup-pages",
+        "displayName": "Acronis Backup Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        },
+        "heroStats": {
+            "type": "component",
+            "component": "ds.perf-stat",
+            "repeatable": true
+        },
+        "pillars": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "pricingLabel": {
+            "type": "string"
+        },
+        "pricingTitle": {
+            "type": "string"
+        },
+        "pricingSubtitle": {
+            "type": "text"
+        },
+        "pricingMessage": {
+            "type": "text"
+        },
+        "pricingCtaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        },
+        "pricingCtaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "ctaBand1": {
+            "type": "component",
+            "component": "ds.cta-band"
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whySubtitle": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "ctaBand2": {
+            "type": "component",
+            "component": "ds.cta-band"
+        },
+        "seo": {
+            "type": "component",
+            "component": "ds.seo-meta"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "component": "ds.testimonial-card",
+            "repeatable": true
+        },
+        "faq": {
+            "type": "component",
+            "component": "ds.faq-entry",
+            "repeatable": true
+        }
+    }
+}

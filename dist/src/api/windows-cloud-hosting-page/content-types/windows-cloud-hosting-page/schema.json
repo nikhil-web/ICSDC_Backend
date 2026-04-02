@@ -1,0 +1,125 @@
+{
+    "kind": "singleType",
+    "collectionName": "windows_cloud_hosting_pages",
+    "info": {
+        "singularName": "windows-cloud-hosting-page",
+        "pluralName": "windows-cloud-hosting-pages",
+        "displayName": "Windows Cloud Hosting Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whySubtitle": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "useCasesLabel": {
+            "type": "string"
+        },
+        "useCasesTitle": {
+            "type": "string"
+        },
+        "useCasesSubtitle": {
+            "type": "text"
+        },
+        "useCaseItems": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "appsLabel": {
+            "type": "string"
+        },
+        "appsTitle": {
+            "type": "string"
+        },
+        "appsSubtitle": {
+            "type": "text"
+        },
+        "appCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "ctaBand2": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "component": "ds.testimonial-card",
+            "repeatable": true
+        },
+        "faq": {
+            "type": "component",
+            "component": "ds.faq-entry",
+            "repeatable": true
+        }
+    }
+}

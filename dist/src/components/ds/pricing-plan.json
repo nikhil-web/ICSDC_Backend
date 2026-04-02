@@ -1,0 +1,53 @@
+{
+    "collectionName": "components_ds_pricing_plans",
+    "info": {
+        "displayName": "DS Pricing Plan",
+        "description": "Dedicated server pricing plan card with features"
+    },
+    "attributes": {
+        "tier": {
+            "type": "string",
+            "required": true
+        },
+        "price": {
+            "type": "string",
+            "required": true
+        },
+        "currency": {
+            "type": "string",
+            "default": "&#8377;"
+        },
+        "period": {
+            "type": "string",
+            "default": "/mo"
+        },
+        "tagline": {
+            "type": "text"
+        },
+        "isFeatured": {
+            "type": "boolean",
+            "default": false
+        },
+        "badge": {
+            "type": "string"
+        },
+        "features": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.plan-feature"
+        },
+        "ctaText": {
+            "type": "string",
+            "required": true
+        },
+        "ctaStyle": {
+            "type": "enumeration",
+            "enum": ["outline", "primary"],
+            "default": "outline"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_ds_cta_bands",
+    "info": {
+        "displayName": "DS CTA Band",
+        "description": "Call-to-action banner section with title, description, and two CTA link buttons"
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "ctaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        },
+        "ctaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link"
+        }
+    }
+}

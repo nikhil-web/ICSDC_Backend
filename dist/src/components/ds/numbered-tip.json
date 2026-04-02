@@ -1,0 +1,13 @@
+{
+    "collectionName": "components_ds_numbered_tips",
+    "info": {
+        "displayName": "DS Numbered Tip",
+        "description": "Numbered step or tip card with a display number, title, and description"
+    },
+    "attributes": {
+        "order": { "type": "integer", "default": 0 },
+        "number": { "type": "string" },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "text", "required": true }
+    }
+}

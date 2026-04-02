@@ -1,0 +1,98 @@
+{
+    "kind": "singleType",
+    "collectionName": "home_pages",
+    "info": {
+        "singularName": "home-page",
+        "pluralName": "home-pages",
+        "displayName": "Home Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "SEO": {
+            "type": "component",
+            "component": "ds.seo-meta",
+            "repeatable": false
+        },
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "mainHeading": {
+            "type": "string"
+        },
+        "subHeading": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "price": {
+            "type": "string"
+        },
+        "priceNote": {
+            "type": "string"
+        },
+        "CallToActionPrimary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "repeatable": false
+        },
+        "callToActionSecondary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "repeatable": false
+        },
+        "whyChooseUs": {
+            "type": "component",
+            "component": "sections.why-us-card",
+            "repeatable": true
+        },
+        "whoWeAre": {
+            "type": "component",
+            "component": "sections.who-we-are",
+            "repeatable": false
+        },
+        "LessCloudComplexity": {
+            "type": "component",
+            "component": "sections.text-image",
+            "repeatable": false
+        },
+        "CloudSolutionsEngineered": {
+            "type": "component",
+            "component": "sections.cloud-solutions-engineered-section",
+            "repeatable": true
+        },
+        "IndustryLeadingExcellenceValidated": {
+            "type": "component",
+            "component": "sections.text-image",
+            "repeatable": false
+        },
+        "BeyondBestPracticeOurISOStandards": {
+            "type": "component",
+            "component": "sections.text-image",
+            "repeatable": false
+        },
+        "BestCloudServices": {
+            "type": "component",
+            "component": "sections.who-we-are",
+            "repeatable": false
+        },
+        "testimonials": {
+            "type": "component",
+            "component": "ds.testimonial-card",
+            "repeatable": true
+        },
+        "faq": {
+            "type": "component",
+            "component": "ds.faq-entry",
+            "repeatable": true
+        },
+        "Footer": {
+            "type": "component",
+            "component": "sections.footer",
+            "repeatable": false
+        }
+    }
+}

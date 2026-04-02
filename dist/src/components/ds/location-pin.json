@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_ds_location_pins",
+    "info": {
+        "displayName": "DS Location Pin",
+        "description": "Map pin with label and CSS position as string percentages"
+    },
+    "attributes": {
+        "label": {
+            "type": "string",
+            "required": true
+        },
+        "top": {
+            "type": "string"
+        },
+        "left": {
+            "type": "string"
+        }
+    }
+}

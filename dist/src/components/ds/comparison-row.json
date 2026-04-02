@@ -1,0 +1,40 @@
+{
+    "collectionName": "components_ds_comparison_rows",
+    "info": {
+        "displayName": "DS Comparison Row",
+        "description": "Single row in the ICSDC vs Others comparison table"
+    },
+    "attributes": {
+        "feature": {
+            "type": "string",
+            "required": true
+        },
+        "icsdc": {
+            "type": "string"
+        },
+        "icsdcStatus": {
+            "type": "enumeration",
+            "enum": [
+                "check",
+                "partial",
+                "cross"
+            ]
+        },
+        "others": {
+            "type": "string"
+        },
+        "othersStatus": {
+            "type": "enumeration",
+            "enum": [
+                "neutral",
+                "check",
+                "partial",
+                "cross"
+            ]
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

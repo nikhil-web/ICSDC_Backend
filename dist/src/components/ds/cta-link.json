@@ -1,0 +1,17 @@
+{
+    "collectionName": "components_ds_cta_links",
+    "info": {
+        "displayName": "DS CTA Link",
+        "description": "Call-to-action button with text and link"
+    },
+    "attributes": {
+        "text": {
+            "type": "string",
+            "required": true
+        },
+        "link": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

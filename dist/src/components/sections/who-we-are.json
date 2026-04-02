@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_sections_who_we_ares",
+    "info": {
+        "displayName": "Who We Are",
+        "icon": "user",
+        "description": "Who We Are section with feature buttons"
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "paragraph": {
+            "type": "richtext"
+        },
+        "featureCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.feature-button"
+        }
+    }
+}

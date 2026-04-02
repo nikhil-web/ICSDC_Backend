@@ -1,0 +1,176 @@
+{
+    "kind": "singleType",
+    "collectionName": "windows_dedicated_server_pages",
+    "info": {
+        "singularName": "windows-dedicated-server-page",
+        "pluralName": "windows-dedicated-server-pages",
+        "displayName": "Windows Dedicated Server Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "pillars": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "pricingLabel": {
+            "type": "string"
+        },
+        "pricingTitle": {
+            "type": "string"
+        },
+        "pricingDescription": {
+            "type": "text"
+        },
+        "pricingCtaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "pricingCtaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "aboutLabel": {
+            "type": "string"
+        },
+        "aboutTitle": {
+            "type": "string"
+        },
+        "aboutDescription": {
+            "type": "text"
+        },
+        "aboutItems": {
+            "type": "component",
+            "component": "ds.checklist-item",
+            "repeatable": true
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "comparisonLabel": {
+            "type": "string"
+        },
+        "comparisonTitle": {
+            "type": "string"
+        },
+        "comparisonSubtitle": {
+            "type": "text"
+        },
+        "comparisonColumns": {
+            "type": "json"
+        },
+        "comparisonRows": {
+            "type": "component",
+            "component": "ds.comparison-row",
+            "repeatable": true
+        },
+        "ctaBand1": {
+            "type": "component",
+            "component": "ds.cta-band",
+            "required": false
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whySubtitle": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "readyLabel": {
+            "type": "string"
+        },
+        "readyTitle": {
+            "type": "string"
+        },
+        "readySubtitle": {
+            "type": "text"
+        },
+        "readyCards": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "useCasesLabel": {
+            "type": "string"
+        },
+        "useCasesTitle": {
+            "type": "string"
+        },
+        "useCasesSubtitle": {
+            "type": "text"
+        },
+        "useCases": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "ctaBand2": {
+            "type": "component",
+            "component": "ds.cta-band",
+            "required": false
+        },
+        "seo": {
+            "type": "component",
+            "component": "ds.seo-meta",
+            "required": false
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "component": "ds.testimonial-card",
+            "repeatable": true
+        },
+        "faq": {
+            "type": "component",
+            "component": "ds.faq-entry",
+            "repeatable": true
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_menu_menu_items",
+    "info": {
+        "displayName": "MenuItem"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtext": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

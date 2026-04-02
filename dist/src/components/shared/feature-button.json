@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_shared_feature_buttons",
+    "info": {
+        "displayName": "Feature Button",
+        "icon": "cursor",
+        "description": "CTA button used inside Who We Are section"
+    },
+    "attributes": {
+        "label": {
+            "type": "string",
+            "required": true
+        },
+        "variant": {
+            "type": "enumeration",
+            "enum": ["outline", "primary"],
+            "default": "outline"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "collectionName": "components_ds_highlight_cards",
+    "info": {
+        "displayName": "DS Highlight Card",
+        "description": "Card with emoji icon, title, and description — used for privacy/feature highlights"
+    },
+    "attributes": {
+        "order": { "type": "integer", "default": 0 },
+        "icon": { "type": "string" },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "text", "required": true }
+    }
+}

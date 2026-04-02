@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_ds_footer_addresses",
+    "info": {
+        "displayName": "DS Footer Address",
+        "description": "Footer company address block"
+    },
+    "attributes": {
+        "street": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "email"
+        }
+    }
+}

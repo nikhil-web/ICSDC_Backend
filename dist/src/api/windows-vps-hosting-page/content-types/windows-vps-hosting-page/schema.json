@@ -1,0 +1,123 @@
+{
+    "kind": "singleType",
+    "collectionName": "windows_vps_hosting_pages",
+    "info": {
+        "singularName": "windows-vps-hosting-page",
+        "pluralName": "windows-vps-hosting-pages",
+        "displayName": "Windows VPS Hosting Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "component": "ds.cta-link",
+            "required": false
+        },
+        "pillars": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "securityLabel": {
+            "type": "string"
+        },
+        "securityTitle": {
+            "type": "string"
+        },
+        "securitySubtitle": {
+            "type": "text"
+        },
+        "securityCards": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "techLabel": {
+            "type": "string"
+        },
+        "techTitle": {
+            "type": "string"
+        },
+        "techSubtitle": {
+            "type": "text"
+        },
+        "techStacks": {
+            "type": "json"
+        },
+        "useCasesLabel": {
+            "type": "string"
+        },
+        "useCasesTitle": {
+            "type": "string"
+        },
+        "useCasesSubtitle": {
+            "type": "text"
+        },
+        "useCases": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "ctaBand1": {
+            "type": "component",
+            "component": "ds.cta-band",
+            "required": false
+        },
+        "ctaBand2": {
+            "type": "component",
+            "component": "ds.cta-band",
+            "required": false
+        },
+        "seo": {
+            "type": "component",
+            "component": "ds.seo-meta",
+            "required": false
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "component": "ds.testimonial-card",
+            "repeatable": true
+        },
+        "faq": {
+            "type": "component",
+            "component": "ds.faq-entry",
+            "repeatable": true
+        }
+    }
+}

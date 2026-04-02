@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_sections_heroes",
+    "info": {
+        "displayName": "Hero",
+        "icon": "star",
+        "description": "Hero section fields for the homepage"
+    },
+    "attributes": {
+        "mainHeading": {
+            "type": "string"
+        },
+        "subHeading": {
+            "type": "string"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "price": {
+            "type": "string"
+        },
+        "priceNote": {
+            "type": "string"
+        }
+    }
+}

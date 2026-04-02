@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_sections_feature_cards",
+    "info": {
+        "displayName": "Feature Card",
+        "icon": "star"
+    },
+    "attributes": {
+        "label": {
+            "type": "string"
+        },
+        "variant": {
+            "type": "string",
+            "default": "outline"
+        }
+    }
+}

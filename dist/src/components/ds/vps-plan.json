@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_ds_vps_plans",
+    "info": {
+        "displayName": "DS VPS Plan",
+        "description": "VPS hosting plan with dedicated resource specs"
+    },
+    "attributes": {
+        "order": { "type": "integer", "default": 0 },
+        "name": { "type": "string", "required": true },
+        "price": { "type": "string", "required": true },
+        "priceNote": { "type": "string" },
+        "isPopular": { "type": "boolean", "default": false },
+        "vcpu": { "type": "string" },
+        "ram": { "type": "string" },
+        "storage": { "type": "string" },
+        "bandwidth": { "type": "string" }
+    }
+}
