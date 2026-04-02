@@ -2249,6 +2249,62 @@ export interface ApiSharedHostingPageSharedHostingPage
   };
 }
 
+export interface ApiTallyOnCloudPageTallyOnCloudPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'tally_on_cloud_pages';
+  info: {
+    displayName: 'Tally on Cloud Page';
+    pluralName: 'tally-on-cloud-pages';
+    singularName: 'tally-on-cloud-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutTitle: Schema.Attribute.String;
+    compareLabel: Schema.Attribute.String;
+    compareRows: Schema.Attribute.Component<'ds.icon-card', true>;
+    compareTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    improvements: Schema.Attribute.Component<'ds.icon-card', true>;
+    improvementsLabel: Schema.Attribute.String;
+    improvementsTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tally-on-cloud-page.tally-on-cloud-page'
+    > &
+      Schema.Attribute.Private;
+    pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
+    testimonialTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whoCanCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whoCanDesc: Schema.Attribute.Text;
+    whoCanLabel: Schema.Attribute.String;
+    whoCanTitle: Schema.Attribute.String;
+    whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyLabel: Schema.Attribute.String;
+    whyTitle: Schema.Attribute.String;
+  };
+}
+
 export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
   collectionName: 'vapt_pages';
   info: {
@@ -2438,6 +2494,57 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
+    whyTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
+  collectionName: 'vps_cpanel_pages';
+  info: {
+    displayName: 'VPS cPanel Page';
+    pluralName: 'vps-cpanel-pages';
+    singularName: 'vps-cpanel-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutTitle: Schema.Attribute.String;
+    advantages: Schema.Attribute.Component<'ds.icon-card', true>;
+    advantagesLabel: Schema.Attribute.String;
+    advantagesTitle: Schema.Attribute.String;
+    cpanelFeaturesDesc: Schema.Attribute.Text;
+    cpanelFeaturesList: Schema.Attribute.JSON;
+    cpanelFeaturesTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::vps-cpanel-page.vps-cpanel-page'
+    > &
+      Schema.Attribute.Private;
+    pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
+    testimonialTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyLabel: Schema.Attribute.String;
     whyTitle: Schema.Attribute.String;
   };
 }
@@ -3482,9 +3589,11 @@ declare module '@strapi/strapi' {
       'api::nvme-dedicated-server-page.nvme-dedicated-server-page': ApiNvmeDedicatedServerPageNvmeDedicatedServerPage;
       'api::reseller-hosting-page.reseller-hosting-page': ApiResellerHostingPageResellerHostingPage;
       'api::shared-hosting-page.shared-hosting-page': ApiSharedHostingPageSharedHostingPage;
+      'api::tally-on-cloud-page.tally-on-cloud-page': ApiTallyOnCloudPageTallyOnCloudPage;
       'api::vapt-page.vapt-page': ApiVaptPageVaptPage;
       'api::veeam-backup-page.veeam-backup-page': ApiVeeamBackupPageVeeamBackupPage;
       'api::virtual-machine-page.virtual-machine-page': ApiVirtualMachinePageVirtualMachinePage;
+      'api::vps-cpanel-page.vps-cpanel-page': ApiVpsCpanelPageVpsCpanelPage;
       'api::vps-hosting-page.vps-hosting-page': ApiVpsHostingPageVpsHostingPage;
       'api::vps-hosting-trial-page.vps-hosting-trial-page': ApiVpsHostingTrialPageVpsHostingTrialPage;
       'api::why-us-section.why-us-section': ApiWhyUsSectionWhyUsSection;

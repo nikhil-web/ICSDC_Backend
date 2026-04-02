@@ -21,41 +21,48 @@
 const { runImport } = require('./strapiImport');
 
 const PAGES = [
+
   {
-    name: 'GPU Dedicated Server',
-    endpoint: 'gpu-dedicated-server-page',
-    uid: 'api::gpu-dedicated-server-page.gpu-dedicated-server-page',
-    data: require('./seed/gpu-dedicated-server'),
+    name: 'Firewall Security',
+    endpoint: 'firewall-security-page',
+    uid: 'api::firewall-security-page.firewall-security-page',
+    data: require('./seed/firewall-security'),
   },
   {
-    name: 'Microsoft 365',
-    endpoint: 'microsoft-365-page',
-    uid: 'api::microsoft-365-page.microsoft-365-page',
-    data: require('./seed/microsoft-365'),
+    name: 'VAPT',
+    endpoint: 'vapt-page',
+    uid: 'api::vapt-page.vapt-page',
+    data: require('./seed/vapt'),
   },
   {
-    name: 'Cloud Storage',
-    endpoint: 'cloud-storage-page',
-    uid: 'api::cloud-storage-page.cloud-storage-page',
-    data: require('./seed/cloud-storage'),
+    name: 'Forex VPS',
+    endpoint: 'forex-vps-page',
+    uid: 'api::forex-vps-page.forex-vps-page',
+    data: require('./seed/forex-vps'),
   },
   {
-    name: 'Bare Metal Server',
-    endpoint: 'bare-metal-server-page',
-    uid: 'api::bare-metal-server-page.bare-metal-server-page',
-    data: require('./seed/bare-metal-server'),
+    name: 'Tally on Cloud',
+    endpoint: 'tally-on-cloud-page',
+    uid: 'api::tally-on-cloud-page.tally-on-cloud-page',
+    data: require('./seed/tally-on-cloud'),
   },
   {
-    name: 'Veeam Backup',
-    endpoint: 'veeam-backup-page',
-    uid: 'api::veeam-backup-page.veeam-backup-page',
-    data: require('./seed/veeam-backup'),
+    name: 'VPS cPanel',
+    endpoint: 'vps-cpanel-page',
+    uid: 'api::vps-cpanel-page.vps-cpanel-page',
+    data: require('./seed/vps-cpanel'),
   },
   {
-    name: 'Virtual Machine',
-    endpoint: 'virtual-machine-page',
-    uid: 'api::virtual-machine-page.virtual-machine-page',
-    data: require('./seed/virtual-machine'),
+    name: 'Navigation',
+    endpoint: 'navigation',
+    uid: 'api::navigation.navigation',
+    data: require('./seed/navigation'),
+  },
+  {
+    name: 'Footer',
+    endpoint: 'footer',
+    uid: 'api::footer.footer',
+    data: require('./seed/footer'),
   },
 ];
 
