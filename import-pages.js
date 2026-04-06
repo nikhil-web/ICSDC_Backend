@@ -76,6 +76,18 @@ const PAGES = [
     uid: 'api::pam-mfa-page.pam-mfa-page',
     data: require('./seed/pam-mfa'),
   },
+  {
+    name: 'Managed Dedicated Server',
+    endpoint: 'managed-dedicated-server-page',
+    uid: 'api::managed-dedicated-server-page.managed-dedicated-server-page',
+    data: require('./seed/managed-dedicated-server'),
+  },
+  {
+    name: 'SSL Certificate',
+    endpoint: 'ssl-certificate-page',
+    uid: 'api::ssl-certificate-page.ssl-certificate-page',
+    data: require('./seed/ssl-certificate'),
+  },
 ];
 
 // Filter pages if CLI args provided (e.g. node import-pages.js "WordPress Hosting")

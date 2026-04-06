@@ -44,6 +44,18 @@ export interface DsCloudPlan extends Struct.ComponentSchema {
   };
 }
 
+export interface DsCompareRow extends Struct.ComponentSchema {
+  collectionName: 'components_ds_compare_rows';
+  info: {
+    displayName: 'DS Compare Row';
+  };
+  attributes: {
+    feature: Schema.Attribute.String;
+    fullyManaged: Schema.Attribute.String;
+    selfManaged: Schema.Attribute.String;
+  };
+}
+
 export interface DsComparisonRow extends Struct.ComponentSchema {
   collectionName: 'components_ds_comparison_rows';
   info: {
@@ -398,6 +410,20 @@ export interface DsSocialLink extends Struct.ComponentSchema {
     platform: Schema.Attribute.String & Schema.Attribute.Required;
     svg: Schema.Attribute.Text;
     url: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface DsSslType extends Struct.ComponentSchema {
+  collectionName: 'components_ds_ssl_types';
+  info: {
+    displayName: 'DS SSL Type';
+  };
+  attributes: {
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    desc: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -830,6 +856,7 @@ declare module '@strapi/strapi' {
       'buttons.button': ButtonsButton;
       'ds.checklist-item': DsChecklistItem;
       'ds.cloud-plan': DsCloudPlan;
+      'ds.compare-row': DsCompareRow;
       'ds.comparison-row': DsComparisonRow;
       'ds.control-panel': DsControlPanel;
       'ds.cta-band': DsCtaBand;
@@ -855,6 +882,7 @@ declare module '@strapi/strapi' {
       'ds.service-button': DsServiceButton;
       'ds.shield-visual': DsShieldVisual;
       'ds.social-link': DsSocialLink;
+      'ds.ssl-type': DsSslType;
       'ds.testimonial-card': DsTestimonialCard;
       'ds.vps-plan': DsVpsPlan;
       'ds.when-card': DsWhenCard;

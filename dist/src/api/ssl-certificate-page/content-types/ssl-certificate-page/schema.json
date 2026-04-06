@@ -1,0 +1,125 @@
+{
+    "kind": "singleType",
+    "collectionName": "ssl_certificate_pages",
+    "info": {
+        "singularName": "ssl-certificate-page",
+        "pluralName": "ssl-certificate-pages",
+        "displayName": "SSL Certificate Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "pricingTitle": {
+            "type": "string"
+        },
+        "pricingDesc": {
+            "type": "text"
+        },
+        "offersLabel": {
+            "type": "string"
+        },
+        "offersTitle": {
+            "type": "string"
+        },
+        "offersCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "sslTypesTitle": {
+            "type": "string"
+        },
+        "sslTypesSubtitle": {
+            "type": "string"
+        },
+        "sslTypes": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.ssl-type"
+        },
+        "typesGlanceTitle": {
+            "type": "string"
+        },
+        "typesGlanceCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "powerLabel": {
+            "type": "string"
+        },
+        "powerTitle": {
+            "type": "string"
+        },
+        "powerCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whyDesc": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.testimonial-card"
+        },
+        "faqTitle": {
+            "type": "string"
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.faq-entry"
+        }
+    }
+}

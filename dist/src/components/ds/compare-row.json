@@ -1,0 +1,9 @@
+{
+    "collectionName": "components_ds_compare_rows",
+    "info": { "displayName": "DS Compare Row" },
+    "attributes": {
+        "feature": { "type": "string" },
+        "selfManaged": { "type": "string" },
+        "fullyManaged": { "type": "string" }
+    }
+}
