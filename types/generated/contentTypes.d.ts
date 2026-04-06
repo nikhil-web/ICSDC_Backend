@@ -2128,6 +2128,64 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
   };
 }
 
+export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
+  collectionName: 'pam_mfa_pages';
+  info: {
+    displayName: 'PAM MFA Page';
+    pluralName: 'pam-mfa-pages';
+    singularName: 'pam-mfa-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    controlCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    controlLabel: Schema.Attribute.String;
+    controlTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand3: Schema.Attribute.Component<'ds.cta-band', false>;
+    faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pam-mfa-page.pam-mfa-page'
+    > &
+      Schema.Attribute.Private;
+    mattersDesc: Schema.Attribute.Text;
+    mattersSteps: Schema.Attribute.Component<'ds.numbered-tip', true>;
+    mattersTitle: Schema.Attribute.String;
+    pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pricingDesc: Schema.Attribute.Text;
+    pricingTitle: Schema.Attribute.String;
+    processLabel: Schema.Attribute.String;
+    processTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    steps: Schema.Attribute.Component<'ds.numbered-tip', true>;
+    testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
+    testimonialTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseTitle: Schema.Attribute.String;
+    whyLabel: Schema.Attribute.String;
+    whyTitle: Schema.Attribute.String;
+  };
+}
+
 export interface ApiResellerHostingPageResellerHostingPage
   extends Struct.SingleTypeSchema {
   collectionName: 'reseller_hosting_pages';
@@ -2694,6 +2752,73 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
+    whyTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiWebHostingPageWebHostingPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'web_hosting_pages';
+  info: {
+    displayName: 'Web Hosting Page';
+    pluralName: 'web-hosting-pages';
+    singularName: 'web-hosting-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    backupPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
+    backupPromoDesc: Schema.Attribute.Text;
+    backupPromoTitle: Schema.Attribute.String;
+    compareRows: Schema.Attribute.Component<'ds.icon-card', true>;
+    compareRows2: Schema.Attribute.Component<'ds.icon-card', true>;
+    compareTitle: Schema.Attribute.String;
+    compareTitle2: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
+    featuresCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    featuresLabel: Schema.Attribute.String;
+    featuresTitle: Schema.Attribute.String;
+    helpCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    helpDesc: Schema.Attribute.Text;
+    helpTitle: Schema.Attribute.String;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::web-hosting-page.web-hosting-page'
+    > &
+      Schema.Attribute.Private;
+    pamPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
+    pamPromoDesc: Schema.Attribute.Text;
+    pamPromoTitle: Schema.Attribute.String;
+    pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    safetyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    safetyDesc: Schema.Attribute.Text;
+    safetyTitle: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    succeedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    succeedTitle: Schema.Attribute.String;
+    testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
+    testimonialTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyLabel: Schema.Attribute.String;
     whyTitle: Schema.Attribute.String;
   };
 }
@@ -3587,6 +3712,7 @@ declare module '@strapi/strapi' {
       'api::microsoft-365-page.microsoft-365-page': ApiMicrosoft365PageMicrosoft365Page;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::nvme-dedicated-server-page.nvme-dedicated-server-page': ApiNvmeDedicatedServerPageNvmeDedicatedServerPage;
+      'api::pam-mfa-page.pam-mfa-page': ApiPamMfaPagePamMfaPage;
       'api::reseller-hosting-page.reseller-hosting-page': ApiResellerHostingPageResellerHostingPage;
       'api::shared-hosting-page.shared-hosting-page': ApiSharedHostingPageSharedHostingPage;
       'api::tally-on-cloud-page.tally-on-cloud-page': ApiTallyOnCloudPageTallyOnCloudPage;
@@ -3596,6 +3722,7 @@ declare module '@strapi/strapi' {
       'api::vps-cpanel-page.vps-cpanel-page': ApiVpsCpanelPageVpsCpanelPage;
       'api::vps-hosting-page.vps-hosting-page': ApiVpsHostingPageVpsHostingPage;
       'api::vps-hosting-trial-page.vps-hosting-trial-page': ApiVpsHostingTrialPageVpsHostingTrialPage;
+      'api::web-hosting-page.web-hosting-page': ApiWebHostingPageWebHostingPage;
       'api::why-us-section.why-us-section': ApiWhyUsSectionWhyUsSection;
       'api::windows-cloud-hosting-page.windows-cloud-hosting-page': ApiWindowsCloudHostingPageWindowsCloudHostingPage;
       'api::windows-dedicated-server-page.windows-dedicated-server-page': ApiWindowsDedicatedServerPageWindowsDedicatedServerPage;

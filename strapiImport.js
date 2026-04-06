@@ -20,7 +20,13 @@ const https = require('https');
 const { URL } = require('url');
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const STRAPI_BASE  = process.env.STRAPI_URL       || 'http://localhost:1337';
+// STRAPI_URL env var overrides everything.
+// Otherwise tries the remote server first, falls back to localhost.
+const STRAPI_URLS = [
+  'http://13.126.9.248:1337',
+  'http://localhost:1337',
+];
+const STRAPI_BASE  = process.env.STRAPI_URL       || STRAPI_URLS[0];
 const ADMIN_EMAIL  = process.env.STRAPI_EMAIL     || 'nikhilpandey.pandey9@gmail.com';
 const ADMIN_PASS   = process.env.STRAPI_PASS      || 'Tubelight@123';
 // Optional: Strapi API Token (Settings → API Tokens in admin panel).
@@ -28,9 +34,9 @@ const ADMIN_PASS   = process.env.STRAPI_PASS      || 'Tubelight@123';
 const API_TOKEN    = process.env.STRAPI_API_TOKEN || '';
 
 // ─── HTTP helper ────────────────────────────────────────────────────────────
-function request(method, path, body, token) {
+function request(method, path, body, token, baseUrl) {
   return new Promise((resolve, reject) => {
-    const url = new URL(STRAPI_BASE + path);
+    const url = new URL((baseUrl || activeBase) + path);
     const isHttps = url.protocol === 'https:';
     const lib = isHttps ? https : http;
     const payload = body ? JSON.stringify(body) : null;
@@ -66,14 +72,29 @@ function request(method, path, body, token) {
 }
 
 // ─── Auth ───────────────────────────────────────────────────────────────────
+// Tries each URL in STRAPI_URLS in order; stops at the first that responds.
+// When STRAPI_URL env var is set, only that URL is tried.
+let activeBase = STRAPI_BASE; // updated on successful login
+
 async function login(email = ADMIN_EMAIL, pass = ADMIN_PASS) {
-  console.log(`\n🔐 Logging in as ${email}…`);
-  const res = await request('POST', '/admin/login', { email, password: pass });
-  if (res.status !== 200 || !res.body?.data?.token) {
-    throw new Error(`Login failed (${res.status}): ${JSON.stringify(res.body)}`);
+  const candidates = process.env.STRAPI_URL ? [STRAPI_BASE] : STRAPI_URLS;
+
+  for (const base of candidates) {
+    console.log(`\n🔐 Trying ${base} as ${email}…`);
+    try {
+      const res = await request('POST', '/admin/login', { email, password: pass }, null, base);
+      if (res.status === 200 && res.body?.data?.token) {
+        activeBase = base;
+        console.log(`   ✓ Authenticated via ${base}`);
+        return res.body.data.token;
+      }
+      console.warn(`   ✗ ${base} responded ${res.status} — trying next…`);
+    } catch (err) {
+      console.warn(`   ✗ ${base} unreachable (${err.message}) — trying next…`);
+    }
   }
-  console.log('   ✓ Authenticated');
-  return res.body.data.token;
+
+  throw new Error(`Login failed on all URLs: ${candidates.join(', ')}`);
 }
 
 // ─── Upsert single-type ─────────────────────────────────────────────────────

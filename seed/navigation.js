@@ -80,6 +80,7 @@ module.exports = {
       cols: 3,
       sections: [],
       items: [
+        { icon: '🌐', title: 'Web Hosting',        subtext: 'Sub Menu Details & subtext', url: '/web-hosting.html' },
         { icon: '⚡', title: 'Shared Hosting',    subtext: 'Sub Menu Details & subtext', url: '/shared-hosting.html' },
         { icon: '🔲', title: 'WordPress Hosting', subtext: 'Sub Menu Details & subtext', url: '/wordpress-hosting.html' },
         { icon: '🛒', title: 'eCommerce Hosting', subtext: 'Sub Menu Details & subtext', url: null },
@@ -116,7 +117,7 @@ module.exports = {
         { icon: '💾', title: 'Acronis Backup',  subtext: 'Sub Menu Details & subtext', url: '/acronis-backup.html' },
         { icon: '🗄️', title: 'Veeam Backup',    subtext: 'Sub Menu Details & subtext', url: '/veeam-backup.html' },
         { icon: '☁️', title: 'Cloud Storage',   subtext: 'Sub Menu Details & subtext', url: '/cloud-storage.html' },
-        { icon: '🔑', title: 'PAM / MFA',       subtext: 'Sub Menu Details & subtext', url: null },
+        { icon: '🔑', title: 'PAM / MFA',       subtext: 'Sub Menu Details & subtext', url: '/pam-mfa.html' },
         { icon: '🛡️', title: 'SSL Certificate', subtext: 'Sub Menu Details & subtext', url: null },
         { icon: '🔥', title: 'Firewall',        subtext: 'Sub Menu Details & subtext', url: '/firewall-security.html' },
         { icon: '🔍', title: 'VAPT',            subtext: 'Sub Menu Details & subtext', url: '/vapt.html' },

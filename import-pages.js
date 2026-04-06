@@ -64,6 +64,18 @@ const PAGES = [
     uid: 'api::footer.footer',
     data: require('./seed/footer'),
   },
+  {
+    name: 'Web Hosting',
+    endpoint: 'web-hosting-page',
+    uid: 'api::web-hosting-page.web-hosting-page',
+    data: require('./seed/web-hosting'),
+  },
+  {
+    name: 'PAM MFA',
+    endpoint: 'pam-mfa-page',
+    uid: 'api::pam-mfa-page.pam-mfa-page',
+    data: require('./seed/pam-mfa'),
+  },
 ];
 
 // Filter pages if CLI args provided (e.g. node import-pages.js "WordPress Hosting")
