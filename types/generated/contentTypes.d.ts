@@ -438,7 +438,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     singularName: 'about-us-page';
   };
   options: {
-    draftAndPublish: false;
+    draftAndPublish: true;
   };
   attributes: {
     countriesCount: Schema.Attribute.String;
@@ -880,7 +880,7 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     singularName: 'contact-us-page';
   };
   options: {
-    draftAndPublish: false;
+    draftAndPublish: true;
   };
   attributes: {
     contactAddress: Schema.Attribute.Text;
