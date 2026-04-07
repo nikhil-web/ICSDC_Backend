@@ -88,6 +88,18 @@ const PAGES = [
     uid: 'api::ssl-certificate-page.ssl-certificate-page',
     data: require('./seed/ssl-certificate'),
   },
+  {
+    name: 'Contact Us',
+    endpoint: 'contact-us-page',
+    uid: 'api::contact-us-page.contact-us-page',
+    data: require('./seed/contact-us'),
+  },
+  {
+    name: 'About Us',
+    endpoint: 'about-us-page',
+    uid: 'api::about-us-page.about-us-page',
+    data: require('./seed/about-us'),
+  },
 ];
 
 // Filter pages if CLI args provided (e.g. node import-pages.js "WordPress Hosting")

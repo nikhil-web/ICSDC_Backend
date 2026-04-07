@@ -430,6 +430,64 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
+  collectionName: 'about_us_pages';
+  info: {
+    displayName: 'About Us Page';
+    pluralName: 'about-us-pages';
+    singularName: 'about-us-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    countriesCount: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
+    dataCentersCount: Schema.Attribute.String;
+    dataCentersItems: Schema.Attribute.JSON;
+    dataCentersTitle: Schema.Attribute.String;
+    foundedYear: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    howStartedItems: Schema.Attribute.JSON;
+    howStartedTitle: Schema.Attribute.String;
+    journeyTitle: Schema.Attribute.String;
+    lifeDescription: Schema.Attribute.Text;
+    lifeTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us-page.about-us-page'
+    > &
+      Schema.Attribute.Private;
+    missionText: Schema.Attribute.Text;
+    missionTitle: Schema.Attribute.String;
+    partnersTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    servicesCount: Schema.Attribute.String;
+    specializationsCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    specializationsTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    visionText: Schema.Attribute.Text;
+    visionTitle: Schema.Attribute.String;
+    whatWeDoCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whatWeDoTitle: Schema.Attribute.String;
+    whereWeOperateItems: Schema.Attribute.JSON;
+    whereWeOperateTitle: Schema.Attribute.String;
+    whoWeAreDescription: Schema.Attribute.Text;
+    whoWeAreTitle: Schema.Attribute.String;
+    whyChooseDescription: Schema.Attribute.Text;
+    whyChooseTitle: Schema.Attribute.String;
+  };
+}
+
 export interface ApiAcronisBackupPageAcronisBackupPage
   extends Struct.SingleTypeSchema {
   collectionName: 'acronis_backup_pages';
@@ -811,6 +869,49 @@ export interface ApiCloudStoragePageCloudStoragePage
     whoLabel: Schema.Attribute.String;
     whoSubtitle: Schema.Attribute.Text;
     whoTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
+  collectionName: 'contact_us_pages';
+  info: {
+    displayName: 'Contact Us Page';
+    pluralName: 'contact-us-pages';
+    singularName: 'contact-us-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    contactAddress: Schema.Attribute.Text;
+    contactEmail: Schema.Attribute.Email;
+    contactPhone: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaDescription: Schema.Attribute.Text;
+    ctaTitle: Schema.Attribute.String;
+    helpCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    helpDescription: Schema.Attribute.Text;
+    helpTitle: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-us-page.contact-us-page'
+    > &
+      Schema.Attribute.Private;
+    officeHours: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    steps: Schema.Attribute.Component<'ds.numbered-tip', true>;
+    stepsDescription: Schema.Attribute.Text;
+    stepsTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -3810,12 +3911,14 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-us-page.about-us-page': ApiAboutUsPageAboutUsPage;
       'api::acronis-backup-page.acronis-backup-page': ApiAcronisBackupPageAcronisBackupPage;
       'api::aws-cloud-hosting-page.aws-cloud-hosting-page': ApiAwsCloudHostingPageAwsCloudHostingPage;
       'api::azure-cloud-hosting-page.azure-cloud-hosting-page': ApiAzureCloudHostingPageAzureCloudHostingPage;
       'api::bare-metal-server-page.bare-metal-server-page': ApiBareMetalServerPageBareMetalServerPage;
       'api::cloud-hosting-page.cloud-hosting-page': ApiCloudHostingPageCloudHostingPage;
       'api::cloud-storage-page.cloud-storage-page': ApiCloudStoragePageCloudStoragePage;
+      'api::contact-us-page.contact-us-page': ApiContactUsPageContactUsPage;
       'api::cpanel-hosting-page.cpanel-hosting-page': ApiCpanelHostingPageCpanelHostingPage;
       'api::dedicated-server-page.dedicated-server-page': ApiDedicatedServerPageDedicatedServerPage;
       'api::domain-registration-page.domain-registration-page': ApiDomainRegistrationPageDomainRegistrationPage;
