@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_ds_partner_logos",
+    "info": {
+        "displayName": "DS Partner Logo",
+        "description": "A partner or technology logo with optional image and display name."
+    },
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}

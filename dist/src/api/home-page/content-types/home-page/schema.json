@@ -84,6 +84,25 @@
             "component": "ds.testimonial-card",
             "repeatable": true
         },
+        "globalPresenceTitle": { "type": "string" },
+        "globalPresenceSubtitle": { "type": "string" },
+        "globalLocations": {
+            "type": "component",
+            "component": "ds.map-location",
+            "repeatable": true
+        },
+        "techPartnersTitle": { "type": "string" },
+        "techPartners": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.partner-logo"
+        },
+        "trustedTitle": { "type": "string" },
+        "trustedPartners": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.partner-logo"
+        },
         "faq": {
             "type": "component",
             "component": "ds.faq-entry",

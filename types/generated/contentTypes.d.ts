@@ -466,6 +466,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     missionText: Schema.Attribute.Text;
     missionTitle: Schema.Attribute.String;
+    partnersCards: Schema.Attribute.Component<'ds.partner-logo', true>;
     partnersTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
@@ -1681,6 +1682,9 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     description: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     Footer: Schema.Attribute.Component<'sections.footer', false>;
+    globalLocations: Schema.Attribute.Component<'ds.map-location', true>;
+    globalPresenceSubtitle: Schema.Attribute.String;
+    globalPresenceTitle: Schema.Attribute.String;
     heroEyebrow: Schema.Attribute.String;
     IndustryLeadingExcellenceValidated: Schema.Attribute.Component<
       'sections.text-image',
@@ -1702,7 +1706,11 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     SEO: Schema.Attribute.Component<'ds.seo-meta', false>;
     subHeading: Schema.Attribute.String;
+    techPartners: Schema.Attribute.Component<'ds.partner-logo', true>;
+    techPartnersTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
+    trustedPartners: Schema.Attribute.Component<'ds.partner-logo', true>;
+    trustedTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -23,15 +23,15 @@ const { URL } = require('url');
 // STRAPI_URL env var overrides everything.
 // Otherwise tries the remote server first, falls back to localhost.
 const STRAPI_URLS = [
-  'http://13.126.9.248:1337',
+  // 'http://13.126.9.248:1337',
   'http://localhost:1337',
 ];
-const STRAPI_BASE  = process.env.STRAPI_URL       || STRAPI_URLS[0];
-const ADMIN_EMAIL  = process.env.STRAPI_EMAIL     || 'nikhilpandey.pandey9@gmail.com';
-const ADMIN_PASS   = process.env.STRAPI_PASS      || 'Tubelight@123';
+const STRAPI_BASE = process.env.STRAPI_URL || STRAPI_URLS[0];
+const ADMIN_EMAIL = process.env.STRAPI_EMAIL || 'nikhilpandey.pandey9@gmail.com';
+const ADMIN_PASS = process.env.STRAPI_PASS || 'Tubelight@123';
 // Optional: Strapi API Token (Settings → API Tokens in admin panel).
 // When set, the script uses /api/* directly — no login step needed.
-const API_TOKEN    = process.env.STRAPI_API_TOKEN || '';
+const API_TOKEN = process.env.STRAPI_API_TOKEN || '';
 
 // ─── HTTP helper ────────────────────────────────────────────────────────────
 function request(method, path, body, token, baseUrl) {
@@ -249,8 +249,8 @@ async function setPublicPermission(token, uid) {
  */
 async function runImport(pages, opts = {}) {
   const apiToken = opts.apiToken || API_TOKEN;
-  const email    = opts.email    || ADMIN_EMAIL;
-  const pass     = opts.password || ADMIN_PASS;
+  const email = opts.email || ADMIN_EMAIL;
+  const pass = opts.password || ADMIN_PASS;
 
   let token;
   if (apiToken) {

@@ -259,6 +259,24 @@ export interface DsLocationTag extends Struct.ComponentSchema {
   };
 }
 
+export interface DsMapLocation extends Struct.ComponentSchema {
+  collectionName: 'components_ds_map_locations';
+  info: {
+    description: 'A country/region pin on the world map. Pick a countryKey from the dropdown \u2014 coordinates are automatically resolved in the frontend MAP_COORDS table.';
+    displayName: 'DS Map Location';
+  };
+  attributes: {
+    countryKey: Schema.Attribute.Enumeration<
+      ['usa', 'uk', 'germany', 'russia', 'india', 'future-expansion']
+    > &
+      Schema.Attribute.Required;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    pinColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#1a56db'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface DsNumberedTip extends Struct.ComponentSchema {
   collectionName: 'components_ds_numbered_tips';
   info: {
@@ -284,6 +302,18 @@ export interface DsOsOption extends Struct.ComponentSchema {
     icon: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+  };
+}
+
+export interface DsPartnerLogo extends Struct.ComponentSchema {
+  collectionName: 'components_ds_partner_logos';
+  info: {
+    description: 'A partner or technology logo with optional image and display name.';
+    displayName: 'DS Partner Logo';
+  };
+  attributes: {
+    logo: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
   };
 }
 
@@ -871,8 +901,10 @@ declare module '@strapi/strapi' {
       'ds.icon-card': DsIconCard;
       'ds.location-pin': DsLocationPin;
       'ds.location-tag': DsLocationTag;
+      'ds.map-location': DsMapLocation;
       'ds.numbered-tip': DsNumberedTip;
       'ds.os-option': DsOsOption;
+      'ds.partner-logo': DsPartnerLogo;
       'ds.perf-stat': DsPerfStat;
       'ds.plan-feature': DsPlanFeature;
       'ds.pricing-plan': DsPricingPlan;

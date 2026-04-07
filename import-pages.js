@@ -100,6 +100,14 @@ const PAGES = [
     uid: 'api::about-us-page.about-us-page',
     data: require('./seed/about-us'),
   },
+  {
+    // Seeds ONLY the 3 new homepage sections (global presence, tech partners,
+    // trusted leaders). Existing homepage fields are left untouched by Strapi.
+    name: 'Home Page Extras',
+    endpoint: 'home-page',
+    uid: 'api::home-page.home-page',
+    data: require('./seed/home-page-extras'),
+  },
 ];
 
 // Filter pages if CLI args provided (e.g. node import-pages.js "WordPress Hosting")

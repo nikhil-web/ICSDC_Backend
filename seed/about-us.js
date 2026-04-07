@@ -70,6 +70,18 @@ module.exports = {
 
   partnersTitle: "Our Partners",
 
+  // ds.partner-logo → { name, logo(media) }
+  // Upload actual logo images via Strapi Admin → Media Library.
+  // Frontend shows text fallback until images are uploaded.
+  partnersCards: [
+    { name: 'CtrlS Data Center' },
+    { name: 'Yotta Data Center' },
+    { name: 'NTT Data Center'   },
+    { name: 'VMware'            },
+    { name: 'Azure'             },
+    { name: 'Google Cloud'      },
+  ],
+
   ctaBand: {
     title: "Whether You're Growing or Scaling, We're Here",
     description: "Start a conversation with ICSDC today. Our experts are ready to help you find the right infrastructure solution.",
