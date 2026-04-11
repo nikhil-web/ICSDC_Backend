@@ -77,6 +77,12 @@ const PAGES = [
     data: require('./seed/pam-mfa'),
   },
   {
+    name: 'Linux Dedicated Server',
+    endpoint: 'linux-dedicated-server-page',
+    uid: 'api::linux-dedicated-server-page.linux-dedicated-server-page',
+    data: require('./seed/linux-dedicated-server'),
+  },
+  {
     name: 'Managed Dedicated Server',
     endpoint: 'managed-dedicated-server-page',
     uid: 'api::managed-dedicated-server-page.managed-dedicated-server-page',
