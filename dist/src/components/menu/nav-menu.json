@@ -8,6 +8,13 @@
         "lebel": {
             "type": "string"
         },
+        "directLink": {
+            "type": "string"
+        },
+        "isHighlighted": {
+            "type": "boolean",
+            "default": false
+        },
         "icon": {
             "type": "string"
         },

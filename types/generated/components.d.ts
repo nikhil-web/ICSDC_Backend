@@ -579,7 +579,9 @@ export interface MenuNavMenu extends Struct.ComponentSchema {
   attributes: {
     cols: Schema.Attribute.Integer;
     desc: Schema.Attribute.String;
+    directLink: Schema.Attribute.String;
     icon: Schema.Attribute.String;
+    isHighlighted: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     items: Schema.Attribute.Component<'menu.menu-item', true>;
     lebel: Schema.Attribute.String;
     sections: Schema.Attribute.Component<'menu.menu-section', true>;
