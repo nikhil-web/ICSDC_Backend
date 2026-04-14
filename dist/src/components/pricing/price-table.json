@@ -1,0 +1,26 @@
+{
+    "collectionName": "components_pricing_price_tables",
+    "info": {
+        "displayName": "Pricing Price Table",
+        "description": "A full pricing table with columns, rows, and optional caption/note"
+    },
+    "attributes": {
+        "columns": {
+            "type": "component",
+            "repeatable": true,
+            "component": "pricing.table-column"
+        },
+        "rows": {
+            "type": "component",
+            "repeatable": true,
+            "component": "pricing.table-row"
+        },
+        "caption": { "type": "text" },
+        "noteText": { "type": "text" },
+        "noteType": {
+            "type": "enumeration",
+            "enum": ["info", "warning"],
+            "default": "info"
+        }
+    }
+}

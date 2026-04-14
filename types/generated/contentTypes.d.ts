@@ -2363,6 +2363,48 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPricingPagePricingPage extends Struct.SingleTypeSchema {
+  collectionName: 'pricing_pages';
+  info: {
+    description: 'Pricing page \u2014 hero, sections with tables, and CTA band';
+    displayName: 'Pricing Page';
+    pluralName: 'pricing-pages';
+    singularName: 'pricing-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    billingAnnualLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Annual'>;
+    billingMonthlyLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Monthly'>;
+    billingSavePill: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
+    heroBadges: Schema.Attribute.Component<'pricing.hero-badge', true>;
+    heroEyebrow: Schema.Attribute.String;
+    heroSub: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pricing-page.pricing-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.Component<'pricing.pricing-section', true>;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    showBillingToggle: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiResellerHostingPageResellerHostingPage
   extends Struct.SingleTypeSchema {
   collectionName: 'reseller_hosting_pages';
@@ -3950,6 +3992,7 @@ declare module '@strapi/strapi' {
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::nvme-dedicated-server-page.nvme-dedicated-server-page': ApiNvmeDedicatedServerPageNvmeDedicatedServerPage;
       'api::pam-mfa-page.pam-mfa-page': ApiPamMfaPagePamMfaPage;
+      'api::pricing-page.pricing-page': ApiPricingPagePricingPage;
       'api::reseller-hosting-page.reseller-hosting-page': ApiResellerHostingPageResellerHostingPage;
       'api::shared-hosting-page.shared-hosting-page': ApiSharedHostingPageSharedHostingPage;
       'api::ssl-certificate-page.ssl-certificate-page': ApiSslCertificatePageSslCertificatePage;

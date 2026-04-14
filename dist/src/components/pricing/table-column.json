@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_pricing_table_columns",
+    "info": {
+        "displayName": "Pricing Table Column",
+        "description": "Defines a column header and how its cells are rendered"
+    },
+    "attributes": {
+        "header": { "type": "string", "required": true },
+        "type": {
+            "type": "enumeration",
+            "enum": ["text", "plan", "vram", "price", "action"],
+            "default": "text",
+            "required": true
+        }
+    }
+}

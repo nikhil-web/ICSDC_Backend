@@ -586,6 +586,95 @@ export interface MenuNavMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface PricingHeroBadge extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_hero_badges';
+  info: {
+    description: "A small badge shown in the pricing hero (e.g. '\u2714 No hidden fees')";
+    displayName: 'Pricing Hero Badge';
+  };
+  attributes: {
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PricingPriceTable extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_price_tables';
+  info: {
+    description: 'A full pricing table with columns, rows, and optional caption/note';
+    displayName: 'Pricing Price Table';
+  };
+  attributes: {
+    caption: Schema.Attribute.Text;
+    columns: Schema.Attribute.Component<'pricing.table-column', true>;
+    noteText: Schema.Attribute.Text;
+    noteType: Schema.Attribute.Enumeration<['info', 'warning']> &
+      Schema.Attribute.DefaultTo<'info'>;
+    rows: Schema.Attribute.Component<'pricing.table-row', true>;
+  };
+}
+
+export interface PricingPricingSection extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_sections';
+  info: {
+    description: 'One section on the pricing page \u2014 maps to one sidebar link and one or more tables';
+    displayName: 'Pricing Section';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    sectionId: Schema.Attribute.String & Schema.Attribute.Required;
+    sectionTag: Schema.Attribute.String;
+    showBillingToggle: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    sidebarGroupLabel: Schema.Attribute.String;
+    sidebarIcon: Schema.Attribute.String;
+    sidebarLinkText: Schema.Attribute.String & Schema.Attribute.Required;
+    tables: Schema.Attribute.Component<'pricing.price-table', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PricingTableCell extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_table_cells';
+  info: {
+    description: 'A single cell value in a pricing table row';
+    displayName: 'Pricing Table Cell';
+  };
+  attributes: {
+    isHighlight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    subValue: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface PricingTableColumn extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_table_columns';
+  info: {
+    description: 'Defines a column header and how its cells are rendered';
+    displayName: 'Pricing Table Column';
+  };
+  attributes: {
+    header: Schema.Attribute.String & Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<
+      ['text', 'plan', 'vram', 'price', 'action']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'text'>;
+  };
+}
+
+export interface PricingTableRow extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_table_rows';
+  info: {
+    description: 'A row in a pricing table \u2014 one cell per column';
+    displayName: 'Pricing Table Row';
+  };
+  attributes: {
+    cells: Schema.Attribute.Component<'pricing.table-cell', true>;
+    isHighlighted: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
 export interface SectionsCloudSolutionsEngineeredSection
   extends Struct.ComponentSchema {
   collectionName: 'components_sections_cloud_solutions_engineered_sections';
@@ -925,6 +1014,12 @@ declare module '@strapi/strapi' {
       'menu.menu-item': MenuMenuItem;
       'menu.menu-section': MenuMenuSection;
       'menu.nav-menu': MenuNavMenu;
+      'pricing.hero-badge': PricingHeroBadge;
+      'pricing.price-table': PricingPriceTable;
+      'pricing.pricing-section': PricingPricingSection;
+      'pricing.table-cell': PricingTableCell;
+      'pricing.table-column': PricingTableColumn;
+      'pricing.table-row': PricingTableRow;
       'sections.cloud-solutions-engineered-section': SectionsCloudSolutionsEngineeredSection;
       'sections.contact-info': SectionsContactInfo;
       'sections.feature-card': SectionsFeatureCard;

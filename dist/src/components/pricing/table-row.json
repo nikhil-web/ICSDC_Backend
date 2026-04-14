@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_pricing_table_rows",
+    "info": {
+        "displayName": "Pricing Table Row",
+        "description": "A row in a pricing table — one cell per column"
+    },
+    "attributes": {
+        "isHighlighted": { "type": "boolean", "default": false },
+        "isPopular": { "type": "boolean", "default": false },
+        "cells": {
+            "type": "component",
+            "repeatable": true,
+            "component": "pricing.table-cell"
+        }
+    }
+}

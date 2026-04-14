@@ -118,6 +118,19 @@ yarn-error.log
 coverage
 
 ############################
+# Seed scripts
+############################
+
+seed/
+seed-pricing-page.js
+generate-and-seed.js
+fill-card-descs-final.js
+fill-card-descs.js
+fill-card-descs-v2.js
+fix-windows-ds-usecases-faq.js
+import-pages.js
+
+############################
 # Strapi
 ############################
 

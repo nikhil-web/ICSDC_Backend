@@ -1,0 +1,41 @@
+{
+    "kind": "singleType",
+    "collectionName": "pricing_pages",
+    "info": {
+        "singularName": "pricing-page",
+        "pluralName": "pricing-pages",
+        "displayName": "Pricing Page",
+        "description": "Pricing page — hero, sections with tables, and CTA band"
+    },
+    "options": { "draftAndPublish": true },
+    "pluginsOptions": {},
+    "attributes": {
+        "seo": {
+            "type": "component",
+            "component": "ds.seo-meta",
+            "repeatable": false
+        },
+        "heroEyebrow": { "type": "string" },
+        "heroTitle": { "type": "string" },
+        "heroSub": { "type": "text" },
+        "heroBadges": {
+            "type": "component",
+            "component": "pricing.hero-badge",
+            "repeatable": true
+        },
+        "showBillingToggle": { "type": "boolean", "default": true },
+        "billingMonthlyLabel": { "type": "string", "default": "Monthly" },
+        "billingAnnualLabel": { "type": "string", "default": "Annual" },
+        "billingSavePill": { "type": "string" },
+        "sections": {
+            "type": "component",
+            "component": "pricing.pricing-section",
+            "repeatable": true
+        },
+        "ctaBand": {
+            "type": "component",
+            "component": "ds.cta-band",
+            "repeatable": false
+        }
+    }
+}

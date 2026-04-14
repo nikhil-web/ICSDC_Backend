@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_pricing_table_cells",
+  "info": {
+    "displayName": "Pricing Table Cell",
+    "description": "A single cell value in a pricing table row"
+  },
+  "attributes": {
+    "value": { "type": "string" },
+    "subValue": { "type": "string" },
+    "isHighlight": { "type": "boolean", "default": false }
+  }
+}

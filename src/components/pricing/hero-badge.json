@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_pricing_hero_badges",
+  "info": {
+    "displayName": "Pricing Hero Badge",
+    "description": "A small badge shown in the pricing hero (e.g. '✔ No hidden fees')"
+  },
+  "attributes": {
+    "text": { "type": "string", "required": true }
+  }
+}
