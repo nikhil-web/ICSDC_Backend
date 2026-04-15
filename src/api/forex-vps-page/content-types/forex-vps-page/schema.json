@@ -72,6 +72,33 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "setupStepsTitle": {
+      "type": "string"
+    },
+    "setupSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.numbered-tip"
+    },
+    "tradingAppsTitle": {
+      "type": "string"
+    },
+    "tradingApps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
     "testimonialTitle": {
       "type": "string"
     },
@@ -92,6 +119,20 @@
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.vps-plan"
     }
   }
 }

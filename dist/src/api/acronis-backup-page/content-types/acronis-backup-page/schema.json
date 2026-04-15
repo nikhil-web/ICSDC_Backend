@@ -109,9 +109,31 @@
             "component": "ds.testimonial-card",
             "repeatable": true
         },
+        "faqTitle": {
+            "type": "string"
+        },
         "faq": {
             "type": "component",
             "component": "ds.faq-entry",
+            "repeatable": true
+        },
+        "aboutTitle": {
+            "type": "string"
+        },
+        "aboutDescription": {
+            "type": "text"
+        },
+        "aboutPointsTitle": {
+            "type": "string"
+        },
+        "aboutPoints": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
+        "aboutFeatures": {
+            "type": "component",
+            "component": "ds.icon-card",
             "repeatable": true
         }
     }

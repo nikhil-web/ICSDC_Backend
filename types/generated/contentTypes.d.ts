@@ -501,12 +501,18 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDescription: Schema.Attribute.Text;
+    aboutFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
+    aboutPoints: Schema.Attribute.Component<'ds.icon-card', true>;
+    aboutPointsTitle: Schema.Attribute.String;
+    aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -1371,10 +1377,18 @@ export interface ApiForexVpsPageForexVpsPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.vps-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    setupSteps: Schema.Attribute.Component<'ds.numbered-tip', true>;
+    setupStepsTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
+    tradingApps: Schema.Attribute.Component<'ds.icon-card', true>;
+    tradingAppsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1384,6 +1398,9 @@ export interface ApiForexVpsPageForexVpsPage extends Struct.SingleTypeSchema {
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
     whoTitle: Schema.Attribute.String;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseTitle: Schema.Attribute.String;
   };
 }
 
