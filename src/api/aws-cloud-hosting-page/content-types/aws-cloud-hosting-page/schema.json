@@ -123,6 +123,9 @@
       "component": "ds.testimonial-card",
       "repeatable": true
     },
+    "faqTitle": {
+      "type": "string"
+    },
     "faq": {
       "type": "component",
       "component": "ds.faq-entry",

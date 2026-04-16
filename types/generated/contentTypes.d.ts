@@ -579,6 +579,7 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
@@ -1055,6 +1056,7 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     serviceButtons: Schema.Attribute.Component<'ds.service-button', true>;
     servicesDescription: Schema.Attribute.Text;
+    servicesFooterText: Schema.Attribute.Text;
     servicesImage: Schema.Attribute.String;
     servicesImageAlt: Schema.Attribute.String;
     servicesLabel: Schema.Attribute.String;
@@ -1094,6 +1096,7 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;

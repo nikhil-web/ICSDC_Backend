@@ -83,6 +83,9 @@
     "servicesDescription": {
       "type": "text"
     },
+    "servicesFooterText": {
+      "type": "text"
+    },
     "servicesImage": {
       "type": "string"
     },
