@@ -134,7 +134,6 @@ import-pages.js
 # Strapi
 ############################
 
-.env
 license.txt
 exports
 .strapi
