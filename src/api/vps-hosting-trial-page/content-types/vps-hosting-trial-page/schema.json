@@ -6,50 +6,171 @@
     "pluralName": "vps-hosting-trial-pages",
     "displayName": "VPS Hosting Trial Page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "attributes": {
-    "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-    "heroEyebrow": { "type": "string" },
-    "heroTitle": { "type": "string" },
-    "heroSubtitle": { "type": "string" },
-    "heroDescription": { "type": "text" },
-    "heroTopBadge": { "type": "string" },
-    "heroStatusTitle": { "type": "string" },
-    "heroStatusSubtitle": { "type": "string" },
-    "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "plansLabel": { "type": "string" },
-    "plansTitle": { "type": "string" },
-    "plansSubtitle": { "type": "text" },
-    "plans": { "type": "component", "repeatable": true, "component": "ds.pricing-plan" },
-    "whyLabel": { "type": "string" },
-    "whyTitle": { "type": "string" },
-    "whySubtitle": { "type": "text" },
-    "whyCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "whenLabel": { "type": "string" },
-    "whenTitle": { "type": "string" },
-    "whenSubtitle": { "type": "text" },
-    "whenCards": { "type": "component", "repeatable": true, "component": "ds.numbered-tip" },
-    "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "howLabel": { "type": "string" },
-    "howTitle": { "type": "string" },
-    "howSubtitle": { "type": "text" },
-    "howSteps": { "type": "component", "repeatable": true, "component": "ds.numbered-tip" },
-    "specsLabel": { "type": "string" },
-    "specsTitle": { "type": "string" },
-    "specsSubtitle": { "type": "text" },
-    "specs": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "whoLabel": { "type": "string" },
-    "whoTitle": { "type": "string" },
-    "whoSubtitle": { "type": "text" },
-    "whoCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "testimonialTitle": { "type": "string" },
-    "faqTitle": { "type": "string" },
-    "faqContactTitle": { "type": "string" },
-    "faqContactDesc": { "type": "text" },
-    "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-    "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" }
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.seo-meta"
+    },
+    "heroEyebrow": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroTopBadge": {
+      "type": "string"
+    },
+    "heroStatusTitle": {
+      "type": "string"
+    },
+    "heroStatusSubtitle": {
+      "type": "string"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whySubtitle": {
+      "type": "text"
+    },
+    "whyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.numbered-tip"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "howLabel": {
+      "type": "string"
+    },
+    "howTitle": {
+      "type": "string"
+    },
+    "howSubtitle": {
+      "type": "text"
+    },
+    "howSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.numbered-tip"
+    },
+    "specsLabel": {
+      "type": "string"
+    },
+    "specsTitle": {
+      "type": "string"
+    },
+    "specsSubtitle": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whoLabel": {
+      "type": "string"
+    },
+    "whoTitle": {
+      "type": "string"
+    },
+    "whoSubtitle": {
+      "type": "text"
+    },
+    "whoCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqContactTitle": {
+      "type": "string"
+    },
+    "faqContactDesc": {
+      "type": "text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+    "ctaBand2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

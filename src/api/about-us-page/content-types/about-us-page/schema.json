@@ -114,6 +114,11 @@
     "ctaBand": {
       "type": "component",
       "component": "ds.cta-band"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }

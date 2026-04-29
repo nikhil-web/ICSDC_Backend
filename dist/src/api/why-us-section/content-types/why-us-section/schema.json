@@ -15,6 +15,11 @@
             "type": "component",
             "component": "sections.why-us-card",
             "repeatable": true
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }

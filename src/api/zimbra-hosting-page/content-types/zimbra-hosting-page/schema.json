@@ -17,7 +17,6 @@
       "repeatable": false,
       "component": "ds.seo-meta"
     },
-
     "heroEyebrow": {
       "type": "string",
       "default": "Zimbra Email Hosting"
@@ -51,13 +50,11 @@
     "heroStatusSubtitle": {
       "type": "string"
     },
-
     "pillars": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "featuresLabel": {
       "type": "string"
     },
@@ -72,7 +69,6 @@
       "repeatable": true,
       "component": "zm.feature-badge"
     },
-
     "whyLabel": {
       "type": "string"
     },
@@ -87,13 +83,11 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
     },
-
     "migrationLabel": {
       "type": "string"
     },
@@ -108,7 +102,6 @@
       "repeatable": true,
       "component": "zm.migration-step"
     },
-
     "comparisonLabel": {
       "type": "string"
     },
@@ -126,7 +119,6 @@
       "repeatable": true,
       "component": "zm.comparison-row"
     },
-
     "testimonialTitle": {
       "type": "string"
     },
@@ -135,7 +127,6 @@
       "component": "ds.testimonial-card",
       "repeatable": true
     },
-
     "faqTitle": {
       "type": "string"
     },
@@ -156,17 +147,20 @@
       "repeatable": true,
       "component": "ds.faq-entry"
     },
-
     "ctaBand2": {
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
     },
-
     "footer": {
       "type": "component",
       "repeatable": false,
       "component": "ds.footer-section"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }

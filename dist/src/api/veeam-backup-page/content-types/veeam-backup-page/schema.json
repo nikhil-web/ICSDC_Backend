@@ -6,48 +6,165 @@
         "pluralName": "veeam-backup-pages",
         "displayName": "Veeam Backup Page"
     },
-    "options": { "draftAndPublish": true },
+    "options": {
+        "draftAndPublish": true
+    },
     "attributes": {
-        "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-        "heroEyebrow": { "type": "string" },
-        "heroTitle": { "type": "string" },
-        "heroSubtitle": { "type": "string" },
-        "heroDescription": { "type": "text" },
-        "heroTopBadge": { "type": "string" },
-        "heroStatusTitle": { "type": "string" },
-        "heroStatusSubtitle": { "type": "string" },
-        "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "featuresLabel": { "type": "string" },
-        "featuresTitle": { "type": "string" },
-        "featuresSubtitle": { "type": "text" },
-        "features": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "compareLabel": { "type": "string" },
-        "compareTitle": { "type": "string" },
-        "compareRows": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "statsLabel": { "type": "string" },
-        "statsTitle": { "type": "string" },
-        "statsSubtitle": { "type": "text" },
-        "stats": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "stepsLabel": { "type": "string" },
-        "stepsTitle": { "type": "string" },
-        "steps": { "type": "component", "repeatable": true, "component": "ds.numbered-tip" },
-        "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-        "whyLabel": { "type": "string" },
-        "whyTitle": { "type": "string" },
-        "whySubtitle": { "type": "text" },
-        "whyCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "whoLabel": { "type": "string" },
-        "whoTitle": { "type": "string" },
-        "whoSubtitle": { "type": "text" },
-        "whoCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "testimonialTitle": { "type": "string" },
-        "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
-        "faqTitle": { "type": "string" },
-        "faqContactTitle": { "type": "string" },
-        "faqContactDesc": { "type": "text" },
-        "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-        "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroTopBadge": {
+            "type": "string"
+        },
+        "heroStatusTitle": {
+            "type": "string"
+        },
+        "heroStatusSubtitle": {
+            "type": "string"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "compareLabel": {
+            "type": "string"
+        },
+        "compareTitle": {
+            "type": "string"
+        },
+        "compareRows": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "statsLabel": {
+            "type": "string"
+        },
+        "statsTitle": {
+            "type": "string"
+        },
+        "statsSubtitle": {
+            "type": "text"
+        },
+        "stats": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "stepsLabel": {
+            "type": "string"
+        },
+        "stepsTitle": {
+            "type": "string"
+        },
+        "steps": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.numbered-tip"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whySubtitle": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "whoLabel": {
+            "type": "string"
+        },
+        "whoTitle": {
+            "type": "string"
+        },
+        "whoSubtitle": {
+            "type": "text"
+        },
+        "whoCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.testimonial-card"
+        },
+        "faqTitle": {
+            "type": "string"
+        },
+        "faqContactTitle": {
+            "type": "string"
+        },
+        "faqContactDesc": {
+            "type": "text"
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.faq-entry"
+        },
+        "ctaBand2": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
+        }
     }
 }

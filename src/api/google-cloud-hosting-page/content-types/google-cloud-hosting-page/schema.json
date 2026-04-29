@@ -7,47 +7,159 @@
     "displayName": "Google Cloud Hosting Page",
     "description": "Full-page content for the Google Cloud Hosting landing page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "pluginOptions": {},
   "attributes": {
-    "seo":                { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-    "heroEyebrow":        { "type": "string" },
-    "heroTitle":          { "type": "string", "required": true },
-    "heroSubtitle":       { "type": "string" },
-    "heroDescription":    { "type": "text" },
-    "heroTopBadge":       { "type": "string" },
-    "heroStatusTitle":    { "type": "string" },
-    "heroStatusSubtitle": { "type": "string" },
-    "heroCtaPrimary":     { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "heroCtaSecondary":   { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "pillars":            { "type": "component", "repeatable": true,  "component": "ds.icon-card" },
-    "plansLabel":         { "type": "string" },
-    "plansTitle":         { "type": "string" },
-    "plansSubtitle":      { "type": "text" },
-    "plans":              { "type": "component", "repeatable": true,  "component": "ds.pricing-plan" },
-    "whyGoogleLabel":     { "type": "string" },
-    "whyGoogleTitle":     { "type": "string" },
-    "whyGoogleSubtitle":  { "type": "text" },
-    "whyGoogleCards":     { "type": "component", "repeatable": true,  "component": "ds.icon-card" },
-    "servicesLabel":      { "type": "string" },
-    "servicesTitle":      { "type": "string" },
-    "servicesSubtitle":   { "type": "text" },
-    "servicesCards":      { "type": "component", "repeatable": true,  "component": "ds.icon-card" },
-    "useCasesLabel":      { "type": "string" },
-    "useCasesTitle":      { "type": "string" },
-    "useCasesSubtitle":   { "type": "text" },
-    "useCases":           { "type": "component", "repeatable": true,  "component": "ds.icon-card" },
-    "migrationLabel":     { "type": "string" },
-    "migrationTitle":     { "type": "string" },
-    "migrationSubtitle":  { "type": "text" },
-    "migrationSteps":     { "type": "component", "repeatable": true,  "component": "ds.numbered-tip" },
-    "ctaBand1":           { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "testimonialTitle":   { "type": "string" },
-    "testimonials":       { "type": "component", "repeatable": true,  "component": "ds.testimonial-card" },
-    "faqTitle":           { "type": "string" },
-    "faqContactTitle":    { "type": "string" },
-    "faqContactDesc":     { "type": "text" },
-    "faq":                { "type": "component", "repeatable": true,  "component": "ds.faq-entry" },
-    "ctaBand2":           { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.seo-meta"
+    },
+    "heroEyebrow": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroTopBadge": {
+      "type": "string"
+    },
+    "heroStatusTitle": {
+      "type": "string"
+    },
+    "heroStatusSubtitle": {
+      "type": "string"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "whyGoogleLabel": {
+      "type": "string"
+    },
+    "whyGoogleTitle": {
+      "type": "string"
+    },
+    "whyGoogleSubtitle": {
+      "type": "text"
+    },
+    "whyGoogleCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "servicesLabel": {
+      "type": "string"
+    },
+    "servicesTitle": {
+      "type": "string"
+    },
+    "servicesSubtitle": {
+      "type": "text"
+    },
+    "servicesCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "useCasesLabel": {
+      "type": "string"
+    },
+    "useCasesTitle": {
+      "type": "string"
+    },
+    "useCasesSubtitle": {
+      "type": "text"
+    },
+    "useCases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "migrationLabel": {
+      "type": "string"
+    },
+    "migrationTitle": {
+      "type": "string"
+    },
+    "migrationSubtitle": {
+      "type": "text"
+    },
+    "migrationSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.numbered-tip"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqContactTitle": {
+      "type": "string"
+    },
+    "faqContactDesc": {
+      "type": "text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+    "ctaBand2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

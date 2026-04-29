@@ -15,6 +15,11 @@
             "type": "component",
             "component": "sections.footer",
             "repeatable": false
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }

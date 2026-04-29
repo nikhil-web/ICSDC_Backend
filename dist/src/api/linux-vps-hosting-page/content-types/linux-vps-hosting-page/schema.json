@@ -7,51 +7,174 @@
         "displayName": "Linux VPS Hosting Page",
         "description": "Full-page content for the Linux VPS Hosting landing page"
     },
-    "options": { "draftAndPublish": true },
+    "options": {
+        "draftAndPublish": true
+    },
     "pluginOptions": {},
     "attributes": {
-        "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-        "heroEyebrow": { "type": "string", "default": "🖥 Linux VPS Hosting" },
-        "heroTitle": { "type": "string", "required": true },
-        "heroSubtitle": { "type": "string" },
-        "heroDescription": { "type": "text" },
-        "heroTopBadge": { "type": "string" },
-        "heroStatusTitle": { "type": "string" },
-        "heroStatusSubtitle": { "type": "string" },
-        "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "plansLabel": { "type": "string" },
-        "plansTitle": { "type": "string" },
-        "plansSubtitle": { "type": "text" },
-        "plans": { "type": "component", "repeatable": true, "component": "ds.vps-plan" },
-        "powerLabel": { "type": "string" },
-        "powerTitle": { "type": "string" },
-        "powerSubtitle": { "type": "text" },
-        "powerFeatures": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-        "osOptionsLabel": { "type": "string" },
-        "osOptionsTitle": { "type": "string" },
-        "osOptionsSubtitle": { "type": "text" },
-        "osOptions": { "type": "component", "repeatable": true, "component": "ds.os-option" },
-        "controlPanelLabel": { "type": "string" },
-        "controlPanelTitle": { "type": "string" },
-        "controlPanelSubtitle": { "type": "text" },
-        "controlPanels": { "type": "component", "repeatable": true, "component": "ds.control-panel" },
-        "whyVpsLabel": { "type": "string" },
-        "whyVpsTitle": { "type": "string" },
-        "whyVpsSubtitle": { "type": "text" },
-        "whyVpsCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "useCasesLabel": { "type": "string" },
-        "useCasesTitle": { "type": "string" },
-        "useCasesSubtitle": { "type": "text" },
-        "useCases": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "testimonialTitle": { "type": "string" },
-        "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
-        "faqTitle": { "type": "string" },
-        "faqContactTitle": { "type": "string" },
-        "faqContactDesc": { "type": "text" },
-        "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-        "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "heroEyebrow": {
+            "type": "string",
+            "default": "🖥 Linux VPS Hosting"
+        },
+        "heroTitle": {
+            "type": "string",
+            "required": true
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroTopBadge": {
+            "type": "string"
+        },
+        "heroStatusTitle": {
+            "type": "string"
+        },
+        "heroStatusSubtitle": {
+            "type": "string"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "plansLabel": {
+            "type": "string"
+        },
+        "plansTitle": {
+            "type": "string"
+        },
+        "plansSubtitle": {
+            "type": "text"
+        },
+        "plans": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.vps-plan"
+        },
+        "powerLabel": {
+            "type": "string"
+        },
+        "powerTitle": {
+            "type": "string"
+        },
+        "powerSubtitle": {
+            "type": "text"
+        },
+        "powerFeatures": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "osOptionsLabel": {
+            "type": "string"
+        },
+        "osOptionsTitle": {
+            "type": "string"
+        },
+        "osOptionsSubtitle": {
+            "type": "text"
+        },
+        "osOptions": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.os-option"
+        },
+        "controlPanelLabel": {
+            "type": "string"
+        },
+        "controlPanelTitle": {
+            "type": "string"
+        },
+        "controlPanelSubtitle": {
+            "type": "text"
+        },
+        "controlPanels": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.control-panel"
+        },
+        "whyVpsLabel": {
+            "type": "string"
+        },
+        "whyVpsTitle": {
+            "type": "string"
+        },
+        "whyVpsSubtitle": {
+            "type": "text"
+        },
+        "whyVpsCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "useCasesLabel": {
+            "type": "string"
+        },
+        "useCasesTitle": {
+            "type": "string"
+        },
+        "useCasesSubtitle": {
+            "type": "text"
+        },
+        "useCases": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.testimonial-card"
+        },
+        "faqTitle": {
+            "type": "string"
+        },
+        "faqContactTitle": {
+            "type": "string"
+        },
+        "faqContactDesc": {
+            "type": "text"
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.faq-entry"
+        },
+        "ctaBand2": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
+        }
     }
 }

@@ -451,6 +451,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     dataCentersTitle: Schema.Attribute.String;
     foundedYear: Schema.Attribute.String;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     howStartedItems: Schema.Attribute.JSON;
@@ -521,6 +522,7 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStats: Schema.Attribute.Component<'ds.perf-stat', true>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -584,6 +586,7 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -643,6 +646,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     heroDescription: Schema.Attribute.Text;
     heroFormSubtitle: Schema.Attribute.String;
     heroFormTitle: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -710,6 +714,7 @@ export interface ApiBareMetalServerPageBareMetalServerPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -778,6 +783,7 @@ export interface ApiCloudHostingPageCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroPrice: Schema.Attribute.String;
     heroPriceNote: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -850,6 +856,7 @@ export interface ApiCloudStoragePageCloudStoragePage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -903,6 +910,7 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     helpDescription: Schema.Attribute.Text;
     helpTitle: Schema.Attribute.String;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -957,6 +965,7 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1022,6 +1031,7 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     featureHighlights: Schema.Attribute.Component<'ds.icon-card', true>;
     footer: Schema.Attribute.Component<'ds.footer-section', false>;
     hero: Schema.Attribute.Component<'ds.hero-section', false>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1105,6 +1115,7 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1168,6 +1179,7 @@ export interface ApiDomainTransferPageDomainTransferPage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u21C4 Domain Transfer'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1235,6 +1247,7 @@ export interface ApiEmailHostingPageEmailHostingPage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1290,6 +1303,7 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1335,6 +1349,7 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1371,6 +1386,7 @@ export interface ApiForexVpsPageForexVpsPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1433,6 +1449,7 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1506,6 +1523,7 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u2601 Google Workspace'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1574,6 +1592,7 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1633,6 +1652,7 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1771,6 +1791,7 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\uD83D\uDC27 Linux Cloud Hosting'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1839,6 +1860,7 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     innovationCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1916,6 +1938,7 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\uD83D\uDDA5 Linux VPS Hosting'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -1988,6 +2011,7 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2062,6 +2086,7 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2128,6 +2153,7 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2199,6 +2225,7 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2243,6 +2270,7 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -2284,6 +2312,7 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2351,6 +2380,7 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2407,6 +2437,7 @@ export interface ApiPricingPagePricingPage extends Struct.SingleTypeSchema {
     ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
     heroBadges: Schema.Attribute.Component<'pricing.hero-badge', true>;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSub: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2455,6 +2486,7 @@ export interface ApiResellerHostingPageResellerHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2520,6 +2552,7 @@ export interface ApiSharedHostingPageSharedHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2568,6 +2601,7 @@ export interface ApiSslCertificatePageSslCertificatePage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2631,6 +2665,7 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     improvements: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2681,6 +2716,7 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2746,6 +2782,7 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2815,6 +2852,7 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -2882,6 +2920,7 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -2937,6 +2976,7 @@ export interface ApiVpsHostingPageVpsHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroPrice: Schema.Attribute.String;
     heroPriceNote: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -3008,6 +3048,7 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -3089,6 +3130,7 @@ export interface ApiWebHostingPageWebHostingPage
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -3136,6 +3178,7 @@ export interface ApiWhyUsSectionWhyUsSection extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -3179,6 +3222,7 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -3241,6 +3285,7 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -3303,6 +3348,7 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -3367,6 +3413,7 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u26A1 WordPress Hosting'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;
@@ -3444,6 +3491,7 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Zimbra Email Hosting'>;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
     heroSubtitle: Schema.Attribute.String;

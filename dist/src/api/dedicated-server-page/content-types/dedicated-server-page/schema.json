@@ -223,6 +223,11 @@
         "footer": {
             "type": "component",
             "component": "ds.footer-section"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }

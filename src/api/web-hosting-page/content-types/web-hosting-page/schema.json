@@ -6,47 +6,166 @@
     "pluralName": "web-hosting-pages",
     "displayName": "Web Hosting Page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "pluginOptions": {},
   "attributes": {
-    "seo":              { "type": "component", "component": "ds.seo-meta", "repeatable": false },
-    "heroTitle":        { "type": "string" },
-    "heroSubtitle":     { "type": "string" },
-    "heroDescription":  { "type": "text" },
-    "heroCtaPrimary":   { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "heroCtaSecondary": { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "pillars":          { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "plansTitle":       { "type": "string" },
-    "plansSubtitle":    { "type": "text" },
-    "ctaBand1":         { "type": "component", "component": "ds.cta-band", "repeatable": false },
-    "featuresLabel":    { "type": "string" },
-    "featuresTitle":    { "type": "string" },
-    "featuresCards":    { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "safetyTitle":      { "type": "string" },
-    "safetyDesc":       { "type": "text" },
-    "safetyCards":      { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "compareTitle":     { "type": "string" },
-    "compareRows":      { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "whyLabel":         { "type": "string" },
-    "whyTitle":         { "type": "string" },
-    "whyCards":         { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "succeedTitle":     { "type": "string" },
-    "succeedCards":     { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "helpTitle":        { "type": "string" },
-    "helpDesc":         { "type": "text" },
-    "helpCards":        { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "compareTitle2":    { "type": "string" },
-    "compareRows2":     { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "pamPromoTitle":    { "type": "string" },
-    "pamPromoDesc":     { "type": "text" },
-    "pamPromoCta":      { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "backupPromoTitle": { "type": "string" },
-    "backupPromoDesc":  { "type": "text" },
-    "backupPromoCta":   { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "testimonialTitle": { "type": "string" },
-    "testimonials":     { "type": "component", "component": "ds.testimonial-card", "repeatable": true },
-    "faqTitle":         { "type": "string" },
-    "faq":              { "type": "component", "component": "ds.faq-entry", "repeatable": true },
-    "ctaBand2":         { "type": "component", "component": "ds.cta-band", "repeatable": false }
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "repeatable": false
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "pillars": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "featuresLabel": {
+      "type": "string"
+    },
+    "featuresTitle": {
+      "type": "string"
+    },
+    "featuresCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "safetyTitle": {
+      "type": "string"
+    },
+    "safetyDesc": {
+      "type": "text"
+    },
+    "safetyCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "compareTitle": {
+      "type": "string"
+    },
+    "compareRows": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "succeedTitle": {
+      "type": "string"
+    },
+    "succeedCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "helpTitle": {
+      "type": "string"
+    },
+    "helpDesc": {
+      "type": "text"
+    },
+    "helpCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "compareTitle2": {
+      "type": "string"
+    },
+    "compareRows2": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "pamPromoTitle": {
+      "type": "string"
+    },
+    "pamPromoDesc": {
+      "type": "text"
+    },
+    "pamPromoCta": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "backupPromoTitle": {
+      "type": "string"
+    },
+    "backupPromoDesc": {
+      "type": "text"
+    },
+    "backupPromoCta": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "ds.testimonial-card",
+      "repeatable": true
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "ds.faq-entry",
+      "repeatable": true
+    },
+    "ctaBand2": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

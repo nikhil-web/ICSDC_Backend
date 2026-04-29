@@ -63,6 +63,11 @@
     },
     "officeHours": {
       "type": "string"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }

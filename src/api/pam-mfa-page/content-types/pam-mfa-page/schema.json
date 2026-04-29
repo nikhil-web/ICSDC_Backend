@@ -6,39 +6,136 @@
     "pluralName": "pam-mfa-pages",
     "displayName": "PAM MFA Page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "pluginOptions": {},
   "attributes": {
-    "seo":                { "type": "component", "component": "ds.seo-meta", "repeatable": false },
-    "heroTitle":          { "type": "string" },
-    "heroSubtitle":       { "type": "string" },
-    "heroDescription":    { "type": "text" },
-    "heroCtaPrimary":     { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "heroCtaSecondary":   { "type": "component", "component": "ds.cta-link", "repeatable": false },
-    "pillars":            { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "whyLabel":           { "type": "string" },
-    "whyTitle":           { "type": "string" },
-    "whyCards":           { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "ctaBand1":           { "type": "component", "component": "ds.cta-band", "repeatable": false },
-    "controlLabel":       { "type": "string" },
-    "controlTitle":       { "type": "string" },
-    "controlCards":       { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "mattersTitle":       { "type": "string" },
-    "mattersDesc":        { "type": "text" },
-    "mattersSteps":       { "type": "component", "component": "ds.numbered-tip", "repeatable": true },
-    "pricingTitle":       { "type": "string" },
-    "pricingDesc":        { "type": "text" },
-    "ctaBand2":           { "type": "component", "component": "ds.cta-band", "repeatable": false },
-    "processLabel":       { "type": "string" },
-    "processTitle":       { "type": "string" },
-    "steps":              { "type": "component", "component": "ds.numbered-tip", "repeatable": true },
-    "whyChooseLabel":     { "type": "string" },
-    "whyChooseTitle":     { "type": "string" },
-    "whyChooseCards":     { "type": "component", "component": "ds.icon-card", "repeatable": true },
-    "testimonialTitle":   { "type": "string" },
-    "testimonials":       { "type": "component", "component": "ds.testimonial-card", "repeatable": true },
-    "faqTitle":           { "type": "string" },
-    "faq":                { "type": "component", "component": "ds.faq-entry", "repeatable": true },
-    "ctaBand3":           { "type": "component", "component": "ds.cta-band", "repeatable": false }
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "repeatable": false
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "pillars": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "controlLabel": {
+      "type": "string"
+    },
+    "controlTitle": {
+      "type": "string"
+    },
+    "controlCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "mattersTitle": {
+      "type": "string"
+    },
+    "mattersDesc": {
+      "type": "text"
+    },
+    "mattersSteps": {
+      "type": "component",
+      "component": "ds.numbered-tip",
+      "repeatable": true
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingDesc": {
+      "type": "text"
+    },
+    "ctaBand2": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "processLabel": {
+      "type": "string"
+    },
+    "processTitle": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "component": "ds.numbered-tip",
+      "repeatable": true
+    },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "ds.testimonial-card",
+      "repeatable": true
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "ds.faq-entry",
+      "repeatable": true
+    },
+    "ctaBand3": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

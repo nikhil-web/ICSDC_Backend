@@ -6,49 +6,166 @@
         "pluralName": "virtual-machine-pages",
         "displayName": "Virtual Machine Page"
     },
-    "options": { "draftAndPublish": true },
+    "options": {
+        "draftAndPublish": true
+    },
     "attributes": {
-        "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-        "heroEyebrow": { "type": "string" },
-        "heroTitle": { "type": "string" },
-        "heroSubtitle": { "type": "string" },
-        "heroDescription": { "type": "text" },
-        "heroTopBadge": { "type": "string" },
-        "heroStatusTitle": { "type": "string" },
-        "heroStatusSubtitle": { "type": "string" },
-        "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "plansLabel": { "type": "string" },
-        "plansTitle": { "type": "string" },
-        "plansSubtitle": { "type": "text" },
-        "vmPlans": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "featuresLabel": { "type": "string" },
-        "featuresTitle": { "type": "string" },
-        "featuresSubtitle": { "type": "text" },
-        "features": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-        "whyLabel": { "type": "string" },
-        "whyTitle": { "type": "string" },
-        "whySubtitle": { "type": "text" },
-        "whyCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "blockStorageTitle": { "type": "string" },
-        "blockStorageSubtitle": { "type": "text" },
-        "blockStorageDescription": { "type": "text" },
-        "useCasesLabel": { "type": "string" },
-        "useCasesTitle": { "type": "string" },
-        "useCasesSubtitle": { "type": "text" },
-        "useCases": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "whenLabel": { "type": "string" },
-        "whenTitle": { "type": "string" },
-        "whenSubtitle": { "type": "text" },
-        "whenCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "testimonialTitle": { "type": "string" },
-        "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
-        "faqTitle": { "type": "string" },
-        "faqContactTitle": { "type": "string" },
-        "faqContactDesc": { "type": "text" },
-        "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-        "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "heroEyebrow": {
+            "type": "string"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroTopBadge": {
+            "type": "string"
+        },
+        "heroStatusTitle": {
+            "type": "string"
+        },
+        "heroStatusSubtitle": {
+            "type": "string"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "plansLabel": {
+            "type": "string"
+        },
+        "plansTitle": {
+            "type": "string"
+        },
+        "plansSubtitle": {
+            "type": "text"
+        },
+        "vmPlans": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "featuresLabel": {
+            "type": "string"
+        },
+        "featuresTitle": {
+            "type": "string"
+        },
+        "featuresSubtitle": {
+            "type": "text"
+        },
+        "features": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "whyLabel": {
+            "type": "string"
+        },
+        "whyTitle": {
+            "type": "string"
+        },
+        "whySubtitle": {
+            "type": "text"
+        },
+        "whyCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "blockStorageTitle": {
+            "type": "string"
+        },
+        "blockStorageSubtitle": {
+            "type": "text"
+        },
+        "blockStorageDescription": {
+            "type": "text"
+        },
+        "useCasesLabel": {
+            "type": "string"
+        },
+        "useCasesTitle": {
+            "type": "string"
+        },
+        "useCasesSubtitle": {
+            "type": "text"
+        },
+        "useCases": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "whenLabel": {
+            "type": "string"
+        },
+        "whenTitle": {
+            "type": "string"
+        },
+        "whenSubtitle": {
+            "type": "text"
+        },
+        "whenCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.testimonial-card"
+        },
+        "faqTitle": {
+            "type": "string"
+        },
+        "faqContactTitle": {
+            "type": "string"
+        },
+        "faqContactDesc": {
+            "type": "text"
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.faq-entry"
+        },
+        "ctaBand2": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
+        }
     }
 }

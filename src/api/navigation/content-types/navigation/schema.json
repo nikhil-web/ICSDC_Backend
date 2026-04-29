@@ -25,6 +25,11 @@
       "type": "component",
       "component": "buttons.button",
       "repeatable": false
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }

@@ -6,47 +6,160 @@
         "pluralName": "managed-dedicated-server-pages",
         "displayName": "Managed Dedicated Server Page"
     },
-    "options": { "draftAndPublish": true },
+    "options": {
+        "draftAndPublish": true
+    },
     "attributes": {
-        "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-        "heroTitle": { "type": "string" },
-        "heroSubtitle": { "type": "string" },
-        "heroDescription": { "type": "text" },
-        "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "plansTitle": { "type": "string" },
-        "plansSubtitle": { "type": "string" },
-        "pricingPlans": { "type": "component", "repeatable": true, "component": "ds.pricing-plan" },
-        "aboutTitle": { "type": "string" },
-        "aboutDesc": { "type": "text" },
-        "aboutNote": { "type": "string" },
-        "standoutLabel": { "type": "string" },
-        "standoutTitle": { "type": "string" },
-        "standoutCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "baremetalPromoTitle": { "type": "string" },
-        "baremetalPromoDesc": { "type": "text" },
-        "baremetalPromoCta": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "cloudPromoTitle": { "type": "string" },
-        "cloudPromoDesc": { "type": "text" },
-        "cloudPromoCta": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-        "whyChooseTitle": { "type": "string" },
-        "whyChooseDesc": { "type": "text" },
-        "whyChooseList": { "type": "json" },
-        "whoLabel": { "type": "string" },
-        "whoTitle": { "type": "string" },
-        "whoCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-        "osTitle": { "type": "string" },
-        "osDesc": { "type": "text" },
-        "compareTitle": { "type": "string" },
-        "compareRows": { "type": "component", "repeatable": true, "component": "ds.compare-row" },
-        "whenTitle": { "type": "string" },
-        "whenDesc": { "type": "text" },
-        "whenList": { "type": "json" },
-        "testimonialTitle": { "type": "string" },
-        "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
-        "faqTitle": { "type": "string" },
-        "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-        "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.seo-meta"
+        },
+        "heroTitle": {
+            "type": "string"
+        },
+        "heroSubtitle": {
+            "type": "string"
+        },
+        "heroDescription": {
+            "type": "text"
+        },
+        "heroCtaPrimary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "heroCtaSecondary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "pillars": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "plansTitle": {
+            "type": "string"
+        },
+        "plansSubtitle": {
+            "type": "string"
+        },
+        "pricingPlans": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.pricing-plan"
+        },
+        "aboutTitle": {
+            "type": "string"
+        },
+        "aboutDesc": {
+            "type": "text"
+        },
+        "aboutNote": {
+            "type": "string"
+        },
+        "standoutLabel": {
+            "type": "string"
+        },
+        "standoutTitle": {
+            "type": "string"
+        },
+        "standoutCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "baremetalPromoTitle": {
+            "type": "string"
+        },
+        "baremetalPromoDesc": {
+            "type": "text"
+        },
+        "baremetalPromoCta": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "cloudPromoTitle": {
+            "type": "string"
+        },
+        "cloudPromoDesc": {
+            "type": "text"
+        },
+        "cloudPromoCta": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-link"
+        },
+        "whyChooseTitle": {
+            "type": "string"
+        },
+        "whyChooseDesc": {
+            "type": "text"
+        },
+        "whyChooseList": {
+            "type": "json"
+        },
+        "whoLabel": {
+            "type": "string"
+        },
+        "whoTitle": {
+            "type": "string"
+        },
+        "whoCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.icon-card"
+        },
+        "osTitle": {
+            "type": "string"
+        },
+        "osDesc": {
+            "type": "text"
+        },
+        "compareTitle": {
+            "type": "string"
+        },
+        "compareRows": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.compare-row"
+        },
+        "whenTitle": {
+            "type": "string"
+        },
+        "whenDesc": {
+            "type": "text"
+        },
+        "whenList": {
+            "type": "json"
+        },
+        "testimonialTitle": {
+            "type": "string"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.testimonial-card"
+        },
+        "faqTitle": {
+            "type": "string"
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "ds.faq-entry"
+        },
+        "ctaBand1": {
+            "type": "component",
+            "repeatable": false,
+            "component": "ds.cta-band"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
+        }
     }
 }

@@ -133,6 +133,11 @@
             "type": "component",
             "repeatable": true,
             "component": "ds.vps-plan"
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }

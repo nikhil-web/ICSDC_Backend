@@ -6,42 +6,143 @@
     "pluralName": "reseller-hosting-pages",
     "displayName": "Reseller Hosting Page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "attributes": {
-    "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-    "heroEyebrow": { "type": "string" },
-    "heroTitle": { "type": "string" },
-    "heroSubtitle": { "type": "string" },
-    "heroDescription": { "type": "text" },
-    "heroTopBadge": { "type": "string" },
-    "heroStatusTitle": { "type": "string" },
-    "heroStatusSubtitle": { "type": "string" },
-    "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "plansLabel": { "type": "string" },
-    "plansTitle": { "type": "string" },
-    "plansSubtitle": { "type": "text" },
-    "plans": { "type": "component", "repeatable": true, "component": "ds.pricing-plan" },
-    "featuresLabel": { "type": "string" },
-    "featuresTitle": { "type": "string" },
-    "featuresSubtitle": { "type": "text" },
-    "features": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "whyLabel": { "type": "string" },
-    "whyTitle": { "type": "string" },
-    "whySubtitle": { "type": "text" },
-    "whyCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "toolsLabel": { "type": "string" },
-    "toolsTitle": { "type": "string" },
-    "toolsSubtitle": { "type": "text" },
-    "toolsCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "testimonialTitle": { "type": "string" },
-    "faqTitle": { "type": "string" },
-    "faqContactTitle": { "type": "string" },
-    "faqContactDesc": { "type": "text" },
-    "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-    "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" }
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.seo-meta"
+    },
+    "heroEyebrow": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroTopBadge": {
+      "type": "string"
+    },
+    "heroStatusTitle": {
+      "type": "string"
+    },
+    "heroStatusSubtitle": {
+      "type": "string"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "featuresLabel": {
+      "type": "string"
+    },
+    "featuresTitle": {
+      "type": "string"
+    },
+    "featuresSubtitle": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whySubtitle": {
+      "type": "text"
+    },
+    "whyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "toolsLabel": {
+      "type": "string"
+    },
+    "toolsTitle": {
+      "type": "string"
+    },
+    "toolsSubtitle": {
+      "type": "text"
+    },
+    "toolsCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqContactTitle": {
+      "type": "string"
+    },
+    "faqContactDesc": {
+      "type": "text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+    "ctaBand2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

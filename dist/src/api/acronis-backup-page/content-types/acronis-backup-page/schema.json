@@ -135,6 +135,11 @@
             "type": "component",
             "component": "ds.icon-card",
             "repeatable": true
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }

@@ -6,31 +6,106 @@
     "pluralName": "vps-cpanel-pages",
     "displayName": "VPS cPanel Page"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "attributes": {
-    "seo": { "type": "component", "repeatable": false, "component": "ds.seo-meta" },
-    "heroTitle": { "type": "string" },
-    "heroSubtitle": { "type": "string" },
-    "heroDescription": { "type": "text" },
-    "heroCtaPrimary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "heroCtaSecondary": { "type": "component", "repeatable": false, "component": "ds.cta-link" },
-    "pillars": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "aboutTitle": { "type": "string" },
-    "aboutDesc": { "type": "text" },
-    "advantagesLabel": { "type": "string" },
-    "advantagesTitle": { "type": "string" },
-    "advantages": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "whyLabel": { "type": "string" },
-    "whyTitle": { "type": "string" },
-    "whyCards": { "type": "component", "repeatable": true, "component": "ds.icon-card" },
-    "cpanelFeaturesTitle": { "type": "string" },
-    "cpanelFeaturesDesc": { "type": "text" },
-    "cpanelFeaturesList": { "type": "json" },
-    "ctaBand1": { "type": "component", "repeatable": false, "component": "ds.cta-band" },
-    "testimonialTitle": { "type": "string" },
-    "testimonials": { "type": "component", "repeatable": true, "component": "ds.testimonial-card" },
-    "faqTitle": { "type": "string" },
-    "faq": { "type": "component", "repeatable": true, "component": "ds.faq-entry" },
-    "ctaBand2": { "type": "component", "repeatable": false, "component": "ds.cta-band" }
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.seo-meta"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "advantagesLabel": {
+      "type": "string"
+    },
+    "advantagesTitle": {
+      "type": "string"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "cpanelFeaturesTitle": {
+      "type": "string"
+    },
+    "cpanelFeaturesDesc": {
+      "type": "text"
+    },
+    "cpanelFeaturesList": {
+      "type": "json"
+    },
+    "ctaBand1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+    "ctaBand2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    }
   }
 }

@@ -170,6 +170,11 @@
             "type": "component",
             "component": "ds.faq-entry",
             "repeatable": true
+        },
+        "heroImage": {
+            "type": "component",
+            "component": "common.image",
+            "repeatable": false
         }
     }
 }
