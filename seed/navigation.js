@@ -1,10 +1,58 @@
-// seed/navigation.js
-// Mirrors the live navigation data exactly.
-// Only the `url` fields have been filled in — all other values are unchanged.
-// navLogo is a media relation; the logo is already uploaded — do not overwrite.
+/**
+ * seed/navigation.js
+ * Run: node seed/navigation.js
+ *
+ * Seeds the navigation single type.
+ * Mirrors the live navigation data exactly.
+ * Only the `url` fields have been filled in — all other values are unchanged.
+ *
+ * NOTE: navLogo is a media relation; the logo is already uploaded — not seeded here.
+ */
 
-module.exports = {
-  // navLogo: media relation — already uploaded in Strapi admin, omit here
+'use strict';
+
+const http = require('http');
+
+const BASE_URL = 'http://127.0.0.1:1338';
+const TOKEN    = '5e685bd788588b5db88df3d3d47ad9a446f82768a2514d7dce437f6dc10c872d61b83b91763e6ea54acb9f7d7aac432e1714eef2dd12d718aae5c3bbae246aa90a85d22938474559dd9327dc2f7c9114b06bfdbb4ce9daf5d4e8f45b7a608c7d80eea92ac9896b47238380007a7d592b3825db93c9f9e5fbdab95be79a2c8e6e';
+
+function putJSON(path, body) {
+  return new Promise(function (resolve, reject) {
+    var payload = JSON.stringify({ data: body });
+    var url     = new URL(BASE_URL + path);
+    var options = {
+      hostname : url.hostname,
+      port     : url.port || 80,
+      path     : url.pathname,
+      method   : 'PUT',
+      headers  : {
+        'Content-Type'  : 'application/json',
+        'Content-Length': Buffer.byteLength(payload),
+        'Authorization' : 'Bearer ' + TOKEN,
+      },
+    };
+    var req = http.request(options, function (res) {
+      var data = '';
+      res.on('data', function (c) { data += c; });
+      res.on('end', function () {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          resolve(JSON.parse(data));
+        } else {
+          reject(new Error('HTTP ' + res.statusCode + ': ' + data));
+        }
+      });
+    });
+    req.on('error', reject);
+    req.write(payload);
+    req.end();
+  });
+}
+
+/* ════════════════════════════════════════
+   PAGE DATA
+════════════════════════════════════════ */
+
+var pageData = {
 
   LoginButton: {
     btnText: 'Login ',
@@ -81,13 +129,13 @@ module.exports = {
       sections: [],
       items: [
         { icon: '🌐', title: 'Web Hosting',        subtext: 'Sub Menu Details & subtext', url: '/web-hosting.html' },
-        { icon: '⚡', title: 'Shared Hosting',    subtext: 'Sub Menu Details & subtext', url: '/shared-hosting.html' },
-        { icon: '🔲', title: 'WordPress Hosting', subtext: 'Sub Menu Details & subtext', url: '/wordpress-hosting.html' },
-        { icon: '🛒', title: 'eCommerce Hosting', subtext: 'Sub Menu Details & subtext', url: null },
-        { icon: '🏢', title: 'Business Hosting',  subtext: 'Sub Menu Details & subtext', url: null },
-        { icon: '🚀', title: 'Reseller Hosting',  subtext: 'Sub Menu Details & subtext', url: '/reseller-hosting.html' },
-        { icon: '🔧', title: 'Managed Hosting',   subtext: 'Sub Menu Details & subtext', url: null },
-        { icon: null,  title: null,                subtext: null,                         url: null },
+        { icon: '⚡', title: 'Shared Hosting',     subtext: 'Sub Menu Details & subtext', url: '/shared-hosting.html' },
+        { icon: '🔲', title: 'WordPress Hosting',  subtext: 'Sub Menu Details & subtext', url: '/wordpress-hosting.html' },
+        { icon: '🛒', title: 'eCommerce Hosting',  subtext: 'Sub Menu Details & subtext', url: null },
+        { icon: '🏢', title: 'Business Hosting',   subtext: 'Sub Menu Details & subtext', url: null },
+        { icon: '🚀', title: 'Reseller Hosting',   subtext: 'Sub Menu Details & subtext', url: '/reseller-hosting.html' },
+        { icon: '🔧', title: 'Managed Hosting',    subtext: 'Sub Menu Details & subtext', url: null },
+        { icon: null,  title: null,                 subtext: null,                         url: null },
       ],
     },
 
@@ -154,4 +202,12 @@ module.exports = {
     },
 
   ],
+
 };
+
+/* ════════════════════════════════════════
+   RUN
+════════════════════════════════════════ */
+putJSON('/api/navigation', pageData)
+  .then(function () { console.log('\u2705  navigation seeded successfully'); })
+  .catch(function (err) { console.error('\u274c  Seed failed:', err.message); process.exit(1); });

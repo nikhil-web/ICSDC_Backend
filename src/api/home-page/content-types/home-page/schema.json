@@ -22,6 +22,11 @@
     "mainHeading": {
       "type": "string"
     },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "subHeading": {
       "type": "string"
     },
@@ -84,24 +89,32 @@
       "component": "ds.testimonial-card",
       "repeatable": true
     },
-    "globalPresenceTitle":    { "type": "string" },
-    "globalPresenceSubtitle": { "type": "string" },
+    "globalPresenceTitle": {
+      "type": "string"
+    },
+    "globalPresenceSubtitle": {
+      "type": "string"
+    },
     "globalLocations": {
       "type": "component",
       "component": "ds.map-location",
       "repeatable": true
     },
-    "techPartnersTitle": { "type": "string" },
+    "techPartnersTitle": {
+      "type": "string"
+    },
     "techPartners": {
       "type": "component",
-      "repeatable": true,
-      "component": "ds.partner-logo"
+      "component": "ds.partner-logo",
+      "repeatable": true
     },
-    "trustedTitle": { "type": "string" },
+    "trustedTitle": {
+      "type": "string"
+    },
     "trustedPartners": {
       "type": "component",
-      "repeatable": true,
-      "component": "ds.partner-logo"
+      "component": "ds.partner-logo",
+      "repeatable": true
     },
     "faq": {
       "type": "component",

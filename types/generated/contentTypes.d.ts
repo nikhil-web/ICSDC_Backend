@@ -1706,6 +1706,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     globalPresenceSubtitle: Schema.Attribute.String;
     globalPresenceTitle: Schema.Attribute.String;
     heroEyebrow: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Component<'common.image', false>;
     IndustryLeadingExcellenceValidated: Schema.Attribute.Component<
       'sections.text-image',
       false
@@ -2926,6 +2927,7 @@ export interface ApiVpsHostingPageVpsHostingPage
     diffSubtitle: Schema.Attribute.Text;
     diffTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     globalCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     globalCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     globalDescription: Schema.Attribute.Text;
@@ -3329,6 +3331,8 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseTitle: Schema.Attribute.String;
   };
 }
 

@@ -91,6 +91,14 @@
             "component": "ds.icon-card",
             "repeatable": true
         },
+        "whyChooseTitle": {
+            "type": "string"
+        },
+        "whyChooseCards": {
+            "type": "component",
+            "component": "ds.icon-card",
+            "repeatable": true
+        },
         "ctaBand1": {
             "type": "component",
             "component": "ds.cta-band",

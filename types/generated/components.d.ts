@@ -11,6 +11,16 @@ export interface ButtonsButton extends Struct.ComponentSchema {
   };
 }
 
+export interface CommonImage extends Struct.ComponentSchema {
+  collectionName: 'components_common_images';
+  info: {
+    displayName: 'image';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface DsChecklistItem extends Struct.ComponentSchema {
   collectionName: 'components_ds_checklist_items';
   info: {
@@ -975,6 +985,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'buttons.button': ButtonsButton;
+      'common.image': CommonImage;
       'ds.checklist-item': DsChecklistItem;
       'ds.cloud-plan': DsCloudPlan;
       'ds.compare-row': DsCompareRow;
