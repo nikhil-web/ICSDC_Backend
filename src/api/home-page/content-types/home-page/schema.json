@@ -125,6 +125,20 @@
       "type": "component",
       "component": "sections.footer",
       "repeatable": false
+    },
+    "whyCloudTitle": {
+      "type": "string"
+    },
+    "whyCloudImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "whyCloudItems": {
+      "type": "component",
+      "component": "sections.why-us-card",
+      "repeatable": true
     }
   }
 }

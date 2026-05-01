@@ -1757,6 +1757,9 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     whoWeAre: Schema.Attribute.Component<'sections.who-we-are', false>;
     whyChooseUs: Schema.Attribute.Component<'sections.why-us-card', true>;
+    whyCloudImage: Schema.Attribute.Media<'images'>;
+    whyCloudItems: Schema.Attribute.Component<'sections.why-us-card', true>;
+    whyCloudTitle: Schema.Attribute.String;
   };
 }
 
