@@ -885,16 +885,13 @@ export interface SharedNavLink extends Struct.ComponentSchema {
 export interface SharedSocialLink extends Struct.ComponentSchema {
   collectionName: 'components_shared_social_links';
   info: {
-    description: 'Social media link entry for the footer';
+    description: 'Social media link with a Font Awesome icon, display name and URL';
     displayName: 'Social Link';
     icon: 'earth';
   };
   attributes: {
+    icon: Schema.Attribute.String & Schema.Attribute.Required;
     name: Schema.Attribute.String;
-    platform: Schema.Attribute.Enumeration<
-      ['facebook', 'twitter', 'instagram', 'linkedin']
-    > &
-      Schema.Attribute.Required;
     url: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

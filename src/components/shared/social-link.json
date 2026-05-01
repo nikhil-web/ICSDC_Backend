@@ -3,25 +3,19 @@
   "info": {
     "displayName": "Social Link",
     "icon": "earth",
-    "description": "Social media link entry for the footer"
+    "description": "Social media link with a Font Awesome icon, display name and URL"
   },
   "attributes": {
-    "platform": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "facebook",
-        "twitter",
-        "instagram",
-        "linkedin"
-      ]
-    },
-    "url": {
+    "icon": {
       "type": "string",
       "required": true
     },
     "name": {
       "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "required": true
     }
   }
 }

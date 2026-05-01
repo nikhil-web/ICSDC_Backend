@@ -65,7 +65,7 @@ $RECYCLE.BIN/
 # Logs and databases
 ############################
 
-
+*.db
 *.log
 *.sql
 *.sqlite
@@ -137,7 +137,7 @@ import-pages.js
 license.txt
 exports
 .strapi
-dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+dist/
