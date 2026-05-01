@@ -126,19 +126,10 @@
             "component": "sections.footer",
             "repeatable": false
         },
-        "whyCloudTitle": {
-            "type": "string"
-        },
-        "whyCloudImage": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": ["images"]
-        },
-        "whyCloudItems": {
+        "whyBusinessNeedsCloud": {
             "type": "component",
-            "component": "sections.why-us-card",
-            "repeatable": true
+            "component": "sections.why-cloud-section",
+            "repeatable": false
         }
     }
 }

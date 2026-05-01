@@ -800,6 +800,20 @@ export interface SectionsWhoWeAre extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsWhyCloudSection extends Struct.ComponentSchema {
+  collectionName: 'components_sections_why_cloud_sections';
+  info: {
+    description: 'Why Business Needs Cloud Services section with image and benefit items';
+    displayName: 'Why Cloud Section';
+    icon: 'cloud';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    items: Schema.Attribute.Component<'sections.why-us-card', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsWhyUsCard extends Struct.ComponentSchema {
   collectionName: 'components_sections_why_us_cards';
   info: {
@@ -1040,6 +1054,7 @@ declare module '@strapi/strapi' {
       'sections.hero': SectionsHero;
       'sections.text-image': SectionsTextImage;
       'sections.who-we-are': SectionsWhoWeAre;
+      'sections.why-cloud-section': SectionsWhyCloudSection;
       'sections.why-us-card': SectionsWhyUsCard;
       'shared.feature-button': SharedFeatureButton;
       'shared.footer-link-group': SharedFooterLinkGroup;

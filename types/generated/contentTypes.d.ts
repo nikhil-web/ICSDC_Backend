@@ -1756,10 +1756,11 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whoWeAre: Schema.Attribute.Component<'sections.who-we-are', false>;
+    whyBusinessNeedsCloud: Schema.Attribute.Component<
+      'sections.why-cloud-section',
+      false
+    >;
     whyChooseUs: Schema.Attribute.Component<'sections.why-us-card', true>;
-    whyCloudImage: Schema.Attribute.Media<'images'>;
-    whyCloudItems: Schema.Attribute.Component<'sections.why-us-card', true>;
-    whyCloudTitle: Schema.Attribute.String;
   };
 }
 

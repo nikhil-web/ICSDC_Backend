@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_why_cloud_sections",
+  "info": {
+    "displayName": "Why Cloud Section",
+    "icon": "cloud",
+    "description": "Why Business Needs Cloud Services section with image and benefit items"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.why-us-card"
+    }
+  }
+}
