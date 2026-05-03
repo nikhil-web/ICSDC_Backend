@@ -108,7 +108,7 @@ export interface DsCtaBand extends Struct.ComponentSchema {
     ctaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     ctaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     description: Schema.Attribute.Text;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
   };
 }
 
