@@ -237,7 +237,7 @@ export interface DsIconCard extends Struct.ComponentSchema {
     displayName: 'DS Icon Card';
   };
   attributes: {
-    desc: Schema.Attribute.String & Schema.Attribute.Required;
+    desc: Schema.Attribute.String;
     icon: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -294,7 +294,7 @@ export interface DsNumberedTip extends Struct.ComponentSchema {
     displayName: 'DS Numbered Tip';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     number: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;

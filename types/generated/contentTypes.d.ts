@@ -919,6 +919,7 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
       'api::contact-us-page.contact-us-page'
     > &
       Schema.Attribute.Private;
+    mapEmbedUrl: Schema.Attribute.Text;
     officeHours: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;

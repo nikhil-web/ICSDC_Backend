@@ -64,6 +64,9 @@
     "officeHours": {
       "type": "string"
     },
+    "mapEmbedUrl": {
+      "type": "text"
+    },
     "heroImage": {
       "type": "component",
       "component": "common.image",
