@@ -447,14 +447,14 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
     dataCentersCount: Schema.Attribute.String;
-    dataCentersItems: Schema.Attribute.JSON;
+    dataCentersItems: Schema.Attribute.Text;
     dataCentersTitle: Schema.Attribute.String;
     foundedYear: Schema.Attribute.String;
     heroDescription: Schema.Attribute.Text;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
-    howStartedItems: Schema.Attribute.JSON;
+    howStartedItems: Schema.Attribute.Text;
     howStartedTitle: Schema.Attribute.String;
     journeyTitle: Schema.Attribute.String;
     lifeDescription: Schema.Attribute.Text;
@@ -481,7 +481,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     visionTitle: Schema.Attribute.String;
     whatWeDoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whatWeDoTitle: Schema.Attribute.String;
-    whereWeOperateItems: Schema.Attribute.JSON;
+    whereWeOperateItems: Schema.Attribute.Text;
     whereWeOperateTitle: Schema.Attribute.String;
     whoWeAreDescription: Schema.Attribute.Text;
     whoWeAreTitle: Schema.Attribute.String;

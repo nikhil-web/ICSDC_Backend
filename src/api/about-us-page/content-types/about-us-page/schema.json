@@ -83,19 +83,19 @@
       "type": "string"
     },
     "howStartedItems": {
-      "type": "json"
+      "type": "text"
     },
     "whereWeOperateTitle": {
       "type": "string"
     },
     "whereWeOperateItems": {
-      "type": "json"
+      "type": "text"
     },
     "dataCentersTitle": {
       "type": "string"
     },
     "dataCentersItems": {
-      "type": "json"
+      "type": "text"
     },
     "lifeTitle": {
       "type": "string"
