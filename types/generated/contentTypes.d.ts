@@ -1717,6 +1717,13 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       'sections.cloud-solutions-engineered-section',
       true
     >;
+    contactEmail: Schema.Attribute.String;
+    contactEmailHours: Schema.Attribute.String;
+    contactPhone: Schema.Attribute.String;
+    contactPhoneHours: Schema.Attribute.String;
+    contactSectionSubtitle: Schema.Attribute.Text;
+    contactSectionTitle: Schema.Attribute.String;
+    contactSubmitText: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

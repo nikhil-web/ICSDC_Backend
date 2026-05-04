@@ -130,6 +130,27 @@
       "type": "component",
       "component": "sections.why-cloud-section",
       "repeatable": false
+    },
+    "contactSectionTitle": {
+      "type": "string"
+    },
+    "contactSectionSubtitle": {
+      "type": "text"
+    },
+    "contactEmail": {
+      "type": "string"
+    },
+    "contactEmailHours": {
+      "type": "string"
+    },
+    "contactPhone": {
+      "type": "string"
+    },
+    "contactPhoneHours": {
+      "type": "string"
+    },
+    "contactSubmitText": {
+      "type": "string"
     }
   }
 }
