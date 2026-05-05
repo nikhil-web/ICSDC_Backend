@@ -509,7 +509,7 @@ export interface DsWhenCard extends Struct.ComponentSchema {
     displayName: 'DS When Card';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     number: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
