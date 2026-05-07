@@ -112,7 +112,13 @@ const PAGES = [
     name: 'Home Page Extras',
     endpoint: 'home-page',
     uid: 'api::home-page.home-page',
-    data: require('./seed/home-page-extras'),
+    get data() { return require('./seed/home-page-extras'); },
+  },
+  {
+    name: 'Shared Hosting',
+    endpoint: 'shared-hosting-page',
+    uid: 'api::shared-hosting-page.shared-hosting-page',
+    data: require('./seed/shared-hosting'),
   },
 ];
 

@@ -29,7 +29,10 @@
       "repeatable": true
     },
     "aboutImage": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     },
     "aboutTitle": {
       "type": "string"

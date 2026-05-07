@@ -119,8 +119,8 @@ export interface DsCtaLink extends Struct.ComponentSchema {
     displayName: 'DS CTA Link';
   };
   attributes: {
-    link: Schema.Attribute.String & Schema.Attribute.Required;
-    text: Schema.Attribute.String & Schema.Attribute.Required;
+    link: Schema.Attribute.String;
+    text: Schema.Attribute.String;
   };
 }
 

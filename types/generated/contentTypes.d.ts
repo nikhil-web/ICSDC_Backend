@@ -566,7 +566,7 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
   };
   attributes: {
     aboutDescription: Schema.Attribute.Text;
-    aboutImage: Schema.Attribute.String;
+    aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.when-card', true>;
     aboutLabel: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
@@ -627,7 +627,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
   };
   attributes: {
     aboutDescription: Schema.Attribute.Text;
-    aboutImage: Schema.Attribute.String;
+    aboutImage: Schema.Attribute.Media<'images'>;
     aboutTitle: Schema.Attribute.String;
     advantages: Schema.Attribute.Component<'ds.icon-card', true>;
     advantagesLabel: Schema.Attribute.String;
@@ -2546,7 +2546,7 @@ export interface ApiSharedHostingPageSharedHostingPage
   };
   attributes: {
     aboutDescription: Schema.Attribute.Text;
-    aboutImage: Schema.Attribute.String;
+    aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.when-card', true>;
     aboutLabel: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
@@ -2585,6 +2585,9 @@ export interface ApiSharedHostingPageSharedHostingPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whenUseCards: Schema.Attribute.Component<'ds.when-card', true>;
+    whenUsePerfectFor: Schema.Attribute.String;
+    whenUseTitle: Schema.Attribute.String;
     whyLabel: Schema.Attribute.String;
     whyReasons: Schema.Attribute.Component<'ds.when-card', true>;
     whySubtitle: Schema.Attribute.Text;

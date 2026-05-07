@@ -44,7 +44,10 @@
       "repeatable": true
     },
     "aboutImage": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     },
     "aboutLabel": {
       "type": "string"

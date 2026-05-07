@@ -5,11 +5,11 @@
     "description": "Numbered card for 'When Do You Need' section"
   },
   "attributes": {
-    "number": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "title": {
+    "number": {
       "type": "string",
       "required": true
     },

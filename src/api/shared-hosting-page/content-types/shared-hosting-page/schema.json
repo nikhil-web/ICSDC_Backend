@@ -38,7 +38,10 @@
       "repeatable": true
     },
     "aboutImage": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     },
     "aboutLabel": {
       "type": "string"
@@ -95,6 +98,17 @@
       "type": "component",
       "component": "ds.icon-card",
       "repeatable": true
+    },
+    "whenUseTitle": {
+      "type": "string"
+    },
+    "whenUseCards": {
+      "type": "component",
+      "component": "ds.when-card",
+      "repeatable": true
+    },
+    "whenUsePerfectFor": {
+      "type": "string"
     },
     "ctaBand1": {
       "type": "component",
