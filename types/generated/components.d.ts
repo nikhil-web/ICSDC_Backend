@@ -239,6 +239,7 @@ export interface DsIconCard extends Struct.ComponentSchema {
   attributes: {
     desc: Schema.Attribute.String;
     icon: Schema.Attribute.String;
+    link: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };

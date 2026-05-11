@@ -3011,6 +3011,7 @@ export interface ApiVpsHostingPageVpsHostingPage
     mgmtLabel: Schema.Attribute.String;
     mgmtSubtitle: Schema.Attribute.Text;
     mgmtTitle: Schema.Attribute.String;
+    panelsImage: Schema.Attribute.Component<'common.image', false>;
     panelsLabel: Schema.Attribute.String;
     panelsSubtitle: Schema.Attribute.Text;
     panelsTitle: Schema.Attribute.String;

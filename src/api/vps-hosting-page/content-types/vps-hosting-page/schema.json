@@ -207,6 +207,11 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "panelsImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }
