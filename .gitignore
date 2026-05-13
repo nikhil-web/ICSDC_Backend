@@ -142,3 +142,4 @@ build
 .strapi-updater.json
 .strapi-cloud.json
 dist/
+migrate-sqlite-to-pg.js
