@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_pricing_feature_rows",
+  "info": {
+    "displayName": "Feature Row",
+    "description": "A comparison row — feature label + one value per plan (p1–p5)"
+  },
+  "attributes": {
+    "feature": {
+      "type": "string"
+    },
+    "p1": {
+      "type": "string"
+    },
+    "p2": {
+      "type": "string"
+    },
+    "p3": {
+      "type": "string"
+    },
+    "p4": {
+      "type": "string"
+    },
+    "p5": {
+      "type": "string"
+    },
+    "isHighlighted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

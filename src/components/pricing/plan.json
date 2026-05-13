@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_pricing_plans",
+  "info": {
+    "displayName": "Plan",
+    "description": "A single pricing plan. Add cpu/ram/storage/bandwidth/gpu for spec-row table layout; leave blank for comparison table layout."
+  },
+  "attributes": {
+    "name":         { "type": "string", "required": true },
+    "monthlyPrice": { "type": "string" },
+    "annualPrice":  { "type": "string" },
+    "isPopular":    { "type": "boolean", "default": false },
+    "ctaText":      { "type": "string" },
+    "ctaLink":      { "type": "string" },
+    "cpu":          { "type": "string" },
+    "ram":          { "type": "string" },
+    "storage":      { "type": "string" },
+    "bandwidth":    { "type": "string" },
+    "gpu":          { "type": "string" },
+    "c1":           { "type": "string" },
+    "c2":           { "type": "string" },
+    "c3":           { "type": "string" },
+    "c4":           { "type": "string" }
+  }
+}

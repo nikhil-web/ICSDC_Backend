@@ -599,6 +599,23 @@ export interface MenuNavMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface PricingFeatureRow extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_feature_rows';
+  info: {
+    description: 'A comparison row \u2014 feature label + one value per plan (p1\u2013p5)';
+    displayName: 'Feature Row';
+  };
+  attributes: {
+    feature: Schema.Attribute.String;
+    isHighlighted: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    p1: Schema.Attribute.String;
+    p2: Schema.Attribute.String;
+    p3: Schema.Attribute.String;
+    p4: Schema.Attribute.String;
+    p5: Schema.Attribute.String;
+  };
+}
+
 export interface PricingHeroBadge extends Struct.ComponentSchema {
   collectionName: 'components_pricing_hero_badges';
   info: {
@@ -610,19 +627,49 @@ export interface PricingHeroBadge extends Struct.ComponentSchema {
   };
 }
 
+export interface PricingPlan extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_plans';
+  info: {
+    description: 'A single pricing plan. Add cpu/ram/storage/bandwidth/gpu for spec-row table layout; leave blank for comparison table layout.';
+    displayName: 'Plan';
+  };
+  attributes: {
+    annualPrice: Schema.Attribute.String;
+    bandwidth: Schema.Attribute.String;
+    c1: Schema.Attribute.String;
+    c2: Schema.Attribute.String;
+    c3: Schema.Attribute.String;
+    c4: Schema.Attribute.String;
+    cpu: Schema.Attribute.String;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    gpu: Schema.Attribute.String;
+    isPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    monthlyPrice: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    ram: Schema.Attribute.String;
+    storage: Schema.Attribute.String;
+  };
+}
+
 export interface PricingPriceTable extends Struct.ComponentSchema {
   collectionName: 'components_pricing_price_tables';
   info: {
-    description: 'A full pricing table with columns, rows, and optional caption/note';
-    displayName: 'Pricing Price Table';
+    description: 'A pricing comparison table \u2014 add plans (columns) and feature rows';
+    displayName: 'Pricing Table';
   };
   attributes: {
+    c1Label: Schema.Attribute.String;
+    c2Label: Schema.Attribute.String;
+    c3Label: Schema.Attribute.String;
+    c4Label: Schema.Attribute.String;
     caption: Schema.Attribute.Text;
-    columns: Schema.Attribute.Component<'pricing.table-column', true>;
+    features: Schema.Attribute.Component<'pricing.feature-row', true>;
     noteText: Schema.Attribute.Text;
     noteType: Schema.Attribute.Enumeration<['info', 'warning']> &
       Schema.Attribute.DefaultTo<'info'>;
-    rows: Schema.Attribute.Component<'pricing.table-row', true>;
+    plans: Schema.Attribute.Component<'pricing.plan', true>;
+    priceLabel: Schema.Attribute.String;
   };
 }
 
@@ -634,7 +681,7 @@ export interface PricingPricingSection extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    sectionId: Schema.Attribute.String & Schema.Attribute.Required;
+    sectionId: Schema.Attribute.String;
     sectionTag: Schema.Attribute.String;
     showBillingToggle: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
@@ -1039,7 +1086,9 @@ declare module '@strapi/strapi' {
       'menu.menu-item': MenuMenuItem;
       'menu.menu-section': MenuMenuSection;
       'menu.nav-menu': MenuNavMenu;
+      'pricing.feature-row': PricingFeatureRow;
       'pricing.hero-badge': PricingHeroBadge;
+      'pricing.plan': PricingPlan;
       'pricing.price-table': PricingPriceTable;
       'pricing.pricing-section': PricingPricingSection;
       'pricing.table-cell': PricingTableCell;

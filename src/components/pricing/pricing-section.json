@@ -5,18 +5,38 @@
     "description": "One section on the pricing page — maps to one sidebar link and one or more tables"
   },
   "attributes": {
-    "sectionId": { "type": "string", "required": true },
-    "sidebarIcon": { "type": "string" },
-    "sidebarGroupLabel": { "type": "string" },
-    "sidebarLinkText": { "type": "string", "required": true },
-    "sectionTag": { "type": "string" },
-    "title": { "type": "string", "required": true },
-    "description": { "type": "text" },
-    "showBillingToggle": { "type": "boolean", "default": false },
+    "sectionId": {
+      "type": "string",
+      "required": false
+    },
+    "sidebarIcon": {
+      "type": "string"
+    },
+    "sidebarGroupLabel": {
+      "type": "string"
+    },
+    "sidebarLinkText": {
+      "type": "string",
+      "required": true
+    },
+    "sectionTag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "showBillingToggle": {
+      "type": "boolean",
+      "default": false
+    },
     "tables": {
       "type": "component",
-      "repeatable": true,
-      "component": "pricing.price-table"
+      "component": "pricing.price-table",
+      "repeatable": true
     }
   }
 }
