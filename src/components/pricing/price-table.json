@@ -2,30 +2,47 @@
   "collectionName": "components_pricing_price_tables",
   "info": {
     "displayName": "Pricing Table",
-    "description": "A pricing comparison table — add plans (columns) and feature rows"
+    "description": "Step 1 — add Columns (label + optional icon). Step 2 — add Rows (one plan per row). Each row needs one Cell per column, in the same order."
   },
   "attributes": {
-    "plans": {
+    "columns": {
       "type": "component",
-      "repeatable": true,
-      "component": "pricing.plan"
+      "component": "pricing.table-column",
+      "repeatable": true
     },
-    "features": {
+    "rows": {
       "type": "component",
-      "repeatable": true,
-      "component": "pricing.feature-row"
+      "component": "pricing.table-row",
+      "repeatable": true
     },
-    "c1Label":    { "type": "string" },
-    "c2Label":    { "type": "string" },
-    "c3Label":    { "type": "string" },
-    "c4Label":    { "type": "string" },
-    "priceLabel": { "type": "string" },
-    "caption":    { "type": "text" },
-    "noteText":   { "type": "text" },
+    "c1Label": {
+      "type": "string"
+    },
+    "c2Label": {
+      "type": "string"
+    },
+    "c3Label": {
+      "type": "string"
+    },
+    "c4Label": {
+      "type": "string"
+    },
+    "priceLabel": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "noteText": {
+      "type": "text"
+    },
     "noteType": {
       "type": "enumeration",
-      "enum": ["info", "warning"],
-      "default": "info"
+      "default": "info",
+      "enum": [
+        "info",
+        "warning"
+      ]
     }
   }
 }

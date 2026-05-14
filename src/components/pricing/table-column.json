@@ -1,16 +1,11 @@
 {
   "collectionName": "components_pricing_table_columns",
   "info": {
-    "displayName": "Pricing Table Column",
-    "description": "Defines a column header and how its cells are rendered"
+    "displayName": "Column",
+    "description": "One spec column. Enter a Label (e.g. CPU) and optionally a Font Awesome icon name (e.g. microchip, memory, hard-drive, network-wired, bolt). Leave icon blank to show label only."
   },
   "attributes": {
-    "header": { "type": "string", "required": true },
-    "type": {
-      "type": "enumeration",
-      "enum": ["text", "plan", "vram", "price", "action"],
-      "default": "text",
-      "required": true
-    }
+    "label": { "type": "string", "required": true },
+    "icon":  { "type": "string" }
   }
 }

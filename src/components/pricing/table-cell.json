@@ -1,12 +1,10 @@
 {
   "collectionName": "components_pricing_table_cells",
   "info": {
-    "displayName": "Pricing Table Cell",
-    "description": "A single cell value in a pricing table row"
+    "displayName": "Cell Value",
+    "description": "One cell value. Add cells in the same order as the Columns list at the top of the table."
   },
   "attributes": {
-    "value": { "type": "string" },
-    "subValue": { "type": "string" },
-    "isHighlight": { "type": "boolean", "default": false }
+    "value": { "type": "string" }
   }
 }

@@ -1,12 +1,16 @@
 {
   "collectionName": "components_pricing_table_rows",
   "info": {
-    "displayName": "Pricing Table Row",
-    "description": "A row in a pricing table — one cell per column"
+    "displayName": "Plan Row",
+    "description": "One plan. Fill name, prices, CTA, then add one Cell for each column defined above (same order)."
   },
   "attributes": {
-    "isHighlighted": { "type": "boolean", "default": false },
-    "isPopular": { "type": "boolean", "default": false },
+    "name":         { "type": "string", "required": true },
+    "isPopular":    { "type": "boolean", "default": false },
+    "monthlyPrice": { "type": "string" },
+    "annualPrice":  { "type": "string" },
+    "ctaText":      { "type": "string" },
+    "ctaLink":      { "type": "string" },
     "cells": {
       "type": "component",
       "repeatable": true,
