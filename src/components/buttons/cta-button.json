@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_buttons_cta_buttons",
+  "info": {
+    "displayName": "CTA Button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "config": {}
+}

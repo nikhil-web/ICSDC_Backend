@@ -887,6 +887,41 @@ export interface ApiCloudStoragePageCloudStoragePage
   };
 }
 
+export interface ApiContactSubmissionContactSubmission
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_submissions';
+  info: {
+    description: 'Enquiries submitted via the website contact form';
+    displayName: 'Contact Submission';
+    pluralName: 'contact-submissions';
+    singularName: 'contact-submission';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-submission.contact-submission'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text & Schema.Attribute.Required;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    subject: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
   collectionName: 'contact_us_pages';
   info: {
@@ -2282,6 +2317,7 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    ctaButton: Schema.Attribute.Component<'buttons.cta-button', false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -2364,6 +2400,39 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
     whyNvmeLabel: Schema.Attribute.String;
     whyNvmeSubtitle: Schema.Attribute.Text;
     whyNvmeTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiPageRegistryPageRegistry
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'page_registries';
+  info: {
+    displayName: 'page-registry';
+    pluralName: 'page-registries';
+    singularName: 'page-registry';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    displayName: Schema.Attribute.String & Schema.Attribute.Required;
+    isLive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::page-registry.page-registry'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -4056,6 +4125,7 @@ declare module '@strapi/strapi' {
       'api::bare-metal-server-page.bare-metal-server-page': ApiBareMetalServerPageBareMetalServerPage;
       'api::cloud-hosting-page.cloud-hosting-page': ApiCloudHostingPageCloudHostingPage;
       'api::cloud-storage-page.cloud-storage-page': ApiCloudStoragePageCloudStoragePage;
+      'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact-us-page.contact-us-page': ApiContactUsPageContactUsPage;
       'api::cpanel-hosting-page.cpanel-hosting-page': ApiCpanelHostingPageCpanelHostingPage;
       'api::dedicated-server-page.dedicated-server-page': ApiDedicatedServerPageDedicatedServerPage;
@@ -4079,6 +4149,7 @@ declare module '@strapi/strapi' {
       'api::microsoft-365-page.microsoft-365-page': ApiMicrosoft365PageMicrosoft365Page;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::nvme-dedicated-server-page.nvme-dedicated-server-page': ApiNvmeDedicatedServerPageNvmeDedicatedServerPage;
+      'api::page-registry.page-registry': ApiPageRegistryPageRegistry;
       'api::pam-mfa-page.pam-mfa-page': ApiPamMfaPagePamMfaPage;
       'api::pricing-page.pricing-page': ApiPricingPagePricingPage;
       'api::reseller-hosting-page.reseller-hosting-page': ApiResellerHostingPageResellerHostingPage;

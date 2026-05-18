@@ -11,6 +11,21 @@ export interface ButtonsButton extends Struct.ComponentSchema {
   };
 }
 
+export interface ButtonsCtaButton extends Struct.ComponentSchema {
+  collectionName: 'components_buttons_cta_buttons';
+  info: {
+    displayName: 'CTA Button';
+  };
+  attributes: {
+    bgColor: Schema.Attribute.String;
+    icon: Schema.Attribute.String;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    link: Schema.Attribute.String & Schema.Attribute.Required;
+    openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    textColor: Schema.Attribute.String;
+  };
+}
+
 export interface CommonImage extends Struct.ComponentSchema {
   collectionName: 'components_common_images';
   info: {
@@ -1042,6 +1057,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'buttons.button': ButtonsButton;
+      'buttons.cta-button': ButtonsCtaButton;
       'common.image': CommonImage;
       'ds.checklist-item': DsChecklistItem;
       'ds.cloud-plan': DsCloudPlan;

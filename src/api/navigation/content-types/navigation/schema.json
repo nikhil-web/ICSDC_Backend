@@ -30,6 +30,11 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "buttons.cta-button",
+      "repeatable": false
     }
   }
 }

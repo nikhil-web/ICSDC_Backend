@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_registries",
+  "info": {
+    "singularName": "page-registry",
+    "pluralName": "page-registries",
+    "displayName": "page-registry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "isLive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
