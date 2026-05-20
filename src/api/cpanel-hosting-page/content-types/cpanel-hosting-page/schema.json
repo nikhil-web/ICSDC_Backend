@@ -160,6 +160,52 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "supportTitle": {
+      "type": "string"
+    },
+    "supportDesc": {
+      "type": "text"
+    },
+    "supportCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "supportImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     }
   }
 }

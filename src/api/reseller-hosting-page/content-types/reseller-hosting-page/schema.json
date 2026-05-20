@@ -143,6 +143,45 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "supportLabel": {
+      "type": "string"
+    },
+    "supportTitle": {
+      "type": "string"
+    },
+    "supportSubtitle": {
+      "type": "text"
+    },
+    "supportCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "relatedLabel": {
+      "type": "string"
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedSubtitle": {
+      "type": "text"
+    },
+    "relatedCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     }
   }
 }

@@ -980,6 +980,10 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     builtinFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     builtinLabel: Schema.Attribute.String;
     builtinSubtitle: Schema.Attribute.Text;
@@ -1020,11 +1024,19 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    supportCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    supportDesc: Schema.Attribute.Text;
+    supportImage: Schema.Attribute.Component<'common.image', false>;
+    supportTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whenCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whenLabel: Schema.Attribute.String;
+    whenSubtitle: Schema.Attribute.Text;
+    whenTitle: Schema.Attribute.String;
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
     whoSubtitle: Schema.Attribute.Text;
@@ -2550,6 +2562,9 @@ export interface ApiResellerHostingPageResellerHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2585,7 +2600,15 @@ export interface ApiResellerHostingPageResellerHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    relatedLabel: Schema.Attribute.String;
+    relatedSubtitle: Schema.Attribute.Text;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
+    supportCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    supportLabel: Schema.Attribute.String;
+    supportSubtitle: Schema.Attribute.Text;
+    supportTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     toolsCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3480,6 +3503,12 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutTitle: Schema.Attribute.String;
+    controlCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    controlDesc: Schema.Attribute.Text;
+    controlImage: Schema.Attribute.Component<'common.image', false>;
+    controlTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3489,6 +3518,9 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     faqContactDesc: Schema.Attribute.Text;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
+    fastDesc: Schema.Attribute.Text;
+    fastImage: Schema.Attribute.Component<'common.image', false>;
+    fastTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -3514,6 +3546,10 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     managedLabel: Schema.Attribute.String;
     managedSubtitle: Schema.Attribute.Text;
     managedTitle: Schema.Attribute.String;
+    packedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    packedLabel: Schema.Attribute.String;
+    packedSubtitle: Schema.Attribute.Text;
+    packedTitle: Schema.Attribute.String;
     performanceCards: Schema.Attribute.Component<'ds.icon-card', true>;
     performanceLabel: Schema.Attribute.String;
     performanceSubtitle: Schema.Attribute.Text;
@@ -3524,6 +3560,10 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    relatedLabel: Schema.Attribute.String;
+    relatedSubtitle: Schema.Attribute.Text;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
@@ -3534,6 +3574,10 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     whyChooseLabel: Schema.Attribute.String;
     whyChooseSubtitle: Schema.Attribute.Text;
     whyChooseTitle: Schema.Attribute.String;
+    whyConsiderCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyConsiderLabel: Schema.Attribute.String;
+    whyConsiderSubtitle: Schema.Attribute.Text;
+    whyConsiderTitle: Schema.Attribute.String;
   };
 }
 

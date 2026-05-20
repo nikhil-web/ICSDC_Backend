@@ -161,6 +161,81 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "whyConsiderLabel": {
+      "type": "string"
+    },
+    "whyConsiderTitle": {
+      "type": "string"
+    },
+    "whyConsiderSubtitle": {
+      "type": "text"
+    },
+    "whyConsiderCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "packedLabel": {
+      "type": "string"
+    },
+    "packedTitle": {
+      "type": "string"
+    },
+    "packedSubtitle": {
+      "type": "text"
+    },
+    "packedCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "fastTitle": {
+      "type": "string"
+    },
+    "fastDesc": {
+      "type": "text"
+    },
+    "fastImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "controlTitle": {
+      "type": "string"
+    },
+    "controlDesc": {
+      "type": "text"
+    },
+    "controlImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "relatedLabel": {
+      "type": "string"
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedSubtitle": {
+      "type": "text"
+    },
+    "relatedCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "controlCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     }
   }
 }
