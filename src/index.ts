@@ -8,6 +8,10 @@
 const PUBLIC_BUILDER_ACTIONS = [
   'api::builder-page.builder-page.find',
   'api::builder-page.builder-page.findOne',
+  // Builder contact-form component posts here from /builder/<slug> pages.
+  // The hand-built contact-us page already relies on this too, but the original
+  // bootstrap left it ungranted.
+  'api::contact-submission.contact-submission.create',
 ];
 
 export default {
