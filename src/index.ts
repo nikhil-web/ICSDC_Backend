@@ -14,6 +14,9 @@ const PUBLIC_BUILDER_ACTIONS = [
   'api::contact-submission.contact-submission.create',
   // Floating WhatsApp widget on every page POSTs a lead here before opening wa.me.
   'api::whatsapp-lead.whatsapp-lead.create',
+  // Live chat widget — visitors create and update their own session via the Node proxy.
+  'api::chat-session.chat-session.create',
+  'api::chat-session.chat-session.update',
 ];
 
 export default {
