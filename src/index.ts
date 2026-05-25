@@ -12,6 +12,8 @@ const PUBLIC_BUILDER_ACTIONS = [
   // The hand-built contact-us page already relies on this too, but the original
   // bootstrap left it ungranted.
   'api::contact-submission.contact-submission.create',
+  // Floating WhatsApp widget on every page POSTs a lead here before opening wa.me.
+  'api::whatsapp-lead.whatsapp-lead.create',
 ];
 
 export default {

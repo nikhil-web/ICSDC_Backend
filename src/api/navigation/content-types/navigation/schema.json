@@ -35,6 +35,11 @@
       "type": "component",
       "component": "buttons.cta-button",
       "repeatable": false
+    },
+    "whatsappWidget": {
+      "type": "component",
+      "component": "buttons.whatsapp-widget",
+      "repeatable": false
     }
   }
 }
