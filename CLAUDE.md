@@ -1,5 +1,11 @@
 # ICSDC Strapi CMS — Claude Notes
 
+This file is read automatically by Claude Code at session start.
+
+**AGENT RULE: After completing any task, update this file immediately.** Add new collections, new components, schema changes, seed patterns, and any gotchas. Keep it comprehensive so any agent can pick up the project cold.
+
+---
+
 ## ⚠️ Critical: Correct Component Field Names
 
 These are the **exact** field names required by each `ds.*` component.
@@ -157,3 +163,28 @@ node import-pages.js "<Page Name>"
    ```
 3. Ensure `src/api/my-page-page/` schema exists with matching attribute names
 4. Restart Strapi (to pick up new content types), then run `node import-pages.js "My Page"`
+
+---
+
+## Navigation Single Type — Component Slots
+
+`src/api/navigation/content-types/navigation/schema.json`
+
+| Slot | Component | Purpose |
+|---|---|---|
+| `navLogo` | `menu.main-logo` | Site logo |
+| `menus` | `menu.nav-menu` (repeatable) | Nav menu groups |
+| `LoginButton` | `buttons.button` | Login CTA in navbar |
+| `ctaButton` | `buttons.cta-button` | Optional extra CTA button in navbar |
+| `whatsappWidget` | `buttons.whatsapp-widget` | WhatsApp button in navbar + lead-capture popover |
+
+### `buttons.whatsapp-widget` fields
+| Field | Type | Notes |
+|---|---|---|
+| `phoneNumber` | string, required | Digits only, no `+` or spaces e.g. `9616382389` |
+| `defaultMessage` | text | Pre-filled chat message |
+| `popoverTitle` | string | Popover heading |
+| `popoverSubtitle` | string | Popover subheading |
+| `enabled` | boolean | Hard kill-switch — false hides button entirely |
+
+> **Note:** `bubblePosition` was removed (2026-05-27). The widget moved from a floating bubble to a navbar button — position is now always anchored to the button element. Do not re-add this field.

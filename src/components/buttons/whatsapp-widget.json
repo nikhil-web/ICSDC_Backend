@@ -22,11 +22,6 @@
       "type": "string",
       "default": "Drop your number and we'll continue on WhatsApp — we usually reply within minutes."
     },
-    "bubblePosition": {
-      "type": "enumeration",
-      "enum": ["bottom-right", "bottom-left"],
-      "default": "bottom-right"
-    },
     "enabled": {
       "type": "boolean",
       "default": true

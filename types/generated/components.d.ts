@@ -33,10 +33,6 @@ export interface ButtonsWhatsappWidget extends Struct.ComponentSchema {
     displayName: 'WhatsApp Widget';
   };
   attributes: {
-    bubblePosition: Schema.Attribute.Enumeration<
-      ['bottom-right', 'bottom-left']
-    > &
-      Schema.Attribute.DefaultTo<'bottom-right'>;
     defaultMessage: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<"Hi, I'd like to know more about ICSDC services.">;
     enabled: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
