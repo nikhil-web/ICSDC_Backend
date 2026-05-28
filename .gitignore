@@ -143,3 +143,6 @@ build
 .strapi-cloud.json
 dist/
 migrate-sqlite-to-pg.js
+
+# Claude Code context file — local only
+CLAUDE.md

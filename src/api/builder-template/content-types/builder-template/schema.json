@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "builder_templates",
+  "info": {
+    "singularName": "builder-template",
+    "pluralName": "builder-templates",
+    "displayName": "Builder Template",
+    "description": "Reusable starting templates for the page builder"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "thumbnailUrl": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "sections": {
+      "type": "json",
+      "required": true,
+      "default": []
+    },
+    "category": {
+      "type": "string",
+      "maxLength": 100
+    }
+  }
+}

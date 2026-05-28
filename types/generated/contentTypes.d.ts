@@ -747,6 +747,136 @@ export interface ApiBareMetalServerPageBareMetalServerPage
   };
 }
 
+export interface ApiBuilderPageBuilderPage extends Struct.CollectionTypeSchema {
+  collectionName: 'builder_pages';
+  info: {
+    description: 'Pages created with the visual page builder';
+    displayName: 'Builder Page';
+    pluralName: 'builder-pages';
+    singularName: 'builder-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    currentVersion: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::builder-page.builder-page'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
+    metaTitle: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    publishedVersion: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    sections: Schema.Attribute.JSON &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<[]>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    templateId: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBuilderTemplateBuilderTemplate
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'builder_templates';
+  info: {
+    description: 'Reusable starting templates for the page builder';
+    displayName: 'Builder Template';
+    pluralName: 'builder-templates';
+    singularName: 'builder-template';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    category: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::builder-template.builder-template'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.JSON &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<[]>;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    thumbnailUrl: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiChatSessionChatSession extends Struct.CollectionTypeSchema {
+  collectionName: 'chat_sessions';
+  info: {
+    description: 'Live chat sessions from the website chat widget';
+    displayName: 'Chat Session';
+    pluralName: 'chat-sessions';
+    singularName: 'chat-session';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    budget: Schema.Attribute.String;
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::chat-session.chat-session'
+    > &
+      Schema.Attribute.Private;
+    messages: Schema.Attribute.JSON & Schema.Attribute.DefaultTo<[]>;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    requirement: Schema.Attribute.Text;
+    service: Schema.Attribute.String;
+    sessionId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    status: Schema.Attribute.Enumeration<['bot', 'live', 'closed']> &
+      Schema.Attribute.DefaultTo<'bot'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCloudHostingPageCloudHostingPage
   extends Struct.SingleTypeSchema {
   collectionName: 'cloud_hosting_pages';
@@ -1979,6 +2109,9 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     controlPanelLabel: Schema.Attribute.String;
     controlPanels: Schema.Attribute.Component<'ds.control-panel', true>;
     controlPanelSubtitle: Schema.Attribute.Text;
@@ -2033,6 +2166,10 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseSubtitle: Schema.Attribute.Text;
+    whyChooseTitle: Schema.Attribute.String;
     whyVpsCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyVpsLabel: Schema.Attribute.String;
     whyVpsSubtitle: Schema.Attribute.Text;
@@ -2344,6 +2481,10 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatsappWidget: Schema.Attribute.Component<
+      'buttons.whatsapp-widget',
+      false
+    >;
   };
 }
 
@@ -2618,6 +2759,10 @@ export interface ApiResellerHostingPageResellerHostingPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatYouGetCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whatYouGetLabel: Schema.Attribute.String;
+    whatYouGetSubtitle: Schema.Attribute.Text;
+    whatYouGetTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
@@ -3146,7 +3291,6 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqContactDesc: Schema.Attribute.Text;
@@ -3172,6 +3316,9 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
       'api::vps-hosting-trial-page.vps-hosting-trial-page'
     > &
       Schema.Attribute.Private;
+    moreServicesCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    moreServicesSubtitle: Schema.Attribute.Text;
+    moreServicesTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
@@ -3268,6 +3415,42 @@ export interface ApiWebHostingPageWebHostingPage
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whyTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiWhatsappLeadWhatsappLead
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'whatsapp_leads';
+  info: {
+    description: 'Phone numbers captured by the floating WhatsApp widget before handoff to WhatsApp';
+    displayName: 'WhatsApp Lead';
+    pluralName: 'whatsapp-leads';
+    singularName: 'whatsapp-lead';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::whatsapp-lead.whatsapp-lead'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    sourceUrl: Schema.Attribute.String;
+    status: Schema.Attribute.Enumeration<['new', 'contacted', 'closed']> &
+      Schema.Attribute.DefaultTo<'new'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    userAgent: Schema.Attribute.String;
   };
 }
 
@@ -3442,12 +3625,22 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
+    aboutWhyTitle: Schema.Attribute.String;
+    advancedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    advancedLabel: Schema.Attribute.String;
+    advancedSubtitle: Schema.Attribute.Text;
+    advancedTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -3466,6 +3659,10 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.vps-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     securityCards: Schema.Attribute.Component<'ds.icon-card', true>;
     securityLabel: Schema.Attribute.String;
@@ -3486,6 +3683,8 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
     whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseSubtitle: Schema.Attribute.Text;
     whyChooseTitle: Schema.Attribute.String;
   };
 }
@@ -3504,6 +3703,7 @@ export interface ApiWordpressHostingPageWordpressHostingPage
   };
   attributes: {
     aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     controlCards: Schema.Attribute.Component<'ds.icon-card', true>;
     controlDesc: Schema.Attribute.Text;
@@ -4167,6 +4367,9 @@ declare module '@strapi/strapi' {
       'api::aws-cloud-hosting-page.aws-cloud-hosting-page': ApiAwsCloudHostingPageAwsCloudHostingPage;
       'api::azure-cloud-hosting-page.azure-cloud-hosting-page': ApiAzureCloudHostingPageAzureCloudHostingPage;
       'api::bare-metal-server-page.bare-metal-server-page': ApiBareMetalServerPageBareMetalServerPage;
+      'api::builder-page.builder-page': ApiBuilderPageBuilderPage;
+      'api::builder-template.builder-template': ApiBuilderTemplateBuilderTemplate;
+      'api::chat-session.chat-session': ApiChatSessionChatSession;
       'api::cloud-hosting-page.cloud-hosting-page': ApiCloudHostingPageCloudHostingPage;
       'api::cloud-storage-page.cloud-storage-page': ApiCloudStoragePageCloudStoragePage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
@@ -4207,6 +4410,7 @@ declare module '@strapi/strapi' {
       'api::vps-hosting-page.vps-hosting-page': ApiVpsHostingPageVpsHostingPage;
       'api::vps-hosting-trial-page.vps-hosting-trial-page': ApiVpsHostingTrialPageVpsHostingTrialPage;
       'api::web-hosting-page.web-hosting-page': ApiWebHostingPageWebHostingPage;
+      'api::whatsapp-lead.whatsapp-lead': ApiWhatsappLeadWhatsappLead;
       'api::why-us-section.why-us-section': ApiWhyUsSectionWhyUsSection;
       'api::windows-cloud-hosting-page.windows-cloud-hosting-page': ApiWindowsCloudHostingPageWindowsCloudHostingPage;
       'api::windows-dedicated-server-page.windows-dedicated-server-page': ApiWindowsDedicatedServerPageWindowsDedicatedServerPage;

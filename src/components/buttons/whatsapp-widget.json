@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_buttons_whatsapp_widgets",
+  "info": {
+    "displayName": "WhatsApp Widget",
+    "description": "Floating WhatsApp bubble + lead-capture popover configuration"
+  },
+  "options": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "defaultMessage": {
+      "type": "text",
+      "default": "Hi, I'd like to know more about ICSDC services."
+    },
+    "popoverTitle": {
+      "type": "string",
+      "default": "Chat with us on WhatsApp"
+    },
+    "popoverSubtitle": {
+      "type": "string",
+      "default": "Drop your number and we'll continue on WhatsApp — we usually reply within minutes."
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

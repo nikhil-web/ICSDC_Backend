@@ -26,6 +26,24 @@ export interface ButtonsCtaButton extends Struct.ComponentSchema {
   };
 }
 
+export interface ButtonsWhatsappWidget extends Struct.ComponentSchema {
+  collectionName: 'components_buttons_whatsapp_widgets';
+  info: {
+    description: 'Floating WhatsApp bubble + lead-capture popover configuration';
+    displayName: 'WhatsApp Widget';
+  };
+  attributes: {
+    defaultMessage: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<"Hi, I'd like to know more about ICSDC services.">;
+    enabled: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    phoneNumber: Schema.Attribute.String & Schema.Attribute.Required;
+    popoverSubtitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<"Drop your number and we'll continue on WhatsApp \u2014 we usually reply within minutes.">;
+    popoverTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Chat with us on WhatsApp'>;
+  };
+}
+
 export interface CommonImage extends Struct.ComponentSchema {
   collectionName: 'components_common_images';
   info: {
@@ -252,7 +270,7 @@ export interface DsIconCard extends Struct.ComponentSchema {
     displayName: 'DS Icon Card';
   };
   attributes: {
-    desc: Schema.Attribute.String;
+    desc: Schema.Attribute.Text;
     icon: Schema.Attribute.String;
     link: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -1058,6 +1076,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'buttons.button': ButtonsButton;
       'buttons.cta-button': ButtonsCtaButton;
+      'buttons.whatsapp-widget': ButtonsWhatsappWidget;
       'common.image': CommonImage;
       'ds.checklist-item': DsChecklistItem;
       'ds.cloud-plan': DsCloudPlan;

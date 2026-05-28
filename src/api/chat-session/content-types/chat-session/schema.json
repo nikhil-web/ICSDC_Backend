@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_sessions",
+  "info": {
+    "singularName": "chat-session",
+    "pluralName": "chat-sessions",
+    "displayName": "Chat Session",
+    "description": "Live chat sessions from the website chat widget"
+  },
+  "options": { "draftAndPublish": false },
+  "pluginOptions": {},
+  "attributes": {
+    "sessionId":   { "type": "string",  "required": true, "unique": true },
+    "name":        { "type": "string"  },
+    "phone":       { "type": "string"  },
+    "service":     { "type": "string"  },
+    "company":     { "type": "string"  },
+    "requirement": { "type": "text"    },
+    "budget":      { "type": "string"  },
+    "status": {
+      "type": "enumeration",
+      "enum": ["bot", "live", "closed"],
+      "default": "bot"
+    },
+    "messages": { "type": "json", "default": [] }
+  }
+}

@@ -93,10 +93,16 @@
       "repeatable": true,
       "component": "ds.numbered-tip"
     },
-    "ctaBand1": {
+    "moreServicesTitle": {
+      "type": "string"
+    },
+    "moreServicesSubtitle": {
+      "type": "text"
+    },
+    "moreServicesCards": {
       "type": "component",
-      "repeatable": false,
-      "component": "ds.cta-band"
+      "repeatable": true,
+      "component": "ds.icon-card"
     },
     "howLabel": {
       "type": "string"

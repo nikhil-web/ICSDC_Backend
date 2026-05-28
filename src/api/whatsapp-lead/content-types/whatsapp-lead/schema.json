@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whatsapp_leads",
+  "info": {
+    "singularName": "whatsapp-lead",
+    "pluralName": "whatsapp-leads",
+    "displayName": "WhatsApp Lead",
+    "description": "Phone numbers captured by the floating WhatsApp widget before handoff to WhatsApp"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "userAgent": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "contacted", "closed"],
+      "default": "new"
+    }
+  }
+}

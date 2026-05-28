@@ -169,6 +169,20 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "whatYouGetLabel": {
+      "type": "string"
+    },
+    "whatYouGetTitle": {
+      "type": "string"
+    },
+    "whatYouGetSubtitle": {
+      "type": "text"
+    },
+    "whatYouGetCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
     "relatedLabel": {
       "type": "string"
     },
