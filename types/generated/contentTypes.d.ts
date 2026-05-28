@@ -2109,6 +2109,9 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     controlPanelLabel: Schema.Attribute.String;
     controlPanels: Schema.Attribute.Component<'ds.control-panel', true>;
     controlPanelSubtitle: Schema.Attribute.Text;
@@ -2163,6 +2166,10 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseSubtitle: Schema.Attribute.Text;
+    whyChooseTitle: Schema.Attribute.String;
     whyVpsCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyVpsLabel: Schema.Attribute.String;
     whyVpsSubtitle: Schema.Attribute.Text;
@@ -2752,6 +2759,10 @@ export interface ApiResellerHostingPageResellerHostingPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatYouGetCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whatYouGetLabel: Schema.Attribute.String;
+    whatYouGetSubtitle: Schema.Attribute.Text;
+    whatYouGetTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
@@ -3280,7 +3291,6 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqContactDesc: Schema.Attribute.Text;
@@ -3306,6 +3316,9 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
       'api::vps-hosting-trial-page.vps-hosting-trial-page'
     > &
       Schema.Attribute.Private;
+    moreServicesCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    moreServicesSubtitle: Schema.Attribute.Text;
+    moreServicesTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
@@ -3612,12 +3625,22 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
+    aboutWhyTitle: Schema.Attribute.String;
+    advancedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    advancedLabel: Schema.Attribute.String;
+    advancedSubtitle: Schema.Attribute.Text;
+    advancedTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -3636,6 +3659,10 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.vps-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     securityCards: Schema.Attribute.Component<'ds.icon-card', true>;
     securityLabel: Schema.Attribute.String;
@@ -3656,6 +3683,8 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
     whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseSubtitle: Schema.Attribute.Text;
     whyChooseTitle: Schema.Attribute.String;
   };
 }
@@ -3674,6 +3703,7 @@ export interface ApiWordpressHostingPageWordpressHostingPage
   };
   attributes: {
     aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     controlCards: Schema.Attribute.Component<'ds.icon-card', true>;
     controlDesc: Schema.Attribute.Text;

@@ -12,11 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
+
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "ds.seo-meta"
     },
+
     "heroEyebrow": {
       "type": "string",
       "default": "⚡ WordPress Hosting"
@@ -50,11 +52,17 @@
       "repeatable": false,
       "component": "ds.cta-link"
     },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "pillars": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
     },
+
     "plansLabel": {
       "type": "string"
     },
@@ -69,6 +77,19 @@
       "repeatable": true,
       "component": "ds.pricing-plan"
     },
+
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+
     "featuresLabel": {
       "type": "string"
     },
@@ -83,11 +104,13 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
     },
+
     "performanceLabel": {
       "type": "string"
     },
@@ -102,80 +125,7 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-    "managedLabel": {
-      "type": "string"
-    },
-    "managedTitle": {
-      "type": "string"
-    },
-    "managedSubtitle": {
-      "type": "text"
-    },
-    "managedFeatures": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.icon-card"
-    },
-    "whyChooseLabel": {
-      "type": "string"
-    },
-    "whyChooseTitle": {
-      "type": "string"
-    },
-    "whyChooseSubtitle": {
-      "type": "text"
-    },
-    "whyChooseCards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.icon-card"
-    },
-    "testimonialTitle": {
-      "type": "string"
-    },
-    "testimonials": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.testimonial-card"
-    },
-    "faqTitle": {
-      "type": "string"
-    },
-    "faqContactTitle": {
-      "type": "string"
-    },
-    "faqContactDesc": {
-      "type": "text"
-    },
-    "faq": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.faq-entry"
-    },
-    "ctaBand2": {
-      "type": "component",
-      "repeatable": false,
-      "component": "ds.cta-band"
-    },
-    "heroImage": {
-      "type": "component",
-      "component": "common.image",
-      "repeatable": false
-    },
-    "whyConsiderLabel": {
-      "type": "string"
-    },
-    "whyConsiderTitle": {
-      "type": "string"
-    },
-    "whyConsiderSubtitle": {
-      "type": "text"
-    },
-    "whyConsiderCards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.icon-card"
-    },
+
     "packedLabel": {
       "type": "string"
     },
@@ -190,11 +140,102 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+
+    "relatedLabel": {
+      "type": "string"
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedSubtitle": {
+      "type": "text"
+    },
+    "relatedCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+
     "fastTitle": {
       "type": "string"
     },
     "fastDesc": {
       "type": "text"
+    },
+
+    "managedLabel": {
+      "type": "string"
+    },
+    "managedTitle": {
+      "type": "string"
+    },
+    "managedSubtitle": {
+      "type": "text"
+    },
+    "managedFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseSubtitle": {
+      "type": "text"
+    },
+    "whyChooseCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+
+    "testimonialTitle": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.testimonial-card"
+    },
+
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqContactTitle": {
+      "type": "string"
+    },
+    "faqContactDesc": {
+      "type": "text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.faq-entry"
+    },
+
+    "ctaBand2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-band"
+    },
+
+    "whyConsiderLabel": {
+      "type": "string"
+    },
+    "whyConsiderTitle": {
+      "type": "string"
+    },
+    "whyConsiderSubtitle": {
+      "type": "text"
+    },
+    "whyConsiderCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     },
     "fastImage": {
       "type": "component",
@@ -212,30 +253,11 @@
       "component": "common.image",
       "repeatable": false
     },
-    "relatedLabel": {
-      "type": "string"
-    },
-    "relatedTitle": {
-      "type": "string"
-    },
-    "relatedSubtitle": {
-      "type": "text"
-    },
-    "relatedCards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "ds.icon-card"
-    },
-    "aboutTitle": {
-      "type": "string"
-    },
-    "aboutDesc": {
-      "type": "text"
-    },
     "controlCards": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
     }
+
   }
 }

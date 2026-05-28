@@ -10,6 +10,11 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "required": false
+    },
     "heroEyebrow": {
       "type": "string"
     },
@@ -32,10 +37,46 @@
       "component": "ds.cta-link",
       "required": false
     },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "pillars": {
       "type": "component",
       "component": "ds.icon-card",
       "repeatable": true
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "component": "ds.vps-plan",
+      "repeatable": true
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutWhyTitle": {
+      "type": "string"
+    },
+    "aboutPoints": {
+      "type": "json"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "featuresLabel": {
       "type": "string"
@@ -61,6 +102,39 @@
       "type": "text"
     },
     "securityCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseSubtitle": {
+      "type": "text"
+    },
+    "whyChooseCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "required": false
+    },
+    "advancedLabel": {
+      "type": "string"
+    },
+    "advancedTitle": {
+      "type": "string"
+    },
+    "advancedSubtitle": {
+      "type": "text"
+    },
+    "advancedCards": {
       "type": "component",
       "component": "ds.icon-card",
       "repeatable": true
@@ -91,29 +165,6 @@
       "component": "ds.icon-card",
       "repeatable": true
     },
-    "whyChooseTitle": {
-      "type": "string"
-    },
-    "whyChooseCards": {
-      "type": "component",
-      "component": "ds.icon-card",
-      "repeatable": true
-    },
-    "ctaBand1": {
-      "type": "component",
-      "component": "ds.cta-band",
-      "required": false
-    },
-    "ctaBand2": {
-      "type": "component",
-      "component": "ds.cta-band",
-      "required": false
-    },
-    "seo": {
-      "type": "component",
-      "component": "ds.seo-meta",
-      "required": false
-    },
     "testimonialTitle": {
       "type": "string"
     },
@@ -122,15 +173,18 @@
       "component": "ds.testimonial-card",
       "repeatable": true
     },
+    "faqTitle": {
+      "type": "string"
+    },
     "faq": {
       "type": "component",
       "component": "ds.faq-entry",
       "repeatable": true
     },
-    "heroImage": {
+    "ctaBand2": {
       "type": "component",
-      "component": "common.image",
-      "repeatable": false
+      "component": "ds.cta-band",
+      "required": false
     }
   }
 }

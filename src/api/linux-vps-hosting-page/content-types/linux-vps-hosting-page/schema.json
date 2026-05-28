@@ -69,6 +69,17 @@
       "repeatable": true,
       "component": "ds.vps-plan"
     },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "powerLabel": {
       "type": "string"
     },
@@ -126,6 +137,20 @@
       "type": "text"
     },
     "whyVpsCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseSubtitle": {
+      "type": "text"
+    },
+    "whyChooseCards": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
