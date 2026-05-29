@@ -2332,6 +2332,16 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
+    advantages: Schema.Attribute.Component<'ds.icon-card', true>;
+    advantagesLabel: Schema.Attribute.String;
+    advantagesTitle: Schema.Attribute.String;
+    costComparison: Schema.Attribute.JSON;
+    cpanelFeaturesDesc: Schema.Attribute.Text;
+    cpanelFeaturesList: Schema.Attribute.JSON;
+    cpanelFeaturesTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2367,12 +2377,14 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    selfManagedComparison: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    useCaseCards: Schema.Attribute.Component<'ds.icon-card', true>;
     useCases: Schema.Attribute.Component<'ds.icon-card', true>;
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
@@ -2381,10 +2393,17 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     whatWeManageLabel: Schema.Attribute.String;
     whatWeManageSubtitle: Schema.Attribute.Text;
     whatWeManageTitle: Schema.Attribute.String;
+    whatYouGetCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whatYouGetLabel: Schema.Attribute.String;
+    whatYouGetSubtitle: Schema.Attribute.Text;
+    whatYouGetTitle: Schema.Attribute.String;
+    whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyLabel: Schema.Attribute.String;
     whyManagedCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyManagedLabel: Schema.Attribute.String;
     whyManagedSubtitle: Schema.Attribute.Text;
     whyManagedTitle: Schema.Attribute.String;
+    whyTitle: Schema.Attribute.String;
   };
 }
 
@@ -3146,7 +3165,7 @@ export interface ApiVirtualMachinePageVirtualMachinePage
 export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
   collectionName: 'vps_cpanel_pages';
   info: {
-    displayName: 'VPS cPanel Page';
+    displayName: 'VPS cPanel Hosting Page';
     pluralName: 'vps-cpanel-pages';
     singularName: 'vps-cpanel-page';
   };
@@ -3155,10 +3174,12 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
   };
   attributes: {
     aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     advantages: Schema.Attribute.Component<'ds.icon-card', true>;
     advantagesLabel: Schema.Attribute.String;
     advantagesTitle: Schema.Attribute.String;
+    costComparison: Schema.Attribute.JSON;
     cpanelFeaturesDesc: Schema.Attribute.Text;
     cpanelFeaturesList: Schema.Attribute.JSON;
     cpanelFeaturesTitle: Schema.Attribute.String;
@@ -3182,13 +3203,26 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    selfManagedComparison: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    useCaseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    useCasesLabel: Schema.Attribute.String;
+    useCasesSubtitle: Schema.Attribute.Text;
+    useCasesTitle: Schema.Attribute.String;
+    whatYouGetCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whatYouGetLabel: Schema.Attribute.String;
+    whatYouGetSubtitle: Schema.Attribute.Text;
+    whatYouGetTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whyTitle: Schema.Attribute.String;
