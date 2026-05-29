@@ -110,6 +110,68 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "advantagesLabel": {
+      "type": "string"
+    },
+    "advantagesTitle": {
+      "type": "string"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whyLabel": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "cpanelFeaturesTitle": {
+      "type": "string"
+    },
+    "cpanelFeaturesDesc": {
+      "type": "text"
+    },
+    "cpanelFeaturesList": {
+      "type": "json"
+    },
+    "costComparison": {
+      "type": "json"
+    },
+    "selfManagedComparison": {
+      "type": "json"
+    },
+    "whatYouGetLabel": {
+      "type": "string"
+    },
+    "whatYouGetTitle": {
+      "type": "string"
+    },
+    "whatYouGetSubtitle": {
+      "type": "text"
+    },
+    "whatYouGetCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
     "useCasesLabel": {
       "type": "string"
     },
@@ -120,6 +182,11 @@
       "type": "text"
     },
     "useCases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "useCaseCards": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"

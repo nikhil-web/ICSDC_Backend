@@ -4,7 +4,7 @@
   "info": {
     "singularName": "vps-cpanel-page",
     "pluralName": "vps-cpanel-pages",
-    "displayName": "VPS cPanel Page"
+    "displayName": "VPS cPanel Hosting Page"
   },
   "options": {
     "draftAndPublish": true
@@ -44,6 +44,11 @@
     },
     "aboutDesc": {
       "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "advantagesLabel": {
       "type": "string"
@@ -106,6 +111,54 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "costComparison": {
+      "type": "json"
+    },
+    "selfManagedComparison": {
+      "type": "json"
+    },
+    "whatYouGetLabel": {
+      "type": "string"
+    },
+    "whatYouGetTitle": {
+      "type": "string"
+    },
+    "whatYouGetSubtitle": {
+      "type": "text"
+    },
+    "whatYouGetCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "useCasesLabel": {
+      "type": "string"
+    },
+    "useCasesTitle": {
+      "type": "string"
+    },
+    "useCasesSubtitle": {
+      "type": "text"
+    },
+    "useCaseCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     }
   }
 }
