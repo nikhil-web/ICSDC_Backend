@@ -1246,6 +1246,7 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     servicesDescription: Schema.Attribute.Text;
     servicesFooterText: Schema.Attribute.Text;
     servicesImage: Schema.Attribute.String;
+    servicesImage2: Schema.Attribute.Component<'common.image', false>;
     servicesImageAlt: Schema.Attribute.String;
     servicesLabel: Schema.Attribute.String;
     servicesTitle: Schema.Attribute.String;

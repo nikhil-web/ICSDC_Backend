@@ -92,6 +92,11 @@
     "servicesImageAlt": {
       "type": "string"
     },
+    "servicesImage2": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "serviceButtons": {
       "type": "component",
       "component": "ds.service-button",
