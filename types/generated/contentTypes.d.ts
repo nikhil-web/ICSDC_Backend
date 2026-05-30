@@ -731,6 +731,9 @@ export interface ApiBareMetalServerPageBareMetalServerPage
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     serverConfigs: Schema.Attribute.Component<'ds.icon-card', true>;
+    strategicCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    strategicLabel: Schema.Attribute.String;
+    strategicTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -2088,9 +2091,14 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
     whatDescription: Schema.Attribute.Text;
+    whatImage: Schema.Attribute.Component<'common.image', false>;
     whatLabel: Schema.Attribute.String;
     whatTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseDescription: Schema.Attribute.Text;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChoosePoints: Schema.Attribute.JSON;
+    whyChooseTitle: Schema.Attribute.String;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;

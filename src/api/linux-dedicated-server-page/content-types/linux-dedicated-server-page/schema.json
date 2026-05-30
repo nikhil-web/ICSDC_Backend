@@ -61,6 +61,11 @@
     "whatDescription": {
       "type": "text"
     },
+    "whatImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "whyLabel": {
       "type": "string"
     },
@@ -102,6 +107,18 @@
       "type": "component",
       "component": "ds.checklist-item",
       "repeatable": true
+    },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseDescription": {
+      "type": "text"
+    },
+    "whyChoosePoints": {
+      "type": "json"
     },
     "supportLabel": {
       "type": "string"

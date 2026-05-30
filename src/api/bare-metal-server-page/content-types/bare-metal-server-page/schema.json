@@ -51,6 +51,17 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "strategicLabel": {
+      "type": "string"
+    },
+    "strategicTitle": {
+      "type": "string"
+    },
+    "strategicCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
     "configsLabel": {
       "type": "string"
     },
