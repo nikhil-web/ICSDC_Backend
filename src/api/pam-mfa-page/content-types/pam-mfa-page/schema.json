@@ -132,6 +132,10 @@
       "component": "ds.cta-band",
       "repeatable": false
     },
+    "heroFormEnabled": {
+      "type": "boolean",
+      "default": false
+    },
     "heroImage": {
       "type": "component",
       "component": "common.image",

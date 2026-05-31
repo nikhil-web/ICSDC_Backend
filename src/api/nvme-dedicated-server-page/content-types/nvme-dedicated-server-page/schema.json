@@ -82,6 +82,12 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "upgradeTitle": {
+      "type": "string"
+    },
+    "upgradeDesc": {
+      "type": "text"
+    },
     "whyNvmeLabel": {
       "type": "string"
     },

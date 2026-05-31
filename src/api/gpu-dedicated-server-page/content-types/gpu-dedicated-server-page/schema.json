@@ -93,6 +93,18 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "gpuCompareLabel": {
+      "type": "string"
+    },
+    "gpuCompareTitle": {
+      "type": "string"
+    },
+    "gpuCompareSubtitle": {
+      "type": "text"
+    },
+    "gpuCompareRows": {
+      "type": "json"
+    },
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
@@ -125,6 +137,18 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenPoints": {
+      "type": "json"
+    },
+    "relatedServices": {
+      "type": "json"
     },
     "testimonialTitle": {
       "type": "string"
