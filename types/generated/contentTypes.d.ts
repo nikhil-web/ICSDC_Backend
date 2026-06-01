@@ -2920,6 +2920,7 @@ export interface ApiSslCertificatePageSslCertificatePage
     powerLabel: Schema.Attribute.String;
     powerTitle: Schema.Attribute.String;
     pricingDesc: Schema.Attribute.Text;
+    pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
