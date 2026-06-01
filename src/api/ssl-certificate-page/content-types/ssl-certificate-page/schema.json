@@ -45,6 +45,11 @@
     "pricingDesc": {
       "type": "text"
     },
+    "pricingPlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
     "offersLabel": {
       "type": "string"
     },

@@ -118,6 +118,11 @@
     "osDesc": {
       "type": "text"
     },
+    "osImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "compareTitle": {
       "type": "string"
     },
@@ -157,6 +162,11 @@
       "component": "ds.cta-band"
     },
     "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "aboutImage": {
       "type": "component",
       "component": "common.image",
       "repeatable": false

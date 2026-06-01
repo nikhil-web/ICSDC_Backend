@@ -731,6 +731,9 @@ export interface ApiBareMetalServerPageBareMetalServerPage
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     serverConfigs: Schema.Attribute.Component<'ds.icon-card', true>;
+    strategicCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    strategicLabel: Schema.Attribute.String;
+    strategicTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -1476,12 +1479,15 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     envCards: Schema.Attribute.Component<'ds.icon-card', true>;
     envLabel: Schema.Attribute.String;
+    envSubtitle: Schema.Attribute.Text;
     envTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroFormEnabled: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -1492,10 +1498,15 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pricingDesc: Schema.Attribute.Text;
+    pricingLabel: Schema.Attribute.String;
+    pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     servicesCards: Schema.Attribute.Component<'ds.icon-card', true>;
     servicesLabel: Schema.Attribute.String;
+    servicesSubtitle: Schema.Attribute.Text;
     servicesTitle: Schema.Attribute.String;
     strengthCards: Schema.Attribute.Component<'ds.icon-card', true>;
     strengthLabel: Schema.Attribute.String;
@@ -1827,6 +1838,10 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
+    gpuCompareLabel: Schema.Attribute.String;
+    gpuCompareRows: Schema.Attribute.JSON;
+    gpuCompareSubtitle: Schema.Attribute.Text;
+    gpuCompareTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
@@ -1853,6 +1868,7 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedServices: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     techLabel: Schema.Attribute.String;
     techSubtitle: Schema.Attribute.Text;
@@ -1866,6 +1882,9 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     usecasesLabel: Schema.Attribute.String;
     usecasesSubtitle: Schema.Attribute.Text;
     usecasesTitle: Schema.Attribute.String;
+    whenLabel: Schema.Attribute.String;
+    whenPoints: Schema.Attribute.JSON;
+    whenTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
@@ -2088,9 +2107,14 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
     whatDescription: Schema.Attribute.Text;
+    whatImage: Schema.Attribute.Component<'common.image', false>;
     whatLabel: Schema.Attribute.String;
     whatTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseDescription: Schema.Attribute.Text;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChoosePoints: Schema.Attribute.JSON;
+    whyChooseTitle: Schema.Attribute.String;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
@@ -2264,6 +2288,7 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
   };
   attributes: {
     aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutNote: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
     baremetalPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
@@ -2293,6 +2318,7 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     > &
       Schema.Attribute.Private;
     osDesc: Schema.Attribute.Text;
+    osImage: Schema.Attribute.Component<'common.image', false>;
     osTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plansSubtitle: Schema.Attribute.String;
@@ -2561,6 +2587,8 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    upgradeDesc: Schema.Attribute.Text;
+    upgradeTitle: Schema.Attribute.String;
     useCases: Schema.Attribute.Component<'ds.icon-card', true>;
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
@@ -2634,6 +2662,8 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroFormEnabled: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -2890,6 +2920,7 @@ export interface ApiSslCertificatePageSslCertificatePage
     powerLabel: Schema.Attribute.String;
     powerTitle: Schema.Attribute.String;
     pricingDesc: Schema.Attribute.Text;
+    pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
@@ -2988,6 +3019,8 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroFormEnabled: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -2999,9 +3032,15 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     offeringsCards: Schema.Attribute.Component<'ds.icon-card', true>;
     offeringsLabel: Schema.Attribute.String;
+    offeringsSubtitle: Schema.Attribute.Text;
     offeringsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pricingDesc: Schema.Attribute.Text;
+    pricingLabel: Schema.Attribute.String;
+    pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    pricingTitle: Schema.Attribute.String;
     processLabel: Schema.Attribute.String;
+    processSubtitle: Schema.Attribute.Text;
     processTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
@@ -3011,8 +3050,15 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatClosing: Schema.Attribute.Text;
     whatDesc: Schema.Attribute.Text;
+    whatLayers: Schema.Attribute.JSON;
     whatTitle: Schema.Attribute.String;
+    whenClosing: Schema.Attribute.Text;
+    whenLabel: Schema.Attribute.String;
+    whenPoints: Schema.Attribute.Component<'ds.numbered-tip', true>;
+    whenSubtitle: Schema.Attribute.Text;
+    whenTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyChooseLabel: Schema.Attribute.String;

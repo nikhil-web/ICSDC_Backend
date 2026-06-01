@@ -39,6 +39,20 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "pricingLabel": {
+      "type": "string"
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingDesc": {
+      "type": "text"
+    },
+    "pricingPlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
     "whyLabel": {
       "type": "string"
     },
@@ -54,6 +68,12 @@
       "type": "string"
     },
     "whatDesc": {
+      "type": "text"
+    },
+    "whatLayers": {
+      "type": "json"
+    },
+    "whatClosing": {
       "type": "text"
     },
     "whyChooseLabel": {
@@ -78,6 +98,9 @@
     "offeringsTitle": {
       "type": "string"
     },
+    "offeringsSubtitle": {
+      "type": "text"
+    },
     "offeringsCards": {
       "type": "component",
       "repeatable": true,
@@ -89,10 +112,30 @@
     "processTitle": {
       "type": "string"
     },
+    "processSubtitle": {
+      "type": "text"
+    },
     "steps": {
       "type": "component",
       "repeatable": true,
       "component": "ds.numbered-tip"
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.numbered-tip"
+    },
+    "whenClosing": {
+      "type": "text"
     },
     "testimonialTitle": {
       "type": "string"
@@ -114,6 +157,10 @@
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
+    },
+    "heroFormEnabled": {
+      "type": "boolean",
+      "default": false
     },
     "heroImage": {
       "type": "component",
