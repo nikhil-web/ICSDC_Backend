@@ -1479,6 +1479,7 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     envCards: Schema.Attribute.Component<'ds.icon-card', true>;
     envLabel: Schema.Attribute.String;
+    envSubtitle: Schema.Attribute.Text;
     envTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqTitle: Schema.Attribute.String;
@@ -1497,10 +1498,15 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pricingDesc: Schema.Attribute.Text;
+    pricingLabel: Schema.Attribute.String;
+    pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     servicesCards: Schema.Attribute.Component<'ds.icon-card', true>;
     servicesLabel: Schema.Attribute.String;
+    servicesSubtitle: Schema.Attribute.Text;
     servicesTitle: Schema.Attribute.String;
     strengthCards: Schema.Attribute.Component<'ds.icon-card', true>;
     strengthLabel: Schema.Attribute.String;

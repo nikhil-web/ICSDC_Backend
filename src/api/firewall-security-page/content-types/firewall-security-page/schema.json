@@ -73,6 +73,9 @@
     "envTitle": {
       "type": "string"
     },
+    "envSubtitle": {
+      "type": "text"
+    },
     "envCards": {
       "type": "component",
       "repeatable": true,
@@ -83,11 +86,28 @@
       "repeatable": false,
       "component": "ds.cta-band"
     },
+    "pricingLabel": {
+      "type": "string"
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingDesc": {
+      "type": "text"
+    },
+    "pricingPlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
     "servicesLabel": {
       "type": "string"
     },
     "servicesTitle": {
       "type": "string"
+    },
+    "servicesSubtitle": {
+      "type": "text"
     },
     "servicesCards": {
       "type": "component",
