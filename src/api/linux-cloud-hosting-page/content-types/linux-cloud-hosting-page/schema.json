@@ -67,7 +67,22 @@
     "plans": {
       "type": "component",
       "repeatable": true,
-      "component": "ds.cloud-plan"
+      "component": "ds.pricing-plan"
+    },
+    "whyNeedTitle": {
+      "type": "string"
+    },
+    "whyNeedDesc": {
+      "type": "text"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseDesc": {
+      "type": "text"
+    },
+    "whyChoosePoints": {
+      "type": "json"
     },
     "powerLabel": {
       "type": "string"
@@ -143,6 +158,9 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "relatedCards": {
+      "type": "json"
     },
     "testimonialTitle": {
       "type": "string"

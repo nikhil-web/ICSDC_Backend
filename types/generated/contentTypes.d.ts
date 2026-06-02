@@ -2013,7 +2013,7 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    plans: Schema.Attribute.Component<'ds.cloud-plan', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
@@ -2022,6 +2022,7 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     powerSubtitle: Schema.Attribute.Text;
     powerTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
@@ -2032,10 +2033,15 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whyChooseDesc: Schema.Attribute.Text;
+    whyChoosePoints: Schema.Attribute.JSON;
+    whyChooseTitle: Schema.Attribute.String;
     whyLinuxCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLinuxLabel: Schema.Attribute.String;
     whyLinuxSubtitle: Schema.Attribute.Text;
     whyLinuxTitle: Schema.Attribute.String;
+    whyNeedDesc: Schema.Attribute.Text;
+    whyNeedTitle: Schema.Attribute.String;
     workloadFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     workloadsLabel: Schema.Attribute.String;
     workloadsSubtitle: Schema.Attribute.Text;
