@@ -37,6 +37,34 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutPoints": {
+      "type": "json"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "featuresLabel": {
       "type": "string"
     },
@@ -61,6 +89,20 @@
       "type": "text"
     },
     "whyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "advancedLabel": {
+      "type": "string"
+    },
+    "advancedTitle": {
+      "type": "string"
+    },
+    "advancedSubtitle": {
+      "type": "text"
+    },
+    "advancedCards": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
@@ -120,6 +162,9 @@
       "type": "component",
       "component": "ds.faq-entry",
       "repeatable": true
+    },
+    "relatedCards": {
+      "type": "json"
     },
     "heroImage": {
       "type": "component",

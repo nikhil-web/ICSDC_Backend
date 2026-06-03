@@ -1769,6 +1769,11 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    deployBadges: Schema.Attribute.JSON;
+    deployCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    deployLabel: Schema.Attribute.String;
+    deploySubtitle: Schema.Attribute.Text;
+    deployTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqContactDesc: Schema.Attribute.Text;
     faqContactTitle: Schema.Attribute.String;
@@ -1788,6 +1793,10 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     heroTopBadge: Schema.Attribute.String;
+    infraClosing: Schema.Attribute.String;
+    infraDesc: Schema.Attribute.Text;
+    infraPoints: Schema.Attribute.JSON;
+    infraTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1799,16 +1808,27 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
+    portfolioImage: Schema.Attribute.Component<'common.image', false>;
     portfolioLabel: Schema.Attribute.String;
     portfolioSubtitle: Schema.Attribute.Text;
     portfolioTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
+    toolsCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    toolsLabel: Schema.Attribute.String;
+    toolsSubtitle: Schema.Attribute.Text;
+    toolsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whoLabel: Schema.Attribute.String;
+    whoSubtitle: Schema.Attribute.Text;
+    whoTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
@@ -3582,6 +3602,14 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
+    advancedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    advancedLabel: Schema.Attribute.String;
+    advancedSubtitle: Schema.Attribute.Text;
+    advancedTitle: Schema.Attribute.String;
     appCards: Schema.Attribute.Component<'ds.icon-card', true>;
     appsLabel: Schema.Attribute.String;
     appsSubtitle: Schema.Attribute.Text;
@@ -3610,7 +3638,12 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;

@@ -98,14 +98,19 @@
       "repeatable": false,
       "component": "ds.cta-band"
     },
-    "portfolioLabel": {
-      "type": "string"
-    },
     "portfolioTitle": {
       "type": "string"
     },
     "portfolioSubtitle": {
       "type": "text"
+    },
+    "portfolioImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "portfolioLabel": {
+      "type": "string"
     },
     "gpuPortfolio": {
       "type": "component",
@@ -157,6 +162,69 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "deployLabel": {
+      "type": "string"
+    },
+    "deployTitle": {
+      "type": "string"
+    },
+    "deploySubtitle": {
+      "type": "text"
+    },
+    "deployCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "deployBadges": {
+      "type": "json"
+    },
+    "infraTitle": {
+      "type": "string"
+    },
+    "infraDesc": {
+      "type": "text"
+    },
+    "infraPoints": {
+      "type": "json"
+    },
+    "infraClosing": {
+      "type": "string"
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedCards": {
+      "type": "json"
+    },
+    "toolsLabel": {
+      "type": "string"
+    },
+    "toolsTitle": {
+      "type": "string"
+    },
+    "toolsSubtitle": {
+      "type": "text"
+    },
+    "toolsCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whoLabel": {
+      "type": "string"
+    },
+    "whoTitle": {
+      "type": "string"
+    },
+    "whoSubtitle": {
+      "type": "text"
+    },
+    "whoCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
     }
   }
 }
