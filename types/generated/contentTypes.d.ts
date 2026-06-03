@@ -3582,6 +3582,14 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
+    advancedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    advancedLabel: Schema.Attribute.String;
+    advancedSubtitle: Schema.Attribute.Text;
+    advancedTitle: Schema.Attribute.String;
     appCards: Schema.Attribute.Component<'ds.icon-card', true>;
     appsLabel: Schema.Attribute.String;
     appsSubtitle: Schema.Attribute.Text;
@@ -3610,7 +3618,12 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
