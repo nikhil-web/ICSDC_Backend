@@ -569,6 +569,7 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.when-card', true>;
     aboutLabel: Schema.Attribute.String;
+    aboutLink: Schema.Attribute.Component<'ds.cta-link', false>;
     aboutTitle: Schema.Attribute.String;
     comparisonColumns: Schema.Attribute.JSON;
     comparisonLabel: Schema.Attribute.String;
@@ -580,8 +581,16 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    dedicatedCtaLink: Schema.Attribute.String;
+    dedicatedCtaText: Schema.Attribute.String;
+    dedicatedDesc: Schema.Attribute.Text;
+    dedicatedImage: Schema.Attribute.Component<'common.image', false>;
+    dedicatedTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqTitle: Schema.Attribute.String;
+    featureBlocks: Schema.Attribute.JSON;
+    featureBlocksLabel: Schema.Attribute.String;
+    featureBlocksTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
@@ -596,6 +605,10 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     services: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -611,6 +624,9 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whyChooseImage: Schema.Attribute.Component<'common.image', false>;
+    whyChooseParas: Schema.Attribute.JSON;
+    whyChooseTitle: Schema.Attribute.String;
   };
 }
 
@@ -628,6 +644,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
   attributes: {
     aboutDescription: Schema.Attribute.Text;
     aboutImage: Schema.Attribute.Media<'images'>;
+    aboutItems: Schema.Attribute.Component<'ds.icon-card', true>;
     aboutTitle: Schema.Attribute.String;
     advantages: Schema.Attribute.Component<'ds.icon-card', true>;
     advantagesLabel: Schema.Attribute.String;
@@ -642,11 +659,17 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
+    ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
+    heroFormEnabled: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
     heroFormSubtitle: Schema.Attribute.String;
     heroFormTitle: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
+    heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -655,9 +678,16 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingDescription: Schema.Attribute.Text;
+    pricingNote: Schema.Attribute.String;
+    pricingPoints: Schema.Attribute.JSON;
     pricingTitle: Schema.Attribute.String;
+    processImage: Schema.Attribute.Component<'common.image', false>;
     processLabel: Schema.Attribute.String;
     processSteps: Schema.Attribute.Component<'ds.when-card', true>;
     processSubtitle: Schema.Attribute.Text;
@@ -665,6 +695,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     publishedAt: Schema.Attribute.DateTime;
     securityDescription: Schema.Attribute.Text;
     securityFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
+    securityImage: Schema.Attribute.Component<'common.image', false>;
     securityLabel: Schema.Attribute.String;
     securityTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
@@ -679,6 +710,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
       Schema.Attribute.Private;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
+    whySubheading: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
   };
