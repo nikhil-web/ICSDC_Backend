@@ -2241,6 +2241,9 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2274,6 +2277,8 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
       'api::managed-cloud-hosting-page.managed-cloud-hosting-page'
     > &
       Schema.Attribute.Private;
+    migrationImage: Schema.Attribute.Component<'common.image', false>;
+    migrationPoints: Schema.Attribute.JSON;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
@@ -2294,6 +2299,10 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whenLabel: Schema.Attribute.String;
+    whenPoints: Schema.Attribute.JSON;
+    whenSubtitle: Schema.Attribute.Text;
+    whenTitle: Schema.Attribute.String;
     whyManagedCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyManagedLabel: Schema.Attribute.String;
     whyManagedSubtitle: Schema.Attribute.Text;
