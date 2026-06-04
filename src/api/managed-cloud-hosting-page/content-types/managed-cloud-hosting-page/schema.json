@@ -174,6 +174,37 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "migrationPoints": {
+      "type": "json"
+    },
+    "migrationImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenPoints": {
+      "type": "json"
     }
   }
 }
