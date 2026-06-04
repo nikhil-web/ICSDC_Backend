@@ -14,14 +14,31 @@
     "heroTitle": {
       "type": "string"
     },
+    "heroSubtitle": {
+      "type": "string"
+    },
     "heroDescription": {
       "type": "text"
+    },
+    "heroCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
     },
     "heroFormTitle": {
       "type": "string"
     },
     "heroFormSubtitle": {
       "type": "string"
+    },
+    "heroFormEnabled": {
+      "type": "boolean",
+      "default": true
     },
     "pillars": {
       "type": "component",
@@ -80,6 +97,9 @@
     "whySubtitle": {
       "type": "text"
     },
+    "whySubheading": {
+      "type": "string"
+    },
     "whyCards": {
       "type": "component",
       "component": "ds.icon-card",
@@ -98,6 +118,11 @@
       "type": "component",
       "component": "ds.when-card",
       "repeatable": true
+    },
+    "processImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "techLabel": {
       "type": "string"
@@ -127,11 +152,19 @@
       "component": "ds.icon-card",
       "repeatable": true
     },
+    "securityImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "pricingTitle": {
       "type": "string"
     },
     "pricingDescription": {
       "type": "text"
+    },
+    "pricingNote": {
+      "type": "string"
     },
     "pricingCtaPrimary": {
       "type": "component",
@@ -139,6 +172,11 @@
       "repeatable": false
     },
     "ctaBand1": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    },
+    "ctaBand2": {
       "type": "component",
       "component": "ds.cta-band",
       "repeatable": false
@@ -165,6 +203,28 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "aboutItems": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "component": "ds.pricing-plan",
+      "repeatable": true
+    },
+    "pricingPoints": {
+      "type": "json"
     }
   }
 }

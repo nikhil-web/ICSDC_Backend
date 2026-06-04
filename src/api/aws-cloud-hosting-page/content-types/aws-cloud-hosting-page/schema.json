@@ -63,6 +63,11 @@
       "component": "ds.when-card",
       "repeatable": true
     },
+    "aboutLink": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
     "strengthsLabel": {
       "type": "string"
     },
@@ -135,6 +140,57 @@
       "repeatable": true
     },
     "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "component": "ds.pricing-plan",
+      "repeatable": true
+    },
+    "dedicatedTitle": {
+      "type": "string"
+    },
+    "dedicatedDesc": {
+      "type": "text"
+    },
+    "dedicatedCtaText": {
+      "type": "string"
+    },
+    "dedicatedCtaLink": {
+      "type": "string"
+    },
+    "dedicatedImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "featureBlocksLabel": {
+      "type": "string"
+    },
+    "featureBlocksTitle": {
+      "type": "string"
+    },
+    "featureBlocks": {
+      "type": "json"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseParas": {
+      "type": "json"
+    },
+    "whyChooseImage": {
       "type": "component",
       "component": "common.image",
       "repeatable": false
