@@ -45,6 +45,11 @@
     "aboutDesc": {
       "type": "text"
     },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "improvementsLabel": {
       "type": "string"
     },
@@ -77,6 +82,20 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
     },
     "ctaBand1": {
       "type": "component",
