@@ -3021,6 +3021,7 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
   };
   attributes: {
     aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     compareLabel: Schema.Attribute.String;
     compareRows: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3048,6 +3049,10 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
