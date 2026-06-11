@@ -156,6 +156,30 @@
       "repeatable": false,
       "component": "ds.cta-band"
     },
+    "heroFormEnabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "compareTitle": {
+      "type": "string"
+    },
+    "compareSubtitle": {
+      "type": "text"
+    },
+    "compareRows": {
+      "type": "json"
+    },
     "heroImage": {
       "type": "component",
       "component": "common.image",
