@@ -1658,6 +1658,12 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
+    compareRows: Schema.Attribute.JSON;
+    compareSubtitle: Schema.Attribute.Text;
+    compareTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1671,6 +1677,8 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
     heroEyebrow: Schema.Attribute.String;
+    heroFormEnabled: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
     heroStatusTitle: Schema.Attribute.String;
