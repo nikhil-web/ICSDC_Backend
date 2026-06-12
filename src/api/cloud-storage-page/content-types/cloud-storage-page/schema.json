@@ -65,6 +65,17 @@
       "repeatable": true,
       "component": "ds.pricing-plan"
     },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "featuresLabel": {
       "type": "string"
     },
@@ -78,6 +89,39 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenSubtitle": {
+      "type": "text"
+    },
+    "whenPoints": {
+      "type": "json"
+    },
+    "audienceLabel": {
+      "type": "string"
+    },
+    "audienceTitle": {
+      "type": "string"
+    },
+    "audienceSubtitle": {
+      "type": "text"
+    },
+    "audienceGroups": {
+      "type": "json"
+    },
+    "relatedLabel": {
+      "type": "string"
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedCards": {
+      "type": "json"
     },
     "ctaBand1": {
       "type": "component",

@@ -1004,6 +1004,13 @@ export interface ApiCloudStoragePageCloudStoragePage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
+    audienceGroups: Schema.Attribute.JSON;
+    audienceLabel: Schema.Attribute.String;
+    audienceSubtitle: Schema.Attribute.Text;
+    audienceTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1039,12 +1046,19 @@ export interface ApiCloudStoragePageCloudStoragePage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
+    relatedLabel: Schema.Attribute.String;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whenLabel: Schema.Attribute.String;
+    whenPoints: Schema.Attribute.JSON;
+    whenSubtitle: Schema.Attribute.Text;
+    whenTitle: Schema.Attribute.String;
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
     whoSubtitle: Schema.Attribute.Text;
