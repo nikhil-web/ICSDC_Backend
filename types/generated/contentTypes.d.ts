@@ -3230,9 +3230,15 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     draftAndPublish: true;
   };
   attributes: {
+    blockStorageCta: Schema.Attribute.Component<'ds.cta-link', false>;
     blockStorageDescription: Schema.Attribute.Text;
+    blockStorageImage: Schema.Attribute.Component<'common.image', false>;
+    blockStorageSubheading: Schema.Attribute.String;
     blockStorageSubtitle: Schema.Attribute.Text;
     blockStorageTitle: Schema.Attribute.String;
+    compareRows: Schema.Attribute.JSON;
+    compareSubtitle: Schema.Attribute.Text;
+    compareTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3284,6 +3290,11 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     whenTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
+    whyOverDesc: Schema.Attribute.Text;
+    whyOverImage: Schema.Attribute.Component<'common.image', false>;
+    whyOverPoints: Schema.Attribute.JSON;
+    whyOverPointsLabel: Schema.Attribute.String;
+    whyOverTitle: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
   };

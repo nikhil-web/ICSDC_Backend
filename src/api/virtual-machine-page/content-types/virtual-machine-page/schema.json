@@ -104,8 +104,21 @@
     "blockStorageSubtitle": {
       "type": "text"
     },
+    "blockStorageSubheading": {
+      "type": "string"
+    },
     "blockStorageDescription": {
       "type": "text"
+    },
+    "blockStorageCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "blockStorageImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "useCasesLabel": {
       "type": "string"
@@ -134,6 +147,32 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "compareTitle": {
+      "type": "string"
+    },
+    "compareSubtitle": {
+      "type": "text"
+    },
+    "compareRows": {
+      "type": "json"
+    },
+    "whyOverTitle": {
+      "type": "string"
+    },
+    "whyOverDesc": {
+      "type": "text"
+    },
+    "whyOverPointsLabel": {
+      "type": "string"
+    },
+    "whyOverPoints": {
+      "type": "json"
+    },
+    "whyOverImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "testimonialTitle": {
       "type": "string"
