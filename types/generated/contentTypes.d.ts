@@ -1462,16 +1462,30 @@ export interface ApiEmailHostingPageEmailHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutCta: Schema.Attribute.Component<'ds.cta-link', false>;
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
+    experienceImage: Schema.Attribute.Component<'common.image', false>;
+    experiencePoints: Schema.Attribute.JSON;
+    experienceSubtitle: Schema.Attribute.Text;
+    experienceTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
     featuresTitle: Schema.Attribute.String;
+    handshakeBlocks: Schema.Attribute.JSON;
+    handshakeImage: Schema.Attribute.Component<'common.image', false>;
+    handshakeSubtitle: Schema.Attribute.Text;
+    handshakeTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.Text;
@@ -1485,7 +1499,15 @@ export interface ApiEmailHostingPageEmailHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    realtimeBlocks: Schema.Attribute.JSON;
+    realtimeClosing: Schema.Attribute.String;
+    realtimeSubtitle: Schema.Attribute.Text;
+    realtimeTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     solutions: Schema.Attribute.Component<'shared.solution-card', true>;
     solutionsLabel: Schema.Attribute.String;
@@ -1500,6 +1522,7 @@ export interface ApiEmailHostingPageEmailHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
+    whenImage: Schema.Attribute.Component<'common.image', false>;
   };
 }
 

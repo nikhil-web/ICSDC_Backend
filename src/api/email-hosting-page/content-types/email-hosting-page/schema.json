@@ -28,10 +28,47 @@
       "type": "component",
       "component": "ds.cta-link"
     },
+    "heroImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "pillars": {
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutPoints": {
+      "type": "json"
+    },
+    "aboutCta": {
+      "type": "component",
+      "component": "ds.cta-link"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "featuresLabel": {
       "type": "string"
@@ -47,6 +84,20 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "experienceTitle": {
+      "type": "string"
+    },
+    "experienceSubtitle": {
+      "type": "text"
+    },
+    "experiencePoints": {
+      "type": "json"
+    },
+    "experienceImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "solutionsLabel": {
       "type": "string"
     },
@@ -61,6 +112,20 @@
       "repeatable": true,
       "component": "shared.solution-card"
     },
+    "handshakeTitle": {
+      "type": "string"
+    },
+    "handshakeSubtitle": {
+      "type": "text"
+    },
+    "handshakeBlocks": {
+      "type": "json"
+    },
+    "handshakeImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "useCasesLabel": {
       "type": "string"
     },
@@ -74,6 +139,23 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.icon-card"
+    },
+    "whenImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "realtimeTitle": {
+      "type": "string"
+    },
+    "realtimeSubtitle": {
+      "type": "text"
+    },
+    "realtimeBlocks": {
+      "type": "json"
+    },
+    "realtimeClosing": {
+      "type": "string"
     },
     "ctaBand1": {
       "type": "component",
@@ -95,15 +177,13 @@
       "component": "ds.testimonial-card",
       "repeatable": true
     },
+    "faqTitle": {
+      "type": "string"
+    },
     "faq": {
       "type": "component",
       "component": "ds.faq-entry",
       "repeatable": true
-    },
-    "heroImage": {
-      "type": "component",
-      "component": "common.image",
-      "repeatable": false
     }
   }
 }
