@@ -1810,7 +1810,15 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
+    prodCompareRows: Schema.Attribute.JSON;
+    prodCompareTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    scaleDesc: Schema.Attribute.Text;
+    scaleGroups: Schema.Attribute.JSON;
+    scaleImage: Schema.Attribute.Component<'common.image', false>;
+    scaleTitle: Schema.Attribute.String;
+    secCompareRows: Schema.Attribute.JSON;
+    secCompareTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     steps: Schema.Attribute.Component<'ds.numbered-tip', true>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -1818,6 +1826,10 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    upgradeBlocks: Schema.Attribute.JSON;
+    upgradeDesc: Schema.Attribute.Text;
+    upgradeImage: Schema.Attribute.Component<'common.image', false>;
+    upgradeTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyIcsdcLabel: Schema.Attribute.String;
     whyIcsdcSubtitle: Schema.Attribute.Text;
@@ -4016,7 +4028,18 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
+    collabCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    collabImage: Schema.Attribute.Component<'common.image', false>;
+    collabLabel: Schema.Attribute.String;
+    collabSubtitle: Schema.Attribute.Text;
+    collabTitle: Schema.Attribute.String;
     comparisonColumns: Schema.Attribute.JSON;
+    comparisonCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    comparisonCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     comparisonLabel: Schema.Attribute.String;
     comparisonRows: Schema.Attribute.Component<'zm.comparison-row', true>;
     comparisonSubtitle: Schema.Attribute.Text;
@@ -4059,6 +4082,10 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     migrationSubtitle: Schema.Attribute.Text;
     migrationTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -4070,6 +4097,11 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
+    whyZimbraCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyZimbraImage: Schema.Attribute.Component<'common.image', false>;
+    whyZimbraLabel: Schema.Attribute.String;
+    whyZimbraSubtitle: Schema.Attribute.Text;
+    whyZimbraTitle: Schema.Attribute.String;
   };
 }
 

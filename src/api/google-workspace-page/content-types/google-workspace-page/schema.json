@@ -116,6 +116,46 @@
       "repeatable": true,
       "component": "ds.numbered-tip"
     },
+    "scaleTitle": {
+      "type": "string"
+    },
+    "scaleDesc": {
+      "type": "text"
+    },
+    "scaleGroups": {
+      "type": "json"
+    },
+    "scaleImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "prodCompareTitle": {
+      "type": "string"
+    },
+    "prodCompareRows": {
+      "type": "json"
+    },
+    "secCompareTitle": {
+      "type": "string"
+    },
+    "secCompareRows": {
+      "type": "json"
+    },
+    "upgradeTitle": {
+      "type": "string"
+    },
+    "upgradeDesc": {
+      "type": "text"
+    },
+    "upgradeBlocks": {
+      "type": "json"
+    },
+    "upgradeImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "testimonialTitle": {
       "type": "string"
     },

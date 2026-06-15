@@ -55,6 +55,34 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutPoints": {
+      "type": "json"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "featuresLabel": {
       "type": "string"
     },
@@ -102,6 +130,25 @@
       "repeatable": true,
       "component": "zm.migration-step"
     },
+    "collabLabel": {
+      "type": "string"
+    },
+    "collabTitle": {
+      "type": "string"
+    },
+    "collabSubtitle": {
+      "type": "text"
+    },
+    "collabCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "collabImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
     "comparisonLabel": {
       "type": "string"
     },
@@ -118,6 +165,35 @@
       "type": "component",
       "repeatable": true,
       "component": "zm.comparison-row"
+    },
+    "comparisonCtaPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "comparisonCtaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    },
+    "whyZimbraLabel": {
+      "type": "string"
+    },
+    "whyZimbraTitle": {
+      "type": "string"
+    },
+    "whyZimbraSubtitle": {
+      "type": "text"
+    },
+    "whyZimbraCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "whyZimbraImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     },
     "testimonialTitle": {
       "type": "string"
