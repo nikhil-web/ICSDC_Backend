@@ -2570,10 +2570,14 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     draftAndPublish: true;
   };
   attributes: {
+    advantageRows: Schema.Attribute.JSON;
+    advantageTitle: Schema.Attribute.String;
     backupFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     backupLabel: Schema.Attribute.String;
     backupSubtitle: Schema.Attribute.Text;
     backupTitle: Schema.Attribute.String;
+    comparePlansRows: Schema.Attribute.JSON;
+    comparePlansTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2609,12 +2613,22 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
+    relatedLabel: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
+    toolsCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    toolsLabel: Schema.Attribute.String;
+    toolsSubtitle: Schema.Attribute.Text;
+    toolsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whenImage: Schema.Attribute.Component<'common.image', false>;
+    whenLabel: Schema.Attribute.String;
+    whenPoints: Schema.Attribute.JSON;
+    whenTitle: Schema.Attribute.String;
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
     whoSubtitle: Schema.Attribute.Text;
