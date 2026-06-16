@@ -143,6 +143,52 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "toolsLabel": {
+      "type": "string"
+    },
+    "toolsTitle": {
+      "type": "string"
+    },
+    "toolsSubtitle": {
+      "type": "text"
+    },
+    "toolsCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "advantageTitle": {
+      "type": "string"
+    },
+    "advantageRows": {
+      "type": "json"
+    },
+    "comparePlansTitle": {
+      "type": "string"
+    },
+    "comparePlansRows": {
+      "type": "json"
+    },
+    "whenLabel": {
+      "type": "string"
+    },
+    "whenTitle": {
+      "type": "string"
+    },
+    "whenPoints": {
+      "type": "json"
+    },
+    "whenImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "relatedLabel": {
+      "type": "string"
+    },
+    "relatedCards": {
+      "type": "json"
     }
   }
 }
