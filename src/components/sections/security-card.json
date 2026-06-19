@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_security_cards",
+  "info": {
+    "displayName": "Security Card",
+    "icon": "shield",
+    "description": "Icon + title + description + chip security feature card"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "chip": {
+      "type": "string"
+    }
+  }
+}

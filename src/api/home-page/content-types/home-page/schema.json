@@ -84,6 +84,83 @@
       "component": "sections.who-we-are",
       "repeatable": false
     },
+    "partnerEyebrow": {
+      "type": "string"
+    },
+    "partnerTitle": {
+      "type": "string"
+    },
+    "partnerSubtitle": {
+      "type": "text"
+    },
+    "partnerStats": {
+      "type": "component",
+      "component": "sections.stat-chip",
+      "repeatable": true
+    },
+    "partnerCards": {
+      "type": "component",
+      "component": "sections.tag-card",
+      "repeatable": true
+    },
+    "partnerCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "partnerCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "industryEyebrow": {
+      "type": "string"
+    },
+    "industryTitle": {
+      "type": "string"
+    },
+    "industrySubtitle": {
+      "type": "text"
+    },
+    "industries": {
+      "type": "component",
+      "component": "sections.industry-solution",
+      "repeatable": true
+    },
+    "securityEyebrow": {
+      "type": "string"
+    },
+    "securityTitle": {
+      "type": "string"
+    },
+    "securitySubtitle": {
+      "type": "text"
+    },
+    "complianceBadges": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "securityCards": {
+      "type": "component",
+      "component": "sections.security-card",
+      "repeatable": true
+    },
+    "securityHighlights": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "securityCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "securityCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
     "testimonials": {
       "type": "component",
       "component": "ds.testimonial-card",

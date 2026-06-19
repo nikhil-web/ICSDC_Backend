@@ -851,6 +851,81 @@ export interface SectionsHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsIndustryFeature extends Struct.ComponentSchema {
+  collectionName: 'components_sections_industry_features';
+  info: {
+    description: 'Icon + title + sub mini-feature for an industry panel';
+    displayName: 'Industry Feature';
+    icon: 'bulletList';
+  };
+  attributes: {
+    icon: Schema.Attribute.String;
+    sub: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsIndustrySolution extends Struct.ComponentSchema {
+  collectionName: 'components_sections_industry_solutions';
+  info: {
+    description: 'One industry tab: icon, label, title, desc, features, used-by, CTA';
+    displayName: 'Industry Solution';
+    icon: 'apps';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'ds.cta-link', false>;
+    desc: Schema.Attribute.Text;
+    features: Schema.Attribute.Component<'sections.industry-feature', true>;
+    icon: Schema.Attribute.String;
+    tabLabel: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    usedBy: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsSecurityCard extends Struct.ComponentSchema {
+  collectionName: 'components_sections_security_cards';
+  info: {
+    description: 'Icon + title + description + chip security feature card';
+    displayName: 'Security Card';
+    icon: 'shield';
+  };
+  attributes: {
+    chip: Schema.Attribute.String;
+    desc: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsStatChip extends Struct.ComponentSchema {
+  collectionName: 'components_sections_stat_chips';
+  info: {
+    description: 'Icon + number + label stat pill';
+    displayName: 'Stat Chip';
+    icon: 'chartBubble';
+  };
+  attributes: {
+    icon: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+    number: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsTagCard extends Struct.ComponentSchema {
+  collectionName: 'components_sections_tag_cards';
+  info: {
+    description: 'Tag badge + title + description card';
+    displayName: 'Tag Card';
+    icon: 'bookmark';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsTextImage extends Struct.ComponentSchema {
   collectionName: 'components_sections_text_images';
   info: {
@@ -1016,8 +1091,10 @@ export interface SharedTldCard extends Struct.ComponentSchema {
   };
   attributes: {
     badge: Schema.Attribute.String;
+    description: Schema.Attribute.String;
     extension: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    originalPrice: Schema.Attribute.String;
     price: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -1132,6 +1209,11 @@ declare module '@strapi/strapi' {
       'sections.feature-card': SectionsFeatureCard;
       'sections.footer': SectionsFooter;
       'sections.hero': SectionsHero;
+      'sections.industry-feature': SectionsIndustryFeature;
+      'sections.industry-solution': SectionsIndustrySolution;
+      'sections.security-card': SectionsSecurityCard;
+      'sections.stat-chip': SectionsStatChip;
+      'sections.tag-card': SectionsTagCard;
       'sections.text-image': SectionsTextImage;
       'sections.who-we-are': SectionsWhoWeAre;
       'sections.why-cloud-section': SectionsWhyCloudSection;

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_industry_features",
+  "info": {
+    "displayName": "Industry Feature",
+    "icon": "bulletList",
+    "description": "Icon + title + sub mini-feature for an industry panel"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub": {
+      "type": "string"
+    }
+  }
+}

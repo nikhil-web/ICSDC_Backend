@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_industry_solutions",
+  "info": {
+    "displayName": "Industry Solution",
+    "icon": "apps",
+    "description": "One industry tab: icon, label, title, desc, features, used-by, CTA"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "tabLabel": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.industry-feature"
+    },
+    "usedBy": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ds.cta-link"
+    }
+  }
+}
