@@ -1328,6 +1328,10 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutPoints: Schema.Attribute.JSON;
+    aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1353,6 +1357,9 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    privacyDesc: Schema.Attribute.Text;
+    privacyImage: Schema.Attribute.Component<'common.image', false>;
+    privacyTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -1370,6 +1377,11 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyChooseLabel: Schema.Attribute.String;
+    whyChooseSubtitle: Schema.Attribute.Text;
+    whyChooseTitle: Schema.Attribute.String;
+    whyImage: Schema.Attribute.Component<'common.image', false>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
@@ -2023,6 +2035,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       'sections.cloud-solutions-engineered-section',
       true
     >;
+    complianceBadges: Schema.Attribute.Component<'ds.icon-card', true>;
     contactEmail: Schema.Attribute.String;
     contactEmailHours: Schema.Attribute.String;
     contactPhone: Schema.Attribute.String;
@@ -2041,10 +2054,14 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     globalPresenceTitle: Schema.Attribute.String;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
+    industries: Schema.Attribute.Component<'sections.industry-solution', true>;
+    industryEyebrow: Schema.Attribute.String;
     IndustryLeadingExcellenceValidated: Schema.Attribute.Component<
       'sections.text-image',
       false
     >;
+    industrySubtitle: Schema.Attribute.Text;
+    industryTitle: Schema.Attribute.String;
     LessCloudComplexity: Schema.Attribute.Component<
       'sections.text-image',
       false
@@ -2056,9 +2073,23 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     mainHeading: Schema.Attribute.String;
+    partnerCards: Schema.Attribute.Component<'sections.tag-card', true>;
+    partnerCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    partnerCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    partnerEyebrow: Schema.Attribute.String;
+    partnerStats: Schema.Attribute.Component<'sections.stat-chip', true>;
+    partnerSubtitle: Schema.Attribute.Text;
+    partnerTitle: Schema.Attribute.String;
     price: Schema.Attribute.String;
     priceNote: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    securityCards: Schema.Attribute.Component<'sections.security-card', true>;
+    securityCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    securityCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
+    securityEyebrow: Schema.Attribute.String;
+    securityHighlights: Schema.Attribute.Component<'ds.icon-card', true>;
+    securitySubtitle: Schema.Attribute.Text;
+    securityTitle: Schema.Attribute.String;
     SEO: Schema.Attribute.Component<'ds.seo-meta', false>;
     subHeading: Schema.Attribute.String;
     techPartners: Schema.Attribute.Component<'ds.partner-logo', true>;

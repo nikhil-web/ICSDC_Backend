@@ -8,6 +8,8 @@
   "attributes": {
     "extension": { "type": "string", "required": true },
     "price": { "type": "string", "required": true },
+    "originalPrice": { "type": "string" },
+    "description": { "type": "string" },
     "badge": { "type": "string" },
     "order": { "type": "integer", "default": 0 }
   }

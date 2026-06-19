@@ -127,6 +127,50 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "whyChooseLabel": {
+      "type": "string"
+    },
+    "whyChooseTitle": {
+      "type": "string"
+    },
+    "whyChooseSubtitle": {
+      "type": "text"
+    },
+    "whyChooseCards": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "whyImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "privacyTitle": {
+      "type": "string"
+    },
+    "privacyDesc": {
+      "type": "text"
+    },
+    "privacyImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "aboutPoints": {
+      "type": "json"
+    },
+    "aboutImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
     }
   }
 }

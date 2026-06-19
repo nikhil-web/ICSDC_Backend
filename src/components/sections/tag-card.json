@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_tag_cards",
+  "info": {
+    "displayName": "Tag Card",
+    "icon": "bookmark",
+    "description": "Tag badge + title + description card"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}
