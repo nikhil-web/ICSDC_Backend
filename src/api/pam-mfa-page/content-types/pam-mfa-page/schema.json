@@ -23,7 +23,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -71,7 +75,11 @@
       "type": "string"
     },
     "mattersDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "mattersSteps": {
       "type": "component",
@@ -82,7 +90,11 @@
       "type": "string"
     },
     "pricingDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "ctaBand2": {
       "type": "component",

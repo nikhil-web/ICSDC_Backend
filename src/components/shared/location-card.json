@@ -6,9 +6,24 @@
     "icon": "pinMap"
   },
   "attributes": {
-    "flag": { "type": "string", "required": true },
-    "name": { "type": "string", "required": true },
-    "description": { "type": "text" },
-    "order": { "type": "integer", "default": 0 }
+    "flag": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
   }
 }

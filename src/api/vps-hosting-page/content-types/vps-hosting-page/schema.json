@@ -20,7 +20,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroPrice": {
       "type": "string"
@@ -132,7 +136,11 @@
       "type": "string"
     },
     "globalDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "globalCtaPrimary": {
       "type": "component",

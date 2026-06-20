@@ -28,7 +28,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -114,7 +118,11 @@
       "type": "string"
     },
     "aboutDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "aboutImage": {
       "type": "component",
@@ -147,7 +155,11 @@
       "type": "string"
     },
     "cpanelFeaturesDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "cpanelFeaturesList": {
       "type": "json"
@@ -211,7 +223,11 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",

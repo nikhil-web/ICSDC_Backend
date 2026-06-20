@@ -29,7 +29,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -73,13 +77,21 @@
       "type": "string"
     },
     "whyNeedDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whyChooseTitle": {
       "type": "string"
     },
     "whyChooseDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whyChoosePoints": {
       "type": "json"
@@ -177,7 +189,11 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",

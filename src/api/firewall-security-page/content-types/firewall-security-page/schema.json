@@ -22,7 +22,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -65,7 +69,11 @@
       "type": "string"
     },
     "threatDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "envLabel": {
       "type": "string"
@@ -93,7 +101,11 @@
       "type": "string"
     },
     "pricingDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "pricingPlans": {
       "type": "component",

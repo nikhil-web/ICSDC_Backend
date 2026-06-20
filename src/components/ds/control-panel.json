@@ -5,9 +5,23 @@
     "description": "Hosting control panel option (cPanel, Plesk, DirectAdmin, etc.)"
   },
   "attributes": {
-    "order": { "type": "integer", "default": 0 },
-    "icon": { "type": "string" },
-    "name": { "type": "string", "required": true },
-    "desc": { "type": "string" }
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "icon": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
   }
 }

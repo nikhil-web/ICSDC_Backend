@@ -18,7 +18,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -49,13 +53,19 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "aboutTitle": {
       "type": "string"
     },
     "aboutDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "advantagesLabel": {
       "type": "string"
@@ -145,7 +155,11 @@
       "type": "string"
     },
     "securityDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "securityFeatures": {
       "type": "component",
@@ -161,7 +175,11 @@
       "type": "string"
     },
     "pricingDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "pricingNote": {
       "type": "string"

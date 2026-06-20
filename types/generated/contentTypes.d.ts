@@ -450,14 +450,26 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     dataCentersItems: Schema.Attribute.Text;
     dataCentersTitle: Schema.Attribute.String;
     foundedYear: Schema.Attribute.String;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     howStartedItems: Schema.Attribute.Text;
     howStartedTitle: Schema.Attribute.String;
     journeyTitle: Schema.Attribute.String;
-    lifeDescription: Schema.Attribute.Text;
+    lifeDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     lifeTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -483,9 +495,21 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     whatWeDoTitle: Schema.Attribute.String;
     whereWeOperateItems: Schema.Attribute.Text;
     whereWeOperateTitle: Schema.Attribute.String;
-    whoWeAreDescription: Schema.Attribute.Text;
+    whoWeAreDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whoWeAreTitle: Schema.Attribute.String;
-    whyChooseDescription: Schema.Attribute.Text;
+    whyChooseDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyChooseTitle: Schema.Attribute.String;
   };
 }
@@ -502,7 +526,13 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDescription: Schema.Attribute.Text;
+    aboutDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     aboutPoints: Schema.Attribute.Component<'ds.icon-card', true>;
     aboutPointsTitle: Schema.Attribute.String;
@@ -520,7 +550,13 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStats: Schema.Attribute.Component<'ds.perf-stat', true>;
@@ -565,7 +601,13 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDescription: Schema.Attribute.Text;
+    aboutDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.when-card', true>;
     aboutLabel: Schema.Attribute.String;
@@ -583,7 +625,13 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     dedicatedCtaLink: Schema.Attribute.String;
     dedicatedCtaText: Schema.Attribute.String;
-    dedicatedDesc: Schema.Attribute.Text;
+    dedicatedDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     dedicatedImage: Schema.Attribute.Component<'common.image', false>;
     dedicatedTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
@@ -593,7 +641,13 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     featureBlocksTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -642,7 +696,13 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDescription: Schema.Attribute.Text;
+    aboutDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.icon-card', true>;
     aboutTitle: Schema.Attribute.String;
@@ -663,7 +723,13 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroFormEnabled: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<true>;
     heroFormSubtitle: Schema.Attribute.String;
@@ -683,7 +749,13 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
-    pricingDescription: Schema.Attribute.Text;
+    pricingDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingNote: Schema.Attribute.String;
     pricingPoints: Schema.Attribute.JSON;
     pricingTitle: Schema.Attribute.String;
@@ -693,7 +765,13 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     processSubtitle: Schema.Attribute.Text;
     processTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    securityDescription: Schema.Attribute.Text;
+    securityDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     securityFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     securityImage: Schema.Attribute.Component<'common.image', false>;
     securityLabel: Schema.Attribute.String;
@@ -739,12 +817,24 @@ export interface ApiBareMetalServerPageBareMetalServerPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -849,7 +939,13 @@ export interface ApiBuilderTemplateBuilderTemplate
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -946,7 +1042,13 @@ export interface ApiCloudHostingPageCloudHostingPage
     frameworksTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroPrice: Schema.Attribute.String;
@@ -1004,7 +1106,13 @@ export interface ApiCloudStoragePageCloudStoragePage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     audienceGroups: Schema.Attribute.JSON;
@@ -1017,7 +1125,13 @@ export interface ApiCloudStoragePageCloudStoragePage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1026,7 +1140,13 @@ export interface ApiCloudStoragePageCloudStoragePage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -1118,12 +1238,30 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    ctaDescription: Schema.Attribute.Text;
+    ctaDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     ctaTitle: Schema.Attribute.String;
     helpCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    helpDescription: Schema.Attribute.Text;
+    helpDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     helpTitle: Schema.Attribute.String;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -1138,7 +1276,13 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     steps: Schema.Attribute.Component<'ds.numbered-tip', true>;
-    stepsDescription: Schema.Attribute.Text;
+    stepsDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     stepsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1160,7 +1304,13 @@ export interface ApiCpanelHostingPageCpanelHostingPage
   };
   attributes: {
     aboutCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     builtinFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1173,7 +1323,13 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1182,7 +1338,13 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -1204,7 +1366,13 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     supportCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    supportDesc: Schema.Attribute.Text;
+    supportDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     supportImage: Schema.Attribute.Component<'common.image', false>;
     supportTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -1252,7 +1420,13 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqContactBtnLabel: Schema.Attribute.String;
     faqContactBtnUrl: Schema.Attribute.String;
-    faqContactDescription: Schema.Attribute.Text;
+    faqContactDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     featureHighlights: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1266,14 +1440,26 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     > &
       Schema.Attribute.Private;
     locationPins: Schema.Attribute.Component<'ds.location-pin', true>;
-    locationsDescription: Schema.Attribute.Text;
+    locationsDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     locationsLabel: Schema.Attribute.String;
     locationsTitle: Schema.Attribute.String;
     locationTags: Schema.Attribute.Component<'ds.location-tag', true>;
     performanceChecklist: Schema.Attribute.Component<'ds.checklist-item', true>;
     performanceCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     performanceCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    performanceDescription: Schema.Attribute.Text;
+    performanceDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     performanceLabel: Schema.Attribute.String;
     performanceStats: Schema.Attribute.Component<'ds.perf-stat', true>;
     performanceTitle: Schema.Attribute.String;
@@ -1287,12 +1473,24 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     securityCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    securityDescription: Schema.Attribute.Text;
+    securityDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     securityLabel: Schema.Attribute.String;
     securityTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     serviceButtons: Schema.Attribute.Component<'ds.service-button', true>;
-    servicesDescription: Schema.Attribute.Text;
+    servicesDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     servicesFooterText: Schema.Attribute.Text;
     servicesImage: Schema.Attribute.String;
     servicesImage2: Schema.Attribute.Component<'common.image', false>;
@@ -1328,7 +1526,13 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutPoints: Schema.Attribute.JSON;
     aboutTitle: Schema.Attribute.String;
@@ -1345,7 +1549,13 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -1357,7 +1567,13 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    privacyDesc: Schema.Attribute.Text;
+    privacyDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     privacyImage: Schema.Attribute.Component<'common.image', false>;
     privacyTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -1401,6 +1617,15 @@ export interface ApiDomainTransferPageDomainTransferPage
     draftAndPublish: true;
   };
   attributes: {
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    aboutImage: Schema.Attribute.Component<'common.image', false>;
+    aboutTitle: Schema.Attribute.String;
     benefits: Schema.Attribute.Component<'ds.icon-card', true>;
     benefitsLabel: Schema.Attribute.String;
     benefitsSubtitle: Schema.Attribute.Text;
@@ -1411,12 +1636,24 @@ export interface ApiDomainTransferPageDomainTransferPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u21C4 Domain Transfer'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -1475,7 +1712,13 @@ export interface ApiEmailHostingPageEmailHostingPage
   };
   attributes: {
     aboutCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutPoints: Schema.Attribute.JSON;
     aboutTitle: Schema.Attribute.String;
@@ -1500,7 +1743,13 @@ export interface ApiEmailHostingPageEmailHostingPage
     handshakeTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -1566,7 +1815,13 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroFormEnabled: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -1579,7 +1834,13 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    pricingDesc: Schema.Attribute.Text;
+    pricingDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingLabel: Schema.Attribute.String;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingTitle: Schema.Attribute.String;
@@ -1594,7 +1855,13 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     strengthTitle: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
-    threatDesc: Schema.Attribute.Text;
+    threatDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     threatTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1656,7 +1923,13 @@ export interface ApiForexVpsPageForexVpsPage extends Struct.SingleTypeSchema {
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -1707,7 +1980,13 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     compareRows: Schema.Attribute.JSON;
@@ -1719,12 +1998,24 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroFormEnabled: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<true>;
@@ -1790,7 +2081,13 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1799,7 +2096,13 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u2601 Google Workspace'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -1825,7 +2128,13 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     prodCompareRows: Schema.Attribute.JSON;
     prodCompareTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    scaleDesc: Schema.Attribute.Text;
+    scaleDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     scaleGroups: Schema.Attribute.JSON;
     scaleImage: Schema.Attribute.Component<'common.image', false>;
     scaleTitle: Schema.Attribute.String;
@@ -1839,7 +2148,13 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     upgradeBlocks: Schema.Attribute.JSON;
-    upgradeDesc: Schema.Attribute.Text;
+    upgradeDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     upgradeImage: Schema.Attribute.Component<'common.image', false>;
     upgradeTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1876,7 +2191,13 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     deploySubtitle: Schema.Attribute.Text;
     deployTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1886,7 +2207,13 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     gpuPortfolio: Schema.Attribute.Component<'ds.icon-card', true>;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -1895,7 +2222,13 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     heroTitle: Schema.Attribute.String;
     heroTopBadge: Schema.Attribute.String;
     infraClosing: Schema.Attribute.String;
-    infraDesc: Schema.Attribute.Text;
+    infraDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     infraPoints: Schema.Attribute.JSON;
     infraTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -1955,7 +2288,13 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1965,7 +2304,13 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     gpuCompareTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -2046,7 +2391,13 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     Footer: Schema.Attribute.Component<'sections.footer', false>;
     globalLocations: Schema.Attribute.Component<'ds.map-location', true>;
@@ -2128,7 +2479,13 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     frameworks: Schema.Attribute.Component<'shared.tech-badge', true>;
@@ -2137,7 +2494,13 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     frameworksTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\uD83D\uDC27 Linux Cloud Hosting'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -2173,14 +2536,26 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
-    whyChooseDesc: Schema.Attribute.Text;
+    whyChooseDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyChoosePoints: Schema.Attribute.JSON;
     whyChooseTitle: Schema.Attribute.String;
     whyLinuxCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLinuxLabel: Schema.Attribute.String;
     whyLinuxSubtitle: Schema.Attribute.Text;
     whyLinuxTitle: Schema.Attribute.String;
-    whyNeedDesc: Schema.Attribute.Text;
+    whyNeedDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyNeedTitle: Schema.Attribute.String;
     workloadFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     workloadsLabel: Schema.Attribute.String;
@@ -2213,7 +2588,13 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -2235,7 +2616,13 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
-    specsDescription: Schema.Attribute.Text;
+    specsDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     specsItems: Schema.Attribute.Component<'ds.checklist-item', true>;
     specsLabel: Schema.Attribute.String;
     specsTitle: Schema.Attribute.String;
@@ -2252,12 +2639,24 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     useCasesLabel: Schema.Attribute.String;
     useCasesSubtitle: Schema.Attribute.Text;
     useCasesTitle: Schema.Attribute.String;
-    whatDescription: Schema.Attribute.Text;
+    whatDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whatImage: Schema.Attribute.Component<'common.image', false>;
     whatLabel: Schema.Attribute.String;
     whatTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    whyChooseDescription: Schema.Attribute.Text;
+    whyChooseDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyChooseLabel: Schema.Attribute.String;
     whyChoosePoints: Schema.Attribute.JSON;
     whyChooseTitle: Schema.Attribute.String;
@@ -2280,7 +2679,13 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     controlPanelLabel: Schema.Attribute.String;
@@ -2293,12 +2698,24 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\uD83D\uDDA5 Linux VPS Hosting'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -2361,7 +2778,13 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -2370,7 +2793,13 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2379,7 +2808,13 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -2442,15 +2877,33 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutNote: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
     baremetalPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    baremetalPromoDesc: Schema.Attribute.Text;
+    baremetalPromoDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     baremetalPromoTitle: Schema.Attribute.String;
     cloudPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    cloudPromoDesc: Schema.Attribute.Text;
+    cloudPromoDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     cloudPromoTitle: Schema.Attribute.String;
     compareRows: Schema.Attribute.Component<'ds.compare-row', true>;
     compareTitle: Schema.Attribute.String;
@@ -2462,7 +2915,13 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -2472,7 +2931,13 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
       'api::managed-dedicated-server-page.managed-dedicated-server-page'
     > &
       Schema.Attribute.Private;
-    osDesc: Schema.Attribute.Text;
+    osDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     osImage: Schema.Attribute.Component<'common.image', false>;
     osTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2489,13 +2954,25 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    whenDesc: Schema.Attribute.Text;
+    whenDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whenList: Schema.Attribute.JSON;
     whenTitle: Schema.Attribute.String;
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
     whoTitle: Schema.Attribute.String;
-    whyChooseDesc: Schema.Attribute.Text;
+    whyChooseDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyChooseList: Schema.Attribute.JSON;
     whyChooseTitle: Schema.Attribute.String;
   };
@@ -2514,14 +2991,26 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     advantages: Schema.Attribute.Component<'ds.icon-card', true>;
     advantagesLabel: Schema.Attribute.String;
     advantagesTitle: Schema.Attribute.String;
     costComparison: Schema.Attribute.JSON;
-    cpanelFeaturesDesc: Schema.Attribute.Text;
+    cpanelFeaturesDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     cpanelFeaturesList: Schema.Attribute.JSON;
     cpanelFeaturesTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -2530,7 +3019,13 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2539,7 +3034,13 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -2615,7 +3116,13 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2624,7 +3131,13 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -2721,12 +3234,24 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
       Schema.Attribute.Private;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -2756,7 +3281,13 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    upgradeDesc: Schema.Attribute.Text;
+    upgradeDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     upgradeTitle: Schema.Attribute.String;
     useCases: Schema.Attribute.Component<'ds.icon-card', true>;
     useCasesLabel: Schema.Attribute.String;
@@ -2830,7 +3361,13 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroFormEnabled: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -2842,11 +3379,23 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
       'api::pam-mfa-page.pam-mfa-page'
     > &
       Schema.Attribute.Private;
-    mattersDesc: Schema.Attribute.Text;
+    mattersDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     mattersSteps: Schema.Attribute.Component<'ds.numbered-tip', true>;
     mattersTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    pricingDesc: Schema.Attribute.Text;
+    pricingDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingTitle: Schema.Attribute.String;
     processLabel: Schema.Attribute.String;
     processTitle: Schema.Attribute.String;
@@ -2922,7 +3471,13 @@ export interface ApiResellerHostingPageResellerHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -2931,7 +3486,13 @@ export interface ApiResellerHostingPageResellerHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -2940,7 +3501,13 @@ export interface ApiResellerHostingPageResellerHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -3001,7 +3568,13 @@ export interface ApiSharedHostingPageSharedHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDescription: Schema.Attribute.Text;
+    aboutDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Media<'images'>;
     aboutItems: Schema.Attribute.Component<'ds.when-card', true>;
     aboutLabel: Schema.Attribute.String;
@@ -3018,7 +3591,13 @@ export interface ApiSharedHostingPageSharedHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -3071,7 +3650,13 @@ export interface ApiSslCertificatePageSslCertificatePage
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -3088,7 +3673,13 @@ export interface ApiSslCertificatePageSslCertificatePage
     powerCards: Schema.Attribute.Component<'ds.icon-card', true>;
     powerLabel: Schema.Attribute.String;
     powerTitle: Schema.Attribute.String;
-    pricingDesc: Schema.Attribute.Text;
+    pricingDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -3104,7 +3695,13 @@ export interface ApiSslCertificatePageSslCertificatePage
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    whyDesc: Schema.Attribute.Text;
+    whyDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyLabel: Schema.Attribute.String;
     whyTitle: Schema.Attribute.String;
   };
@@ -3122,7 +3719,13 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     compareLabel: Schema.Attribute.String;
@@ -3137,7 +3740,13 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -3163,7 +3772,13 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whoCanCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    whoCanDesc: Schema.Attribute.Text;
+    whoCanDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whoCanLabel: Schema.Attribute.String;
     whoCanTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3192,7 +3807,13 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroFormEnabled: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -3209,7 +3830,13 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     offeringsSubtitle: Schema.Attribute.Text;
     offeringsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    pricingDesc: Schema.Attribute.Text;
+    pricingDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingLabel: Schema.Attribute.String;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingTitle: Schema.Attribute.String;
@@ -3225,7 +3852,13 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whatClosing: Schema.Attribute.Text;
-    whatDesc: Schema.Attribute.Text;
+    whatDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whatLayers: Schema.Attribute.JSON;
     whatTitle: Schema.Attribute.String;
     whenClosing: Schema.Attribute.Text;
@@ -3263,7 +3896,13 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3272,7 +3911,13 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -3325,7 +3970,13 @@ export interface ApiVirtualMachinePageVirtualMachinePage
   };
   attributes: {
     blockStorageCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    blockStorageDescription: Schema.Attribute.Text;
+    blockStorageDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     blockStorageImage: Schema.Attribute.Component<'common.image', false>;
     blockStorageSubheading: Schema.Attribute.String;
     blockStorageSubtitle: Schema.Attribute.Text;
@@ -3339,7 +3990,13 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3348,7 +4005,13 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -3384,7 +4047,13 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     whenTitle: Schema.Attribute.String;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyLabel: Schema.Attribute.String;
-    whyOverDesc: Schema.Attribute.Text;
+    whyOverDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     whyOverImage: Schema.Attribute.Component<'common.image', false>;
     whyOverPoints: Schema.Attribute.JSON;
     whyOverPointsLabel: Schema.Attribute.String;
@@ -3405,14 +4074,26 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     advantages: Schema.Attribute.Component<'ds.icon-card', true>;
     advantagesLabel: Schema.Attribute.String;
     advantagesTitle: Schema.Attribute.String;
     costComparison: Schema.Attribute.JSON;
-    cpanelFeaturesDesc: Schema.Attribute.Text;
+    cpanelFeaturesDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     cpanelFeaturesList: Schema.Attribute.JSON;
     cpanelFeaturesTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -3424,7 +4105,13 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -3487,12 +4174,24 @@ export interface ApiVpsHostingPageVpsHostingPage
     faqTitle: Schema.Attribute.String;
     globalCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     globalCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    globalDescription: Schema.Attribute.Text;
+    globalDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     globalLabel: Schema.Attribute.String;
     globalTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroPrice: Schema.Attribute.String;
@@ -3559,12 +4258,24 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
       Schema.Attribute.Private;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroStatusSubtitle: Schema.Attribute.String;
@@ -3629,7 +4340,13 @@ export interface ApiWebHostingPageWebHostingPage
   };
   attributes: {
     backupPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    backupPromoDesc: Schema.Attribute.Text;
+    backupPromoDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     backupPromoTitle: Schema.Attribute.String;
     compareRows: Schema.Attribute.Component<'ds.icon-card', true>;
     compareRows2: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3646,11 +4363,23 @@ export interface ApiWebHostingPageWebHostingPage
     featuresLabel: Schema.Attribute.String;
     featuresTitle: Schema.Attribute.String;
     helpCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    helpDesc: Schema.Attribute.Text;
+    helpDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     helpTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
@@ -3661,14 +4390,26 @@ export interface ApiWebHostingPageWebHostingPage
     > &
       Schema.Attribute.Private;
     pamPromoCta: Schema.Attribute.Component<'ds.cta-link', false>;
-    pamPromoDesc: Schema.Attribute.Text;
+    pamPromoDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pamPromoTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     safetyCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    safetyDesc: Schema.Attribute.Text;
+    safetyDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     safetyTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     succeedCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3761,7 +4502,13 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutPoints: Schema.Attribute.JSON;
     aboutTitle: Schema.Attribute.String;
@@ -3785,7 +4532,13 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -3832,7 +4585,13 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDescription: Schema.Attribute.Text;
+    aboutDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutItems: Schema.Attribute.Component<'ds.checklist-item', true>;
     aboutLabel: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
@@ -3853,7 +4612,13 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -3867,7 +4632,13 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    pricingDescription: Schema.Attribute.Text;
+    pricingDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     pricingLabel: Schema.Attribute.String;
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -3904,7 +4675,13 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutPoints: Schema.Attribute.JSON;
     aboutTitle: Schema.Attribute.String;
@@ -3926,7 +4703,13 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
     heroSubtitle: Schema.Attribute.String;
@@ -3981,11 +4764,23 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutTitle: Schema.Attribute.String;
     controlCards: Schema.Attribute.Component<'ds.icon-card', true>;
-    controlDesc: Schema.Attribute.Text;
+    controlDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     controlImage: Schema.Attribute.Component<'common.image', false>;
     controlTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -3994,10 +4789,22 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
-    faqContactDesc: Schema.Attribute.Text;
+    faqContactDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
-    fastDesc: Schema.Attribute.Text;
+    fastDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     fastImage: Schema.Attribute.Component<'common.image', false>;
     fastTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -4006,7 +4813,13 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'\u26A1 WordPress Hosting'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -4073,7 +4886,13 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     draftAndPublish: true;
   };
   attributes: {
-    aboutDesc: Schema.Attribute.Text;
+    aboutDesc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     aboutImage: Schema.Attribute.Component<'common.image', false>;
     aboutPoints: Schema.Attribute.JSON;
     aboutTitle: Schema.Attribute.String;
@@ -4097,7 +4916,13 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqContactBtnLabel: Schema.Attribute.String;
     faqContactBtnUrl: Schema.Attribute.String;
-    faqContactDescription: Schema.Attribute.Text;
+    faqContactDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     featureBadges: Schema.Attribute.Component<'zm.feature-badge', true>;
@@ -4107,7 +4932,13 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     footer: Schema.Attribute.Component<'ds.footer-section', false>;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    heroDescription: Schema.Attribute.Text;
+    heroDescription: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     heroEyebrow: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Zimbra Email Hosting'>;
     heroImage: Schema.Attribute.Component<'common.image', false>;

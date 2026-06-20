@@ -29,7 +29,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -120,7 +124,11 @@
       "type": "string"
     },
     "scaleDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "scaleGroups": {
       "type": "json"
@@ -146,7 +154,11 @@
       "type": "string"
     },
     "upgradeDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "upgradeBlocks": {
       "type": "json"
@@ -171,7 +183,11 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",

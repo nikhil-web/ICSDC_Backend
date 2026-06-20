@@ -10,7 +10,11 @@
       "type": "string"
     },
     "paragraph": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "featureCards": {
       "type": "component",

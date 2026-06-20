@@ -12,7 +12,11 @@
       "type": "string"
     },
     "desc": {
-      "type": "string"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     }
   },
   "config": {}
