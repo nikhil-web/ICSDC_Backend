@@ -61,7 +61,13 @@ export interface DsChecklistItem extends Struct.ComponentSchema {
     displayName: 'DS Checklist Item';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     label: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
   };
@@ -124,7 +130,13 @@ export interface DsControlPanel extends Struct.ComponentSchema {
     displayName: 'DS Control Panel';
   };
   attributes: {
-    desc: Schema.Attribute.String;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -140,7 +152,13 @@ export interface DsCtaBand extends Struct.ComponentSchema {
   attributes: {
     ctaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     ctaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     title: Schema.Attribute.String;
   };
 }
@@ -164,7 +182,13 @@ export interface DsFaqEntry extends Struct.ComponentSchema {
     displayName: 'DS FAQ Entry';
   };
   attributes: {
-    answer: Schema.Attribute.Text & Schema.Attribute.Required;
+    answer: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     question: Schema.Attribute.String & Schema.Attribute.Required;
   };
@@ -234,7 +258,13 @@ export interface DsHeroSection extends Struct.ComponentSchema {
   attributes: {
     ctaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     ctaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     eyebrow: Schema.Attribute.String;
     price: Schema.Attribute.String;
     priceCurrency: Schema.Attribute.String &
@@ -256,7 +286,13 @@ export interface DsHighlightCard extends Struct.ComponentSchema {
     displayName: 'DS Highlight Card';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -270,7 +306,13 @@ export interface DsIconCard extends Struct.ComponentSchema {
     displayName: 'DS Icon Card';
   };
   attributes: {
-    desc: Schema.Attribute.Text;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     link: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -314,7 +356,13 @@ export interface DsMapLocation extends Struct.ComponentSchema {
       ['usa', 'uk', 'germany', 'russia', 'india', 'future-expansion']
     > &
       Schema.Attribute.Required;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     pinColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#1a56db'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -328,7 +376,13 @@ export interface DsNumberedTip extends Struct.ComponentSchema {
     displayName: 'DS Numbered Tip';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     number: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -342,7 +396,13 @@ export interface DsOsOption extends Struct.ComponentSchema {
     displayName: 'DS OS Option';
   };
   attributes: {
-    desc: Schema.Attribute.String;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -415,7 +475,13 @@ export interface DsRelatedCard extends Struct.ComponentSchema {
   attributes: {
     btnLabel: Schema.Attribute.String;
     btnUrl: Schema.Attribute.String;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
@@ -428,6 +494,7 @@ export interface DsSeoMeta extends Struct.ComponentSchema {
     displayName: 'DS SEO Meta';
   };
   attributes: {
+    canonicalUrl: Schema.Attribute.String;
     metaDescription: Schema.Attribute.Text;
     metaTitle: Schema.Attribute.String;
   };
@@ -495,7 +562,13 @@ export interface DsSslType extends Struct.ComponentSchema {
   attributes: {
     ctaLink: Schema.Attribute.String;
     ctaText: Schema.Attribute.String;
-    desc: Schema.Attribute.Text;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -511,7 +584,13 @@ export interface DsTestimonialCard extends Struct.ComponentSchema {
     Avatar: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     company: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    quote: Schema.Attribute.Text & Schema.Attribute.Required;
+    quote: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     rating: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<5>;
     title: Schema.Attribute.String;
   };
@@ -543,7 +622,13 @@ export interface DsWhenCard extends Struct.ComponentSchema {
     displayName: 'DS When Card';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     number: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
@@ -565,7 +650,13 @@ export interface HeroHeroParagraph extends Struct.ComponentSchema {
     displayName: 'Hero Paragraph';
   };
   attributes: {
-    Paragraph: Schema.Attribute.String;
+    Paragraph: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
   };
 }
 
@@ -713,7 +804,13 @@ export interface PricingPricingSection extends Struct.ComponentSchema {
     displayName: 'Pricing Section';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     sectionId: Schema.Attribute.String;
     sectionTag: Schema.Attribute.String;
     showBillingToggle: Schema.Attribute.Boolean &
@@ -774,7 +871,13 @@ export interface SectionsCloudSolutionsEngineeredSection
   };
   attributes: {
     animationDelay: Schema.Attribute.String;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     position: Schema.Attribute.Enumeration<
       [
         'left-top',
@@ -826,7 +929,13 @@ export interface SectionsFooter extends Struct.ComponentSchema {
     icon: 'grid';
   };
   attributes: {
-    address: Schema.Attribute.RichText;
+    address: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     email: Schema.Attribute.Email;
     linkGroups: Schema.Attribute.Component<'shared.footer-link-group', true>;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -843,7 +952,13 @@ export interface SectionsHero extends Struct.ComponentSchema {
     icon: 'star';
   };
   attributes: {
-    description: Schema.Attribute.RichText;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     mainHeading: Schema.Attribute.String;
     price: Schema.Attribute.String;
     priceNote: Schema.Attribute.String;
@@ -874,7 +989,13 @@ export interface SectionsIndustrySolution extends Struct.ComponentSchema {
   };
   attributes: {
     cta: Schema.Attribute.Component<'ds.cta-link', false>;
-    desc: Schema.Attribute.Text;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     features: Schema.Attribute.Component<'sections.industry-feature', true>;
     icon: Schema.Attribute.String;
     tabLabel: Schema.Attribute.String;
@@ -892,7 +1013,13 @@ export interface SectionsSecurityCard extends Struct.ComponentSchema {
   };
   attributes: {
     chip: Schema.Attribute.String;
-    desc: Schema.Attribute.Text;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -920,7 +1047,13 @@ export interface SectionsTagCard extends Struct.ComponentSchema {
     icon: 'bookmark';
   };
   attributes: {
-    desc: Schema.Attribute.Text;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     tag: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -936,7 +1069,13 @@ export interface SectionsTextImage extends Struct.ComponentSchema {
   attributes: {
     heading: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
-    paragraph: Schema.Attribute.RichText;
+    paragraph: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
   };
 }
 
@@ -950,7 +1089,13 @@ export interface SectionsWhoWeAre extends Struct.ComponentSchema {
   attributes: {
     featureCards: Schema.Attribute.Component<'shared.feature-button', true>;
     heading: Schema.Attribute.String;
-    paragraph: Schema.Attribute.RichText;
+    paragraph: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
   };
 }
 
@@ -974,7 +1119,13 @@ export interface SectionsWhyUsCard extends Struct.ComponentSchema {
     displayName: 'WhyUsCard';
   };
   attributes: {
-    desc: Schema.Attribute.String;
+    desc: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -1016,7 +1167,13 @@ export interface SharedLocationCard extends Struct.ComponentSchema {
     icon: 'pinMap';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     flag: Schema.Attribute.String & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -1060,7 +1217,13 @@ export interface SharedSolutionCard extends Struct.ComponentSchema {
   attributes: {
     ctaStyle: Schema.Attribute.String;
     ctaText: Schema.Attribute.String;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     icon: Schema.Attribute.String & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
@@ -1091,7 +1254,13 @@ export interface SharedTldCard extends Struct.ComponentSchema {
   };
   attributes: {
     badge: Schema.Attribute.String;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     extension: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     originalPrice: Schema.Attribute.String;
@@ -1141,7 +1310,13 @@ export interface ZmMigrationStep extends Struct.ComponentSchema {
     icon: 'arrow-right';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     number: Schema.Attribute.Integer & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     title: Schema.Attribute.String & Schema.Attribute.Required;

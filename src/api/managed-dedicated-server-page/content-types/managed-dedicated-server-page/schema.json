@@ -22,7 +22,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -54,7 +58,11 @@
       "type": "string"
     },
     "aboutDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "aboutNote": {
       "type": "string"
@@ -74,7 +82,11 @@
       "type": "string"
     },
     "baremetalPromoDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "baremetalPromoCta": {
       "type": "component",
@@ -85,7 +97,11 @@
       "type": "string"
     },
     "cloudPromoDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "cloudPromoCta": {
       "type": "component",
@@ -96,7 +112,11 @@
       "type": "string"
     },
     "whyChooseDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whyChooseList": {
       "type": "json"
@@ -116,7 +136,11 @@
       "type": "string"
     },
     "osDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "osImage": {
       "type": "component",
@@ -135,7 +159,11 @@
       "type": "string"
     },
     "whenDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whenList": {
       "type": "json"

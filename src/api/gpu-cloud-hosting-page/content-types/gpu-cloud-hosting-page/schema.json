@@ -25,7 +25,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -141,7 +145,11 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",
@@ -184,7 +192,11 @@
       "type": "string"
     },
     "infraDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "infraPoints": {
       "type": "json"

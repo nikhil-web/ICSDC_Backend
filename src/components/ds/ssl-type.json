@@ -1,11 +1,27 @@
 {
   "collectionName": "components_ds_ssl_types",
-  "info": { "displayName": "DS SSL Type" },
+  "info": {
+    "displayName": "DS SSL Type"
+  },
   "attributes": {
-    "title":   { "type": "string" },
-    "subtitle":{ "type": "string" },
-    "desc":    { "type": "text" },
-    "ctaText": { "type": "string" },
-    "ctaLink": { "type": "string" }
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
   }
 }

@@ -22,7 +22,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -43,7 +47,11 @@
       "type": "string"
     },
     "aboutDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "aboutImage": {
       "type": "component",
@@ -109,7 +117,11 @@
       "type": "string"
     },
     "whoCanDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whoCanCards": {
       "type": "component",

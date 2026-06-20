@@ -13,7 +13,11 @@
       "type": "string"
     },
     "description": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "price": {
       "type": "string"

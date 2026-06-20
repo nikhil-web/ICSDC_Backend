@@ -23,7 +23,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroCtaPrimary": {
       "type": "component",
@@ -66,7 +70,11 @@
       "type": "string"
     },
     "safetyDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "safetyCards": {
       "type": "component",
@@ -104,7 +112,11 @@
       "type": "string"
     },
     "helpDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "helpCards": {
       "type": "component",
@@ -123,7 +135,11 @@
       "type": "string"
     },
     "pamPromoDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "pamPromoCta": {
       "type": "component",
@@ -134,7 +150,11 @@
       "type": "string"
     },
     "backupPromoDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "backupPromoCta": {
       "type": "component",

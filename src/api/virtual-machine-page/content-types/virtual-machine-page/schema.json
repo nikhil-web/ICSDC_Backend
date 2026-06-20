@@ -25,7 +25,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -108,7 +112,11 @@
       "type": "string"
     },
     "blockStorageDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "blockStorageCta": {
       "type": "component",
@@ -161,7 +169,11 @@
       "type": "string"
     },
     "whyOverDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whyOverPointsLabel": {
       "type": "string"
@@ -189,7 +201,11 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",

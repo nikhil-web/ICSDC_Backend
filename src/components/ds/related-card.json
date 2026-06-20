@@ -5,10 +5,26 @@
     "description": "Related service card with title, description, and a CTA link"
   },
   "attributes": {
-    "order": { "type": "integer", "default": 0 },
-    "title": { "type": "string", "required": true },
-    "description": { "type": "text", "required": true },
-    "btnLabel": { "type": "string" },
-    "btnUrl": { "type": "string" }
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "btnLabel": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    }
   }
 }

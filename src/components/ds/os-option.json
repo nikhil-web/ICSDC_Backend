@@ -5,9 +5,23 @@
     "description": "Operating system option card with icon, name, and short description"
   },
   "attributes": {
-    "order": { "type": "integer", "default": 0 },
-    "icon": { "type": "string" },
-    "name": { "type": "string", "required": true },
-    "desc": { "type": "string" }
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "icon": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
   }
 }

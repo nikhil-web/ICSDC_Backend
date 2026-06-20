@@ -5,9 +5,23 @@
     "description": "Card with emoji icon, title, and description — used for privacy/feature highlights"
   },
   "attributes": {
-    "order": { "type": "integer", "default": 0 },
-    "icon": { "type": "string" },
-    "title": { "type": "string", "required": true },
-    "description": { "type": "text", "required": true }
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
   }
 }

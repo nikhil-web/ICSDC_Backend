@@ -12,13 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "ds.seo-meta"
     },
-
     "heroEyebrow": {
       "type": "string",
       "default": "⚡ WordPress Hosting"
@@ -31,7 +29,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "heroTopBadge": {
       "type": "string"
@@ -62,7 +64,6 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "plansLabel": {
       "type": "string"
     },
@@ -77,19 +78,21 @@
       "repeatable": true,
       "component": "ds.pricing-plan"
     },
-
     "aboutTitle": {
       "type": "string"
     },
     "aboutDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "aboutImage": {
       "type": "component",
       "component": "common.image",
       "repeatable": false
     },
-
     "featuresLabel": {
       "type": "string"
     },
@@ -104,13 +107,11 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
     },
-
     "performanceLabel": {
       "type": "string"
     },
@@ -125,7 +126,6 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "packedLabel": {
       "type": "string"
     },
@@ -140,7 +140,6 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "relatedLabel": {
       "type": "string"
     },
@@ -155,14 +154,16 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "fastTitle": {
       "type": "string"
     },
     "fastDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
-
     "managedLabel": {
       "type": "string"
     },
@@ -177,7 +178,6 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "whyChooseLabel": {
       "type": "string"
     },
@@ -192,7 +192,6 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
-
     "testimonialTitle": {
       "type": "string"
     },
@@ -201,7 +200,6 @@
       "repeatable": true,
       "component": "ds.testimonial-card"
     },
-
     "faqTitle": {
       "type": "string"
     },
@@ -209,20 +207,22 @@
       "type": "string"
     },
     "faqContactDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": true,
       "component": "ds.faq-entry"
     },
-
     "ctaBand2": {
       "type": "component",
       "repeatable": false,
       "component": "ds.cta-band"
     },
-
     "whyConsiderLabel": {
       "type": "string"
     },
@@ -246,7 +246,11 @@
       "type": "string"
     },
     "controlDesc": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "controlImage": {
       "type": "component",
@@ -258,6 +262,5 @@
       "repeatable": true,
       "component": "ds.icon-card"
     }
-
   }
 }

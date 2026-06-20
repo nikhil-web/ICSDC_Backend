@@ -22,7 +22,11 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "foundedYear": {
       "type": "string"
@@ -48,7 +52,11 @@
       "type": "string"
     },
     "whoWeAreDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "whatWeDoTitle": {
       "type": "string"
@@ -74,7 +82,11 @@
       "type": "string"
     },
     "whyChooseDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "journeyTitle": {
       "type": "string"
@@ -101,7 +113,11 @@
       "type": "string"
     },
     "lifeDescription": {
-      "type": "text"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "partnersTitle": {
       "type": "string"

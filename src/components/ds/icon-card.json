@@ -13,8 +13,11 @@
       "required": true
     },
     "desc": {
-      "type": "text",
-      "required": false
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
     },
     "order": {
       "type": "integer",
