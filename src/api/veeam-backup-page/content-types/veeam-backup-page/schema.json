@@ -173,6 +173,42 @@
       "type": "component",
       "component": "common.image",
       "repeatable": false
+    },
+    "plansLabel": {
+      "type": "string"
+    },
+    "plansTitle": {
+      "type": "string"
+    },
+    "plansSubtitle": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.pricing-plan"
+    },
+    "proactiveTitle": {
+      "type": "string"
+    },
+    "proactiveSubtitle": {
+      "type": "text"
+    },
+    "proactiveCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ds.icon-card"
+    },
+    "proactiveImage": {
+      "type": "component",
+      "component": "common.image",
+      "repeatable": false
+    },
+    "relatedTitle": {
+      "type": "string"
+    },
+    "relatedCards": {
+      "type": "json"
     }
   }
 }

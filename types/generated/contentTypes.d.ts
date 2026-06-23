@@ -3932,7 +3932,17 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
+    plansLabel: Schema.Attribute.String;
+    plansSubtitle: Schema.Attribute.Text;
+    plansTitle: Schema.Attribute.String;
+    proactiveCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    proactiveImage: Schema.Attribute.Component<'common.image', false>;
+    proactiveSubtitle: Schema.Attribute.Text;
+    proactiveTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    relatedCards: Schema.Attribute.JSON;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     stats: Schema.Attribute.Component<'ds.icon-card', true>;
     statsLabel: Schema.Attribute.String;
