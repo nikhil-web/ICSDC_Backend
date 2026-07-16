@@ -45,6 +45,9 @@
       "enum": ["outline", "primary"],
       "default": "outline"
     },
+    "ctaLink": {
+      "type": "string"
+    },
     "order": {
       "type": "integer",
       "default": 0

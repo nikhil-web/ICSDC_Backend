@@ -452,6 +452,7 @@ export interface DsPricingPlan extends Struct.ComponentSchema {
   };
   attributes: {
     badge: Schema.Attribute.String;
+    ctaLink: Schema.Attribute.String;
     ctaStyle: Schema.Attribute.Enumeration<['outline', 'primary']> &
       Schema.Attribute.DefaultTo<'outline'>;
     ctaText: Schema.Attribute.String & Schema.Attribute.Required;
