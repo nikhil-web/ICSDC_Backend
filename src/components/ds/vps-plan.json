@@ -13,6 +13,8 @@
     "vcpu": { "type": "string" },
     "ram": { "type": "string" },
     "storage": { "type": "string" },
-    "bandwidth": { "type": "string" }
+    "bandwidth": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
   }
 }
