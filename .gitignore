@@ -144,5 +144,13 @@ build
 dist/
 migrate-sqlite-to-pg.js
 
+############################
+# Environment / secrets
+############################
+
+.env
+.env.*
+!.env.example
+
 # Claude Code context file — local only
 CLAUDE.md
