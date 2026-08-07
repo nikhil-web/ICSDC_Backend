@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_index_pages",
+  "info": {
+    "singularName": "blog-index-page",
+    "pluralName": "blog-index-pages",
+    "displayName": "Blog Index Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "helpLinks": {
+      "type": "component",
+      "component": "ds.icon-card",
+      "repeatable": true
+    },
+    "ctaBand": {
+      "type": "component",
+      "component": "ds.cta-band",
+      "repeatable": false
+    }
+  }
+}

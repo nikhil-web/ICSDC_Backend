@@ -872,6 +872,36 @@ export interface ApiBareMetalServerPageBareMetalServerPage
   };
 }
 
+export interface ApiBlogIndexPageBlogIndexPage extends Struct.SingleTypeSchema {
+  collectionName: 'blog_index_pages';
+  info: {
+    displayName: 'Blog Index Page';
+    pluralName: 'blog-index-pages';
+    singularName: 'blog-index-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categories: Schema.Attribute.Component<'ds.icon-card', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
+    helpLinks: Schema.Attribute.Component<'ds.icon-card', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-index-page.blog-index-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBuilderPageBuilderPage extends Struct.CollectionTypeSchema {
   collectionName: 'builder_pages';
   info: {
@@ -5507,6 +5537,7 @@ declare module '@strapi/strapi' {
       'api::aws-cloud-hosting-page.aws-cloud-hosting-page': ApiAwsCloudHostingPageAwsCloudHostingPage;
       'api::azure-cloud-hosting-page.azure-cloud-hosting-page': ApiAzureCloudHostingPageAzureCloudHostingPage;
       'api::bare-metal-server-page.bare-metal-server-page': ApiBareMetalServerPageBareMetalServerPage;
+      'api::blog-index-page.blog-index-page': ApiBlogIndexPageBlogIndexPage;
       'api::builder-page.builder-page': ApiBuilderPageBuilderPage;
       'api::builder-template.builder-template': ApiBuilderTemplateBuilderTemplate;
       'api::chat-session.chat-session': ApiChatSessionChatSession;
