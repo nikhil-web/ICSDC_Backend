@@ -605,6 +605,8 @@ export interface DsVpsPlan extends Struct.ComponentSchema {
   };
   attributes: {
     bandwidth: Schema.Attribute.String;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
     isPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
