@@ -569,6 +569,7 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingLabel: Schema.Attribute.String;
@@ -583,6 +584,7 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    whyImage: Schema.Attribute.Component<'common.image', false>;
     whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;

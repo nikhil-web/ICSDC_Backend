@@ -97,24 +97,28 @@ ctaBand1: {
 ---
 
 ### `ds.faq-entry`
-| Field | Type | Required |
-|-------|------|----------|
-| `question` | string | yes |
-| `answer` | text | yes |
+| Field | Type | Required | Note |
+|-------|------|----------|------|
+| `question` | string | yes | |
+| `answer` | CKEditor | no | rich HTML, not plain text |
+| `order` | integer | no | |
 
 ### `ds.testimonial-card`
-| Field | Type | Required |
-|-------|------|----------|
-| `name` | string | yes |
-| `role` | string | no |
-| `company` | string | no |
-| `quote` | text | yes |
+| Field | Type | Required | Note |
+|-------|------|----------|------|
+| `name` | string | yes | |
+| `title` | string | no | ⚠️ `title` NOT `role` — this is the job title |
+| `company` | string | no | |
+| `quote` | CKEditor | no | rich HTML |
+| `rating` | integer | no | default 5, drives the star count |
+| `Avatar` | media | no | ⚠️ capital A — and currently never rendered; `initTestimonials()` draws initials only |
 
 ### `ds.seo-meta`
-| Field | Type | Required |
-|-------|------|----------|
-| `metaTitle` | string | no |
-| `metaDescription` | text | no |
+| Field | Type | Required | Note |
+|-------|------|----------|------|
+| `metaTitle` | string | no | |
+| `metaDescription` | text | no | |
+| `canonicalUrl` | string | no | absolute URL, or a path resolved against `SITE_URL` |
 
 ---
 
@@ -142,16 +146,31 @@ node import-pages.js "GPU Dedicated Server" "Cloud Storage"
 
 Strapi must be running at `http://localhost:1337` before importing.
 
-## ⚡ Workflow Rule — Always Run Import After Seeding
+## ⚠️ `import-pages.js` is currently BROKEN (verified 2026-08-03)
 
-After writing or updating any seed file and adding its entry to `import-pages.js`, **always attempt to run the import automatically**:
+The script `require()`s **16** seed files but only two exist — `seed/footer.js` and `seed/navigation.js`. The other 14 are required eagerly when the `PAGES` array is built, so the script dies at load time:
+
+```
+CRASH: MODULE_NOT_FOUND — Cannot find module './seed/firewall-security'
+```
+
+Filtering by name does **not** help (`node import-pages.js "Navigation"` fails too) because the `require()` calls run before argument filtering. Only the `Home Page Extras` entry uses a lazy getter.
+
+Missing seed files: `about-us`, `contact-us`, `firewall-security`, `forex-vps`, `home-page-extras`, `linux-dedicated-server`, `managed-dedicated-server`, `pam-mfa`, `shared-hosting`, `ssl-certificate`, `tally-on-cloud`, `vapt`, `vps-cpanel`, `web-hosting`.
+
+They were never committed — the repo has no `seed/*.js` beyond the two above. Fix by either restoring the seed files, or converting every `data:` to a lazy `get data()` so filtering works.
+
+**Until this is fixed, do not promise to "run the import" as part of the page workflow — it cannot succeed.**
+
+## ⚡ Workflow Rule — Run Import After Seeding (once the above is fixed)
+
+After writing or updating any seed file and adding its entry to `import-pages.js`, run the import from the repo root:
 
 ```bash
-cd "C:\Users\saket\OneDrive\Desktop\ICSDC Strapi CMS\my-admin"
 node import-pages.js "<Page Name>"
 ```
 
-- If Strapi is not running, report the error and remind the user to start Strapi, then re-run the command.
+- If Strapi is not running, report the error and remind the user to start Strapi, then re-run.
 - Do not wait for the user to ask — run it proactively as part of the page creation workflow.
 
 ## Adding a New Page
