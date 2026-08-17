@@ -885,12 +885,18 @@ export interface ApiBlogIndexPageBlogIndexPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    archiveTitle: Schema.Attribute.String;
     categories: Schema.Attribute.Component<'ds.icon-card', true>;
+    categoriesTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaBand: Schema.Attribute.Component<'ds.cta-band', false>;
+    emptyText: Schema.Attribute.Text;
+    emptyTitle: Schema.Attribute.String;
+    featuredLabel: Schema.Attribute.String;
     helpLinks: Schema.Attribute.Component<'ds.icon-card', true>;
+    helpTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -898,6 +904,8 @@ export interface ApiBlogIndexPageBlogIndexPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    searchPlaceholder: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

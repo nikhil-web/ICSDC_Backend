@@ -11,6 +11,32 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "seo": {
+      "type": "component",
+      "component": "ds.seo-meta",
+      "repeatable": false
+    },
+    "featuredLabel": {
+      "type": "string"
+    },
+    "archiveTitle": {
+      "type": "string"
+    },
+    "categoriesTitle": {
+      "type": "string"
+    },
+    "helpTitle": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "emptyTitle": {
+      "type": "string"
+    },
+    "emptyText": {
+      "type": "text"
+    },
     "categories": {
       "type": "component",
       "component": "ds.icon-card",
