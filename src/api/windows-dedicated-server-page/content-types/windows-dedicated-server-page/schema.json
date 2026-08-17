@@ -55,6 +55,11 @@
         "preset": "defaultHtml"
       }
     },
+    "plans": {
+      "type": "component",
+      "component": "ds.pricing-plan",
+      "repeatable": true
+    },
     "pricingCtaPrimary": {
       "type": "component",
       "component": "ds.cta-link",
@@ -113,6 +118,16 @@
       "type": "component",
       "component": "ds.comparison-row",
       "repeatable": true
+    },
+    "comparisonCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "comparisonCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
     },
     "ctaBand1": {
       "type": "component",

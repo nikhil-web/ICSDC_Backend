@@ -545,7 +545,6 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
     faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
-    featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
     featuresTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
@@ -557,9 +556,7 @@ export interface ApiAcronisBackupPageAcronisBackupPage
           preset: 'defaultHtml';
         }
       >;
-    heroEyebrow: Schema.Attribute.String;
     heroImage: Schema.Attribute.Component<'common.image', false>;
-    heroStats: Schema.Attribute.Component<'ds.perf-stat', true>;
     heroSubtitle: Schema.Attribute.String;
     heroTitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -570,10 +567,6 @@ export interface ApiAcronisBackupPageAcronisBackupPage
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
-    pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
-    pricingCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
-    pricingLabel: Schema.Attribute.String;
-    pricingMessage: Schema.Attribute.Text;
     pricingSubtitle: Schema.Attribute.Text;
     pricingTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -585,7 +578,6 @@ export interface ApiAcronisBackupPageAcronisBackupPage
       Schema.Attribute.Private;
     whyCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whyImage: Schema.Attribute.Component<'common.image', false>;
-    whyLabel: Schema.Attribute.String;
     whySubtitle: Schema.Attribute.Text;
     whyTitle: Schema.Attribute.String;
   };
@@ -4646,6 +4638,8 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     aboutLabel: Schema.Attribute.String;
     aboutTitle: Schema.Attribute.String;
     comparisonColumns: Schema.Attribute.JSON;
+    comparisonCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    comparisonCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     comparisonLabel: Schema.Attribute.String;
     comparisonRows: Schema.Attribute.Component<'ds.comparison-row', true>;
     comparisonSubtitle: Schema.Attribute.Text;
@@ -4680,6 +4674,7 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingDescription: Schema.Attribute.RichText &
