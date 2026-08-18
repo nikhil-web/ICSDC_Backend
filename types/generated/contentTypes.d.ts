@@ -4766,7 +4766,7 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
-    plans: Schema.Attribute.Component<'ds.vps-plan', true>;
+    plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
