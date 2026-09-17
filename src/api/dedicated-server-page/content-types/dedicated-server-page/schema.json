@@ -19,6 +19,12 @@
       "type": "component",
       "component": "ds.hero-section"
     },
+    "featureHighlightsTitle": {
+      "type": "string"
+    },
+    "featureHighlightsSubtitle": {
+      "type": "text"
+    },
     "featureHighlights": {
       "type": "component",
       "component": "ds.icon-card",
