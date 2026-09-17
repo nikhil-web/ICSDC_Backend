@@ -14,7 +14,7 @@
   "attributes": {
     "name":    { "type": "string",  "required": true },
     "email":   { "type": "email",   "required": true },
-    "phone":   { "type": "string" },
+    "phone":   { "type": "string",  "required": true },
     "company": { "type": "string" },
     "subject": { "type": "string",  "required": true },
     "message": { "type": "text",    "required": true }
