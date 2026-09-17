@@ -53,6 +53,12 @@
       "component": "ds.cta-link",
       "repeatable": false
     },
+    "whyChooseUsTitle": {
+      "type": "string"
+    },
+    "whyChooseUsSubtitle": {
+      "type": "text"
+    },
     "whyChooseUs": {
       "type": "component",
       "component": "sections.why-us-card",

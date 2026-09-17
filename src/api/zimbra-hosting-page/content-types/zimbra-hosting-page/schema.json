@@ -54,6 +54,12 @@
     "heroStatusSubtitle": {
       "type": "string"
     },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
     "pillars": {
       "type": "component",
       "repeatable": true,

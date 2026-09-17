@@ -38,6 +38,12 @@
     "tldPills": {
       "type": "json"
     },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
     "pillars": {
       "type": "component",
       "component": "ds.icon-card",

@@ -38,6 +38,12 @@
       "repeatable": false,
       "component": "ds.cta-link"
     },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
     "pillars": {
       "type": "component",
       "repeatable": true,

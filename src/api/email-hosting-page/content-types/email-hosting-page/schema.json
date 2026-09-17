@@ -37,6 +37,12 @@
       "component": "common.image",
       "repeatable": false
     },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
     "pillars": {
       "type": "component",
       "repeatable": true,

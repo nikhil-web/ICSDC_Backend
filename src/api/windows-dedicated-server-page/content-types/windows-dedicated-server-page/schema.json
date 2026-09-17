@@ -37,6 +37,12 @@
       "component": "ds.cta-link",
       "required": false
     },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsSubtitle": {
+      "type": "text"
+    },
     "pillars": {
       "type": "component",
       "component": "ds.icon-card",
