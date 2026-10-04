@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_seo_schema_blocks",
+  "info": {
+    "displayName": "SEO Schema Block",
+    "description": "One JSON-LD block injected into a page's <head>. The site already emits Organization + WebSite + WebPage (and BlogPosting on blog posts) automatically — these are EXTRA blocks on top of that."
+  },
+  "attributes": {
+    "note": {
+      "type": "string",
+      "description": "Internal label so this block is recognisable in the list, e.g. 'pricing FAQ'. Never published."
+    },
+    "schemaType": {
+      "type": "enumeration",
+      "enum": [
+        "FAQPage",
+        "Service",
+        "Product",
+        "Review",
+        "HowTo",
+        "BreadcrumbList",
+        "VideoObject",
+        "Custom"
+      ],
+      "default": "Custom",
+      "required": true
+    },
+    "jsonLd": {
+      "type": "json",
+      "required": true,
+      "description": "The schema.org object, e.g. {\"@type\":\"FAQPage\",\"mainEntity\":[...]}. An array of objects is allowed too. Leave out \"@context\" — the server adds it once for the whole page."
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Switch a block off without deleting it."
+    }
+  }
+}

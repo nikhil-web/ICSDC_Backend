@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_schemas",
+  "info": {
+    "singularName": "page-schema",
+    "pluralName": "page-schemas",
+    "displayName": "Page Schema (JSON-LD)",
+    "description": "Extra JSON-LD schema markup for one page, matched by its URL path. Works for every kind of page: legacy pages, builder pages, blog posts and knowledge base articles."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "The page's URL path, with a leading slash and no trailing slash or domain: / for the homepage, /cloud-hosting, /blogs/my-post, /knowledge-base/my-article."
+    },
+    "label": {
+      "type": "string",
+      "description": "Readable page name, shown in this list only."
+    },
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.schema-block"
+    }
+  }
+}

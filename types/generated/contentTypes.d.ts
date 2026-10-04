@@ -566,6 +566,8 @@ export interface ApiAcronisBackupPageAcronisBackupPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingSubtitle: Schema.Attribute.Text;
     pricingTitle: Schema.Attribute.String;
@@ -653,6 +655,8 @@ export interface ApiAwsCloudHostingPageAwsCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -715,6 +719,7 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.RichText &
@@ -738,6 +743,8 @@ export interface ApiAzureCloudHostingPageAzureCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -844,6 +851,8 @@ export interface ApiBareMetalServerPageBareMetalServerPage
       Schema.Attribute.Private;
     managedFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     serverConfigs: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -1068,6 +1077,7 @@ export interface ApiCloudHostingPageCloudHostingPage
     dashboardSubtitle: Schema.Attribute.Text;
     dashboardTitle: Schema.Attribute.String;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     frameworks: Schema.Attribute.Component<'shared.tech-badge', true>;
     frameworksLabel: Schema.Attribute.String;
     frameworksSubtitle: Schema.Attribute.Text;
@@ -1094,6 +1104,8 @@ export interface ApiCloudHostingPageCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     portalSteps: Schema.Attribute.Component<'ds.when-card', true>;
     powerFeatures: Schema.Attribute.Component<'ds.icon-card', true>;
     powerLabel: Schema.Attribute.String;
@@ -1193,6 +1205,8 @@ export interface ApiCloudStoragePageCloudStoragePage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -1244,7 +1258,7 @@ export interface ApiContactSubmissionContactSubmission
       Schema.Attribute.Private;
     message: Schema.Attribute.Text & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    phone: Schema.Attribute.String;
+    phone: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     subject: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
@@ -1391,6 +1405,8 @@ export interface ApiCpanelHostingPageCpanelHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -1462,6 +1478,8 @@ export interface ApiDedicatedServerPageDedicatedServerPage
     faqContactTitle: Schema.Attribute.String;
     faqTitle: Schema.Attribute.String;
     featureHighlights: Schema.Attribute.Component<'ds.icon-card', true>;
+    featureHighlightsSubtitle: Schema.Attribute.Text;
+    featureHighlightsTitle: Schema.Attribute.String;
     footer: Schema.Attribute.Component<'ds.footer-section', false>;
     hero: Schema.Attribute.Component<'ds.hero-section', false>;
     heroImage: Schema.Attribute.Component<'common.image', false>;
@@ -1599,6 +1617,8 @@ export interface ApiDomainRegistrationPageDomainRegistrationPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     privacyDesc: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -1702,6 +1722,8 @@ export interface ApiDomainTransferPageDomainTransferPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedLabel: Schema.Attribute.String;
@@ -1792,6 +1814,8 @@ export interface ApiEmailHostingPageEmailHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -1866,6 +1890,8 @@ export interface ApiFirewallSecurityPageFirewallSecurityPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     pricingDesc: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -1972,6 +1998,8 @@ export interface ApiForexVpsPageForexVpsPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.vps-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2068,6 +2096,8 @@ export interface ApiGoogleCloudHostingPageGoogleCloudHostingPage
     migrationSubtitle: Schema.Attribute.Text;
     migrationTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2153,6 +2183,8 @@ export interface ApiGoogleWorkspacePageGoogleWorkspacePage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2270,6 +2302,8 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2361,6 +2395,8 @@ export interface ApiGpuDedicatedServerPageGpuDedicatedServerPage
     modelsSubtitle: Schema.Attribute.Text;
     modelsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2431,6 +2467,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         }
       >;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     Footer: Schema.Attribute.Component<'sections.footer', false>;
     globalLocations: Schema.Attribute.Component<'ds.map-location', true>;
     globalPresenceSubtitle: Schema.Attribute.String;
@@ -2489,6 +2526,8 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       false
     >;
     whyChooseUs: Schema.Attribute.Component<'sections.why-us-card', true>;
+    whyChooseUsSubtitle: Schema.Attribute.Text;
+    whyChooseUsTitle: Schema.Attribute.String;
   };
 }
 
@@ -2548,6 +2587,8 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2618,6 +2659,7 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
       Schema.Attribute.Private;
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.RichText &
@@ -2642,6 +2684,8 @@ export interface ApiLinuxDedicatedServerPageLinuxDedicatedServerPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     pricingLabel: Schema.Attribute.String;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingSubtitle: Schema.Attribute.Text;
@@ -2767,6 +2811,8 @@ export interface ApiLinuxVpsHostingPageLinuxVpsHostingPage
     osOptionsSubtitle: Schema.Attribute.Text;
     osOptionsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.vps-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2867,6 +2913,8 @@ export interface ApiManagedCloudHostingPageManagedCloudHostingPage
     migrationImage: Schema.Attribute.Component<'common.image', false>;
     migrationPoints: Schema.Attribute.JSON;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -2973,6 +3021,8 @@ export interface ApiManagedDedicatedServerPageManagedDedicatedServerPage
     osImage: Schema.Attribute.Component<'common.image', false>;
     osTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.String;
     plansTitle: Schema.Attribute.String;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
@@ -3087,6 +3137,8 @@ export interface ApiManagedVpsHostingPageManagedVpsHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -3184,6 +3236,8 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -3302,6 +3356,8 @@ export interface ApiNvmeDedicatedServerPageNvmeDedicatedServerPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -3369,6 +3425,39 @@ export interface ApiPageRegistryPageRegistry
   };
 }
 
+export interface ApiPageSchemaPageSchema extends Struct.CollectionTypeSchema {
+  collectionName: 'page_schemas';
+  info: {
+    description: 'Extra JSON-LD schema markup for one page, matched by its URL path. Works for every kind of page: legacy pages, builder pages, blog posts and knowledge base articles.';
+    displayName: 'Page Schema (JSON-LD)';
+    pluralName: 'page-schemas';
+    singularName: 'page-schema';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    blocks: Schema.Attribute.Component<'seo.schema-block', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::page-schema.page-schema'
+    > &
+      Schema.Attribute.Private;
+    path: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
   collectionName: 'pam_mfa_pages';
   info: {
@@ -3421,6 +3510,8 @@ export interface ApiPamMfaPagePamMfaPage extends Struct.SingleTypeSchema {
     mattersSteps: Schema.Attribute.Component<'ds.numbered-tip', true>;
     mattersTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     pricingDesc: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -3554,6 +3645,8 @@ export interface ApiResellerHostingPageResellerHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -3617,6 +3710,7 @@ export interface ApiSharedHostingPageSharedHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -3641,6 +3735,8 @@ export interface ApiSharedHostingPageSharedHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     techCards: Schema.Attribute.Component<'ds.icon-card', true>;
@@ -3702,6 +3798,8 @@ export interface ApiSslCertificatePageSslCertificatePage
     offersLabel: Schema.Attribute.String;
     offersTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     powerCards: Schema.Attribute.Component<'ds.icon-card', true>;
     powerLabel: Schema.Attribute.String;
     powerTitle: Schema.Attribute.String;
@@ -3792,6 +3890,8 @@ export interface ApiTallyOnCloudPageTallyOnCloudPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -3862,6 +3962,8 @@ export interface ApiVaptPageVaptPage extends Struct.SingleTypeSchema {
     offeringsSubtitle: Schema.Attribute.Text;
     offeringsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     pricingDesc: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -3964,6 +4066,8 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -4068,6 +4172,8 @@ export interface ApiVirtualMachinePageVirtualMachinePage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
@@ -4164,6 +4270,8 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -4260,6 +4368,8 @@ export interface ApiVpsHostingPageVpsHostingPage
     panelsSubtitle: Schema.Attribute.Text;
     panelsTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     pricingLabel: Schema.Attribute.String;
     pricingPlans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingSubtitle: Schema.Attribute.Text;
@@ -4339,6 +4449,8 @@ export interface ApiVpsHostingTrialPageVpsHostingTrialPage
     moreServicesSubtitle: Schema.Attribute.Text;
     moreServicesTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -4441,6 +4553,8 @@ export interface ApiWebHostingPageWebHostingPage
       >;
     pamPromoTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -4568,6 +4682,7 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -4592,6 +4707,8 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -4650,6 +4767,7 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     ctaBand1: Schema.Attribute.Component<'ds.cta-band', false>;
     ctaBand2: Schema.Attribute.Component<'ds.cta-band', false>;
     faq: Schema.Attribute.Component<'ds.faq-entry', true>;
+    faqTitle: Schema.Attribute.String;
     features: Schema.Attribute.Component<'ds.icon-card', true>;
     featuresLabel: Schema.Attribute.String;
     featuresSubtitle: Schema.Attribute.Text;
@@ -4674,6 +4792,8 @@ export interface ApiWindowsDedicatedServerPageWindowsDedicatedServerPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     pricingCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
     pricingCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
@@ -4766,6 +4886,8 @@ export interface ApiWindowsVpsHostingPageWindowsVpsHostingPage
     > &
       Schema.Attribute.Private;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -4892,6 +5014,8 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     performanceSubtitle: Schema.Attribute.Text;
     performanceTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -5003,6 +5127,8 @@ export interface ApiZimbraHostingPageZimbraHostingPage
     migrationSubtitle: Schema.Attribute.Text;
     migrationTitle: Schema.Attribute.String;
     pillars: Schema.Attribute.Component<'ds.icon-card', true>;
+    pillarsSubtitle: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
     plans: Schema.Attribute.Component<'ds.pricing-plan', true>;
     plansLabel: Schema.Attribute.String;
     plansSubtitle: Schema.Attribute.Text;
@@ -5573,6 +5699,7 @@ declare module '@strapi/strapi' {
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::nvme-dedicated-server-page.nvme-dedicated-server-page': ApiNvmeDedicatedServerPageNvmeDedicatedServerPage;
       'api::page-registry.page-registry': ApiPageRegistryPageRegistry;
+      'api::page-schema.page-schema': ApiPageSchemaPageSchema;
       'api::pam-mfa-page.pam-mfa-page': ApiPamMfaPagePamMfaPage;
       'api::pricing-page.pricing-page': ApiPricingPagePricingPage;
       'api::reseller-hosting-page.reseller-hosting-page': ApiResellerHostingPageResellerHostingPage;

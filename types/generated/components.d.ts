@@ -1134,6 +1134,33 @@ export interface SectionsWhyUsCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SeoSchemaBlock extends Struct.ComponentSchema {
+  collectionName: 'components_seo_schema_blocks';
+  info: {
+    description: "One JSON-LD block injected into a page's <head>. The site already emits Organization + WebSite + WebPage (and BlogPosting on blog posts) automatically \u2014 these are EXTRA blocks on top of that.";
+    displayName: 'SEO Schema Block';
+  };
+  attributes: {
+    enabled: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    jsonLd: Schema.Attribute.JSON & Schema.Attribute.Required;
+    note: Schema.Attribute.String;
+    schemaType: Schema.Attribute.Enumeration<
+      [
+        'FAQPage',
+        'Service',
+        'Product',
+        'Review',
+        'HowTo',
+        'BreadcrumbList',
+        'VideoObject',
+        'Custom',
+      ]
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Custom'>;
+  };
+}
+
 export interface SharedFeatureButton extends Struct.ComponentSchema {
   collectionName: 'components_shared_feature_buttons';
   info: {
@@ -1396,6 +1423,7 @@ declare module '@strapi/strapi' {
       'sections.who-we-are': SectionsWhoWeAre;
       'sections.why-cloud-section': SectionsWhyCloudSection;
       'sections.why-us-card': SectionsWhyUsCard;
+      'seo.schema-block': SeoSchemaBlock;
       'shared.feature-button': SharedFeatureButton;
       'shared.footer-link-group': SharedFooterLinkGroup;
       'shared.location-card': SharedLocationCard;
