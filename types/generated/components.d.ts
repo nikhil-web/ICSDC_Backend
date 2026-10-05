@@ -1150,7 +1150,6 @@ export interface SeoSchemaBlock extends Struct.ComponentSchema {
         'Service',
         'Product',
         'Review',
-        'HowTo',
         'BreadcrumbList',
         'VideoObject',
         'Custom',

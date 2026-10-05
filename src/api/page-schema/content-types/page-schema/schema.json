@@ -16,7 +16,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "description": "The page's URL path, with a leading slash and no trailing slash or domain: / for the homepage, /cloud-hosting, /blogs/my-post, /knowledge-base/my-article."
+      "description": "The page's URL path, e.g. / for the homepage, /cloud-hosting, /blogs/my-post, /knowledge-base/my-article. Saved lowercase without a trailing slash or domain."
     },
     "label": {
       "type": "string",

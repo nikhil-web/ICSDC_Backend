@@ -207,3 +207,9 @@ node import-pages.js "<Page Name>"
 | `enabled` | boolean | Hard kill-switch — false hides button entirely |
 
 > **Note:** `bubblePosition` was removed (2026-05-27). The widget moved from a floating bubble to a navbar button — position is now always anchored to the button element. Do not re-add this field.
+
+## page-schema (JSON-LD) — hardened 2026-10-05
+- `src/api/page-schema/content-types/page-schema/lifecycles.ts` normalises `path` on create/update (lowercase, no domain/query/trailing slash) so the `unique` constraint matches how the frontend looks paths up (`schemaNormalisePath` in icsdc_node_fe/server.js — keep the two in sync).
+- `seo.schema-block.schemaType` no longer offers `HowTo` (Google dropped HowTo rich results).
+- The frontend rejects blocks of types it generates itself (Organization/Corporation/WebSite/WebPage; BlogPosting/Article/BreadcrumbList on blog posts) — see icsdc_node_fe CLAUDE.md "Per-page JSON-LD schema".
+- `page-schemas` is not readable through the public `/api/strapi` proxy any more; the frontend server reads it directly with its token.
