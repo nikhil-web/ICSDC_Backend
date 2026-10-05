@@ -16,18 +16,18 @@
         "Service",
         "Product",
         "Review",
-        "HowTo",
         "BreadcrumbList",
         "VideoObject",
         "Custom"
       ],
       "default": "Custom",
-      "required": true
+      "required": true,
+      "description": "What the block is, for the list view. Note: Google no longer shows HowTo rich results, and shows FAQ rich results only for government and health sites — FAQPage markup is still valid, but it must repeat questions that are visible on the page."
     },
     "jsonLd": {
       "type": "json",
       "required": true,
-      "description": "The schema.org object, e.g. {\"@type\":\"FAQPage\",\"mainEntity\":[...]}. An array of objects is allowed too. Leave out \"@context\" — the server adds it once for the whole page."
+      "description": "The schema.org object, e.g. {\"@type\":\"Service\",...}. An array of objects is allowed too. Leave out \"@context\" — the server adds it. Organization, WebSite and WebPage (and BlogPosting/BreadcrumbList on blog posts) are generated automatically and are rejected here."
     },
     "enabled": {
       "type": "boolean",
