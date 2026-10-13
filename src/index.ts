@@ -24,7 +24,12 @@ export default {
    * An asynchronous register function that runs before
    * your application is initialized.
    */
-  register(/* { strapi }: { strapi: Core.Strapi } */) {},
+  register({ strapi }: { strapi: any }) {
+    // "Place" field for map pins: a searchable city/country picker. Stored as
+    // JSON ({ label, lat, lng, … }); the admin input lives in src/admin/app.tsx,
+    // its search in src/api/geo + src/utils/geo-places.ts.
+    strapi.customFields.register({ name: 'place', type: 'json' });
+  },
 
   /**
    * An asynchronous bootstrap function that runs before
