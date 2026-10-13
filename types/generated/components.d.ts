@@ -328,8 +328,8 @@ export interface DsLocationPin extends Struct.ComponentSchema {
   };
   attributes: {
     label: Schema.Attribute.String & Schema.Attribute.Required;
-    left: Schema.Attribute.String;
-    top: Schema.Attribute.String;
+    place: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'global::place'>;
   };
 }
 
@@ -352,10 +352,6 @@ export interface DsMapLocation extends Struct.ComponentSchema {
     displayName: 'DS Map Location';
   };
   attributes: {
-    countryKey: Schema.Attribute.Enumeration<
-      ['usa', 'uk', 'germany', 'russia', 'india', 'future-expansion']
-    > &
-      Schema.Attribute.Required;
     description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -364,7 +360,8 @@ export interface DsMapLocation extends Struct.ComponentSchema {
         }
       >;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
-    pinColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#1a56db'>;
+    place: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'global::place'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

@@ -13,17 +13,10 @@
       "type": "string",
       "required": true
     },
-    "countryKey": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "usa",
-        "uk",
-        "germany",
-        "russia",
-        "india",
-        "future-expansion"
-      ]
+    "place": {
+      "type": "customField",
+      "customField": "global::place",
+      "description": "Pick a country, then a city in it (leave the city empty for a pin in the middle of the country)."
     },
     "description": {
       "type": "customField",
@@ -31,10 +24,6 @@
       "options": {
         "preset": "defaultHtml"
       }
-    },
-    "pinColor": {
-      "type": "string",
-      "default": "#1a56db"
     }
   }
 }

@@ -10,5 +10,18 @@ export default {
       },
     },
   },
+  register(app: any) {
+    // Map pins: a searchable city/country picker (server side: src/index.ts,
+    // src/api/geo). Stored as JSON; the website reads its lat/lng.
+    app.customFields.register({
+      name: 'place',
+      type: 'json',
+      intlLabel: { id: 'global.place.label', defaultMessage: 'Place' },
+      intlDescription: { id: 'global.place.description', defaultMessage: 'Searchable city or country for a map pin' },
+      components: {
+        Input: async () => import('./components/PlaceInput').then((m) => ({ default: m.PlaceInput })),
+      },
+    });
+  },
   bootstrap() { },
 }

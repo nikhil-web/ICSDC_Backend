@@ -9,11 +9,10 @@
       "type": "string",
       "required": true
     },
-    "top": {
-      "type": "string"
-    },
-    "left": {
-      "type": "string"
+    "place": {
+      "type": "customField",
+      "customField": "global::place",
+      "description": "Pick a country, then a city in it (leave the city empty for a pin in the middle of the country)."
     }
   }
 }
