@@ -9,9 +9,11 @@
       "type": "integer",
       "default": 0
     },
+    "icon": {
+      "type": "string"
+    },
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "customField",

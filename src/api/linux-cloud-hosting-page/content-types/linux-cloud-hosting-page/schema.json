@@ -178,7 +178,9 @@
       "component": "ds.icon-card"
     },
     "relatedCards": {
-      "type": "json"
+      "type": "component",
+      "component": "ds.related-card",
+      "repeatable": true
     },
     "testimonialTitle": {
       "type": "string"

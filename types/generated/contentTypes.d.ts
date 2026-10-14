@@ -1212,7 +1212,7 @@ export interface ApiCloudStoragePageCloudStoragePage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedLabel: Schema.Attribute.String;
     relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
@@ -2315,7 +2315,7 @@ export interface ApiGpuCloudHostingPageGpuCloudHostingPage
     portfolioSubtitle: Schema.Attribute.Text;
     portfolioTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -2600,7 +2600,7 @@ export interface ApiLinuxCloudHostingPageLinuxCloudHostingPage
     powerSubtitle: Schema.Attribute.Text;
     powerTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;
@@ -3245,7 +3245,7 @@ export interface ApiMicrosoft365PageMicrosoft365Page
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedLabel: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -4716,7 +4716,7 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;

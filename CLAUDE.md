@@ -231,5 +231,7 @@ node import-pages.js "<Page Name>"
 
 ## Veeam related-service cards (2026-10-14)
 - `veeam-backup-page.relatedCards` changed from raw `json` to repeatable **`ds.related-card`** (order, title, description [CKEditor], btnLabel = link text, btnUrl = link). The json value was null in draft + published, so nothing was lost. Seeded with the 2 cards from the HTML (Managed Cloud Hosting → /managed-cloud-hosting, DRaaS → /contact-us).
-- Other pages still have `relatedCards` as raw json (cloud-storage, gpu-cloud, linux-cloud, microsoft-365, reseller, windows-cloud, wordpress) — same conversion would make them editable.
+- **Same conversion done for 5 more pages (2026-10-14):** cloud-storage, gpu-cloud-hosting, linux-cloud-hosting, microsoft-365, windows-cloud-hosting — `relatedCards` json → `ds.related-card`. Old json keys mapped desc→description, ctaText→btnLabel, ctaLink→btnUrl, title, icon; every value verified copied (draft + published). microsoft-365 was null → seeded verbatim from its HTML cards. Backup of the old json: `/Users/nikhil/Desktop/ICDSC/backups/related-cards-2026-10-14/`.
+- `ds.related-card` gained optional **`icon`** (FA name, e.g. `server`) and **`title` is no longer required** (linux-cloud / windows-cloud cards have no title — those pages don't show one).
+- reseller-hosting + wordpress-hosting `relatedCards` were already components (`ds.icon-card`) — left as is. WordPress packs "tagline||description" into `desc`.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts (old schema would turn the field back into json and drop the cards).

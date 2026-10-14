@@ -135,7 +135,9 @@
       "type": "string"
     },
     "relatedCards": {
-      "type": "json"
+      "type": "component",
+      "component": "ds.related-card",
+      "repeatable": true
     },
     "ctaBand1": {
       "type": "component",

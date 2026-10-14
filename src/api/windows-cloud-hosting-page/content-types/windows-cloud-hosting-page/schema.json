@@ -181,7 +181,9 @@
       "repeatable": true
     },
     "relatedCards": {
-      "type": "json"
+      "type": "component",
+      "component": "ds.related-card",
+      "repeatable": true
     },
     "heroImage": {
       "type": "component",
