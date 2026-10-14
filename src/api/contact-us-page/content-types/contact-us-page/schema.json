@@ -28,6 +28,16 @@
         "preset": "defaultHtml"
       }
     },
+    "heroCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "heroCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
     "helpTitle": {
       "type": "string"
     },

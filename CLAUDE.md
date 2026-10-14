@@ -224,3 +224,7 @@ node import-pages.js "<Page Name>"
 - The earlier city/country/latitude/longitude/manualCoordinates fields (2026-10-06) were dropped — never filled (verified 0 rows first).
 - **Content as of 2026-10-13:** homepage map = Delhi + Mumbai only (user's call; real locations to be added by editors later, descriptions empty); dedicated pins = Delhi + Mumbai (Noida pin switched to Delhi at the user's request; the chips under that map — `locationTags` "Noida, India" — and its subtitle "(Noida & Mumbai)" still say Noida). Previous entries (India/Europe/USA/UK + a test "New Data center" in Kabul) are backed up in `/Users/nikhil/Desktop/ICDSC/backups/` (draft + published JSON).
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts — on the old schema it drops the `place` column.
+
+## Contact Us hero buttons (2026-10-14)
+- Added `heroCtaPrimary` / `heroCtaSecondary` (`ds.cta-link`) to `contact-us-page`, after `heroDescription`. Seeded with the buttons the page already had: "Send Us a Message" → `#cu-contact`, "View Our Services" → `/`.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts (shared DB — on the old schema it would drop the two new component links).
