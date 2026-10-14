@@ -228,3 +228,8 @@ node import-pages.js "<Page Name>"
 ## Contact Us hero buttons (2026-10-14)
 - Added `heroCtaPrimary` / `heroCtaSecondary` (`ds.cta-link`) to `contact-us-page`, after `heroDescription`. Seeded with the buttons the page already had: "Send Us a Message" → `#cu-contact`, "View Our Services" → `/`.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts (shared DB — on the old schema it would drop the two new component links).
+
+## Veeam related-service cards (2026-10-14)
+- `veeam-backup-page.relatedCards` changed from raw `json` to repeatable **`ds.related-card`** (order, title, description [CKEditor], btnLabel = link text, btnUrl = link). The json value was null in draft + published, so nothing was lost. Seeded with the 2 cards from the HTML (Managed Cloud Hosting → /managed-cloud-hosting, DRaaS → /contact-us).
+- Other pages still have `relatedCards` as raw json (cloud-storage, gpu-cloud, linux-cloud, microsoft-365, reseller, windows-cloud, wordpress) — same conversion would make them editable.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts (old schema would turn the field back into json and drop the cards).

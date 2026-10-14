@@ -4079,7 +4079,7 @@ export interface ApiVeeamBackupPageVeeamBackupPage
     proactiveSubtitle: Schema.Attribute.Text;
     proactiveTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.JSON;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     stats: Schema.Attribute.Component<'ds.icon-card', true>;
