@@ -5023,7 +5023,7 @@ export interface ApiWordpressHostingPageWordpressHostingPage
     plansSubtitle: Schema.Attribute.Text;
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    relatedCards: Schema.Attribute.Component<'ds.icon-card', true>;
+    relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedLabel: Schema.Attribute.String;
     relatedSubtitle: Schema.Attribute.Text;
     relatedTitle: Schema.Attribute.String;

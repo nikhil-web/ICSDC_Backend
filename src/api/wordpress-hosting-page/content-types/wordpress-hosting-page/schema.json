@@ -157,8 +157,8 @@
     },
     "relatedCards": {
       "type": "component",
-      "repeatable": true,
-      "component": "ds.icon-card"
+      "component": "ds.related-card",
+      "repeatable": true
     },
     "fastTitle": {
       "type": "string"

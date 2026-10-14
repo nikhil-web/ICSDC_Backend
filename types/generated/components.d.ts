@@ -482,6 +482,7 @@ export interface DsRelatedCard extends Struct.ComponentSchema {
       >;
     icon: Schema.Attribute.String;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    tagline: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
