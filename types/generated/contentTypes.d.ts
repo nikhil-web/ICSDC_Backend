@@ -1301,6 +1301,8 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
         }
       >;
     helpTitle: Schema.Attribute.String;
+    heroCtaPrimary: Schema.Attribute.Component<'ds.cta-link', false>;
+    heroCtaSecondary: Schema.Attribute.Component<'ds.cta-link', false>;
     heroDescription: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
