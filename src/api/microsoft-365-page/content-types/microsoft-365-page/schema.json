@@ -191,7 +191,9 @@
       "type": "string"
     },
     "whenPoints": {
-      "type": "json"
+      "type": "component",
+      "component": "ds.plan-feature",
+      "repeatable": true
     },
     "whenImage": {
       "type": "component",

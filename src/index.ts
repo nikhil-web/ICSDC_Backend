@@ -82,6 +82,24 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key, value: conf });
   }
+
+  // Microsoft 365 "When to Choose" section: one text box per point.
+  const m365Key = 'configuration_content_types::api::microsoft-365-page.microsoft-365-page';
+  const m365 = await store.get({ key: m365Key });
+  if (m365 && m365.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      whenTitle: ['When to choose — heading', ''],
+      whenPoints: ['When to choose — points', 'One point per item, shown as a checklist.'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = m365.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (description && !m.edit.description) { m.edit.description = description; changed = true; }
+    }
+    if (changed) await store.set({ key: m365Key, value: m365 });
+  }
 }
 
 export default {

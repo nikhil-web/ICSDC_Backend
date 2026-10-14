@@ -240,3 +240,7 @@ node import-pages.js "<Page Name>"
 ## Related-services sections — audit + editor labels (2026-10-14)
 - **Editor labels:** `labelRelatedCardFields()` in `src/index.ts` (bootstrap) gives `ds.related-card` friendly labels + help text (Order, Icon, Title, Tagline, Description, **Link text** = btnLabel, **Link URL** = btnUrl) and a tidier form layout, and labels `relatedTitle`/`relatedSubtitle`/`relatedCards` on the 9 pages as "Related services — heading/subtitle/cards". Stored in `strapi_core_store_settings` (content-manager config). Only overwrites a label that is still the raw field name, so changes made in "Configure the view" are kept; the layout is set once (first run).
 - New fields: `windows-cloud-hosting-page.relatedTitle` (seeded "Explore More ICSDC Hosting Solutions"), `cloud-storage-page.relatedSubtitle` (seeded with the HTML subtitle). `wordpress-hosting-page.relatedSubtitle` seeded with the HTML subtitle (was null). All three were hardcoded on the page before.
+
+## Microsoft 365 "When to Choose" section (2026-10-14)
+- `microsoft-365-page.whenPoints`: raw `json` → repeatable **`ds.plan-feature`** (one `label` per point). Was null in draft + published, so nothing lost. Seeded `whenTitle` "When to Choose Microsoft 365?" + the 7 points verbatim from the HTML. Editor labels "When to choose — heading / points" set in `labelRelatedCardFields()` (src/index.ts).
+- `whenLabel` and `whenImage` are unused — the page has no eyebrow (removed by preference) and no image in that section.

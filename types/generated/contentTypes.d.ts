@@ -3260,7 +3260,7 @@ export interface ApiMicrosoft365PageMicrosoft365Page
       Schema.Attribute.Private;
     whenImage: Schema.Attribute.Component<'common.image', false>;
     whenLabel: Schema.Attribute.String;
-    whenPoints: Schema.Attribute.JSON;
+    whenPoints: Schema.Attribute.Component<'ds.plan-feature', true>;
     whenTitle: Schema.Attribute.String;
     whoCards: Schema.Attribute.Component<'ds.icon-card', true>;
     whoLabel: Schema.Attribute.String;
