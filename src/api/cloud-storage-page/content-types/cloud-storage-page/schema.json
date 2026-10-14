@@ -134,6 +134,9 @@
     "relatedTitle": {
       "type": "string"
     },
+    "relatedSubtitle": {
+      "type": "text"
+    },
     "relatedCards": {
       "type": "component",
       "component": "ds.related-card",

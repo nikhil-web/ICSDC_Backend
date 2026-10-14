@@ -1214,6 +1214,7 @@ export interface ApiCloudStoragePageCloudStoragePage
     publishedAt: Schema.Attribute.DateTime;
     relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
     relatedLabel: Schema.Attribute.String;
+    relatedSubtitle: Schema.Attribute.Text;
     relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
@@ -4717,6 +4718,7 @@ export interface ApiWindowsCloudHostingPageWindowsCloudHostingPage
     plansTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     relatedCards: Schema.Attribute.Component<'ds.related-card', true>;
+    relatedTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'ds.seo-meta', false>;
     testimonials: Schema.Attribute.Component<'ds.testimonial-card', true>;
     testimonialTitle: Schema.Attribute.String;

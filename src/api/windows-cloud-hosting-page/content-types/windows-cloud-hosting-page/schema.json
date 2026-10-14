@@ -180,6 +180,9 @@
       "component": "ds.faq-entry",
       "repeatable": true
     },
+    "relatedTitle": {
+      "type": "string"
+    },
     "relatedCards": {
       "type": "component",
       "component": "ds.related-card",
