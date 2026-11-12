@@ -253,3 +253,7 @@ node import-pages.js "<Page Name>"
 ## About-section eyebrow ("Who We Are" label) (2026-11-12)
 - Added optional **`aboutLabel`** (string, just before `aboutTitle`) to vps-cpanel, managed-vps-hosting, linux-vps-hosting, windows-vps-hosting, wordpress-hosting, cpanel-hosting, reseller-hosting. Their about sections had a hardcoded `.cloud-section-label` eyebrow ("Who We Are" ×5, "About ICSDC", "About Reseller Hosting") that duplicated the heading and couldn't be edited. Left empty → no eyebrow; fill it in → the eyebrow shows. (shared-hosting already had `aboutLabel`.)
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+
+## Bare Metal comparison buttons (2026-11-12)
+- `bare-metal-server-page.compareCtaPrimary` / `compareCtaSecondary` (`ds.cta-link`) added after `managedFeatures` — the two buttons under the managed vs self-managed table (were hardcoded). Seeded with the existing ones: "Self-Managed Server Plans" → `#bms-configs` (outline) and "Managed Server Plans" → `#bms-configs` (filled). Each shows only when text + link are set; `contact-popup` opens the contact form.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts.

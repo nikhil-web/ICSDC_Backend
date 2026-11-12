@@ -97,6 +97,16 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "compareCtaPrimary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "compareCtaSecondary": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
