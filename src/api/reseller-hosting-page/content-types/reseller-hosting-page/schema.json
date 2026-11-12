@@ -158,6 +158,9 @@
       "component": "common.image",
       "repeatable": false
     },
+    "aboutLabel": {
+      "type": "string"
+    },
     "aboutTitle": {
       "type": "string"
     },

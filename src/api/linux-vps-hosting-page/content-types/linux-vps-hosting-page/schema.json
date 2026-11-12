@@ -19,7 +19,7 @@
     },
     "heroEyebrow": {
       "type": "string",
-      "default": "🖥 Linux VPS Hosting"
+      "default": "\ud83d\udda5 Linux VPS Hosting"
     },
     "heroTitle": {
       "type": "string",
@@ -78,6 +78,9 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.vps-plan"
+    },
+    "aboutLabel": {
+      "type": "string"
     },
     "aboutTitle": {
       "type": "string"

@@ -120,6 +120,9 @@
       "repeatable": true,
       "component": "ds.icon-card"
     },
+    "aboutLabel": {
+      "type": "string"
+    },
     "aboutTitle": {
       "type": "string"
     },
