@@ -4238,6 +4238,7 @@ export interface ApiVpsCpanelPageVpsCpanelPage extends Struct.SingleTypeSchema {
     advantagesLabel: Schema.Attribute.String;
     advantagesTitle: Schema.Attribute.String;
     costComparison: Schema.Attribute.JSON;
+    cpanelFeaturesCta: Schema.Attribute.Component<'ds.cta-link', false>;
     cpanelFeaturesDesc: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',

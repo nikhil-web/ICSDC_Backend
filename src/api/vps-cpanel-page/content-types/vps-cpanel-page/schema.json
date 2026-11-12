@@ -99,6 +99,11 @@
     "cpanelFeaturesList": {
       "type": "json"
     },
+    "cpanelFeaturesCta": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
     "ctaBand1": {
       "type": "component",
       "repeatable": false,
