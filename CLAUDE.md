@@ -261,3 +261,4 @@ node import-pages.js "<Page Name>"
 ## Forex VPS "Why Forex VPS" subtext (2026-11-12)
 - `forex-vps-page.featuresSubtitle` (text) added after `featuresTitle` — the line under "What Makes ICSDC Forex VPS a Better Choice for Traders" was hardcoded. Seeded verbatim with the existing text. Empty → the line is hidden.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+- **More Forex VPS fields (2026-11-12):** `heroEyebrow` (hero pill, was hardcoded "📈 Forex VPS Hosting"), `tradingAppsSubtitle`, `useCasesSubtitle`, `whoSubtitle` (section subtexts), `plansBadge` ("Most Popular", shown on plans with isPopular) and `plansPeriod` ("/mo"). Plans' `ctaText`/`ctaLink` were empty (code defaulted to "Get Started" + contact popup) → seeded "Get Started" / `contact-popup` on all 5. All seeded verbatim from the HTML; empty = element hidden. Note: the published `featuresSubtitle` had been blanked (stale admin tab publish) — re-published from the draft.

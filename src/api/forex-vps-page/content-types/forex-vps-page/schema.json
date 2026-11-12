@@ -15,6 +15,9 @@
       "repeatable": false,
       "component": "ds.seo-meta"
     },
+    "heroEyebrow": {
+      "type": "string"
+    },
     "heroTitle": {
       "type": "string"
     },
@@ -69,6 +72,9 @@
     "useCasesTitle": {
       "type": "string"
     },
+    "useCasesSubtitle": {
+      "type": "text"
+    },
     "useCasesCards": {
       "type": "component",
       "repeatable": true,
@@ -79,6 +85,9 @@
     },
     "whoTitle": {
       "type": "string"
+    },
+    "whoSubtitle": {
+      "type": "text"
     },
     "whoCards": {
       "type": "component",
@@ -106,6 +115,9 @@
     },
     "tradingAppsTitle": {
       "type": "string"
+    },
+    "tradingAppsSubtitle": {
+      "type": "text"
     },
     "tradingApps": {
       "type": "component",
@@ -146,6 +158,12 @@
       "type": "component",
       "repeatable": true,
       "component": "ds.vps-plan"
+    },
+    "plansBadge": {
+      "type": "string"
+    },
+    "plansPeriod": {
+      "type": "string"
     },
     "heroImage": {
       "type": "component",
