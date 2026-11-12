@@ -97,7 +97,9 @@
       }
     },
     "cpanelFeaturesList": {
-      "type": "json"
+      "type": "component",
+      "component": "ds.feature-group",
+      "repeatable": true
     },
     "cpanelFeaturesCta": {
       "type": "component",

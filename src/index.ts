@@ -100,6 +100,41 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key: m365Key, value: m365 });
   }
+
+  // VPS cPanel features card: groups of points, one text box per point.
+  const groupKey = 'configuration_components::ds.feature-group';
+  const group = await store.get({ key: groupKey });
+  if (group && group.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      category: ['Heading', 'Card heading. With two or more groups it is also the tab name.'],
+      subtitle: ['Subtitle', 'Optional line under the heading.'],
+      items: ['Points', 'One point per item, shown as a checklist.'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = group.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (!m.edit.description) { m.edit.description = description; changed = true; }
+    }
+    if (changed) await store.set({ key: groupKey, value: group });
+  }
+  const vpcKey = 'configuration_content_types::api::vps-cpanel-page.vps-cpanel-page';
+  const vpc = await store.get({ key: vpcKey });
+  if (vpc && vpc.metadatas) {
+    let changed = false;
+    const labels: Record<string, string> = {
+      cpanelFeaturesTitle: 'cPanel features — section heading',
+      cpanelFeaturesDesc: 'cPanel features — section text',
+      cpanelFeaturesList: 'cPanel features — groups',
+      cpanelFeaturesCta: 'cPanel features — button',
+    };
+    for (const [field, label] of Object.entries(labels)) {
+      const m = vpc.metadatas[field];
+      if (m && m.edit.label === field) { m.edit.label = label; changed = true; }
+    }
+    if (changed) await store.set({ key: vpcKey, value: vpc });
+  }
 }
 
 export default {

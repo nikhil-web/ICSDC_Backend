@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ds_feature_groups",
+  "info": {
+    "displayName": "DS Feature Group",
+    "description": "A titled group of feature points (one text box per point)"
+  },
+  "attributes": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "ds.plan-feature",
+      "repeatable": true
+    }
+  }
+}

@@ -247,3 +247,5 @@ node import-pages.js "<Page Name>"
 
 ## VPS cPanel features card button (2026-11-12)
 - `vps-cpanel-page.cpanelFeaturesCta` (`ds.cta-link`) added after `cpanelFeaturesList`; seeded "Get Started" → `/contact-us` (was hardcoded `/contact-us.html` in vps-cpanel.js). `cpanelFeaturesList` itself is still raw json (`[{category, subtitle, items[]}]`).
+- **2026-11-12:** `cpanelFeaturesList` converted from raw json to repeatable **`ds.feature-group`** (new component: `category` = heading/tab name, `subtitle`, `items` = repeatable `ds.plan-feature` → one text box per point). The 1 group + 6 points copied over verbatim (draft + published verified); backup of the old json: `/Users/nikhil/Desktop/ICDSC/backups/vps-cpanel-cpanelFeaturesList-2026-11-12.json`. Editor labels set in `labelRelatedCardFields()` (src/index.ts). Frontend needs `populate[cpanelFeaturesList][populate]=*`.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts (old schema would turn the field back into json and drop the groups).
