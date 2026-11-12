@@ -244,3 +244,6 @@ node import-pages.js "<Page Name>"
 ## Microsoft 365 "When to Choose" section (2026-10-14)
 - `microsoft-365-page.whenPoints`: raw `json` → repeatable **`ds.plan-feature`** (one `label` per point). Was null in draft + published, so nothing lost. Seeded `whenTitle` "When to Choose Microsoft 365?" + the 7 points verbatim from the HTML. Editor labels "When to choose — heading / points" set in `labelRelatedCardFields()` (src/index.ts).
 - `whenLabel` and `whenImage` are unused — the page has no eyebrow (removed by preference) and no image in that section.
+
+## VPS cPanel features card button (2026-11-12)
+- `vps-cpanel-page.cpanelFeaturesCta` (`ds.cta-link`) added after `cpanelFeaturesList`; seeded "Get Started" → `/contact-us` (was hardcoded `/contact-us.html` in vps-cpanel.js). `cpanelFeaturesList` itself is still raw json (`[{category, subtitle, items[]}]`).
