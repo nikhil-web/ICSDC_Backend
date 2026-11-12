@@ -257,3 +257,7 @@ node import-pages.js "<Page Name>"
 ## Bare Metal comparison buttons (2026-11-12)
 - `bare-metal-server-page.compareCtaPrimary` / `compareCtaSecondary` (`ds.cta-link`) added after `managedFeatures` — the two buttons under the managed vs self-managed table (were hardcoded). Seeded with the existing ones: "Self-Managed Server Plans" → `#bms-configs` (outline) and "Managed Server Plans" → `#bms-configs` (filled). Each shows only when text + link are set; `contact-popup` opens the contact form.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+
+## Forex VPS "Why Forex VPS" subtext (2026-11-12)
+- `forex-vps-page.featuresSubtitle` (text) added after `featuresTitle` — the line under "What Makes ICSDC Forex VPS a Better Choice for Traders" was hardcoded. Seeded verbatim with the existing text. Empty → the line is hidden.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts.

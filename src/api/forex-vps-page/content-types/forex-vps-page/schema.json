@@ -55,6 +55,9 @@
     "featuresTitle": {
       "type": "string"
     },
+    "featuresSubtitle": {
+      "type": "text"
+    },
     "features": {
       "type": "component",
       "repeatable": true,
