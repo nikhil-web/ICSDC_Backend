@@ -56,6 +56,11 @@
     "plansSubtitle": {
       "type": "text"
     },
+    "plans": {
+      "type": "component",
+      "component": "ds.pricing-plan",
+      "repeatable": true
+    },
     "ctaBand1": {
       "type": "component",
       "component": "ds.cta-band",

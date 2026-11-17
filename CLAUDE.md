@@ -267,3 +267,7 @@ node import-pages.js "<Page Name>"
 - `firewall-security-page.strengthSubtitle` (text) added after `strengthTitle` — the line under the #fw-features heading was hardcoded. Seeded verbatim ("Purpose-built firewall management that delivers protection, clarity, and control across your entire network."). Empty → hidden.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
 - `firewall-security-page.adaptsSubtitle` (text) added after `adaptsTitle` (2026-11-17) — the #fw-adapts subtext was hardcoded. Seeded verbatim ("Built for modern networks — context-aware, performance-optimized, and ready to scale."). Empty → hidden.
+
+## Web Hosting pricing plans (2026-11-17)
+- `web-hosting-page.plans` (repeatable `ds.pricing-plan`) added after `plansSubtitle` — the page showed a hardcoded "Pricing table coming soon" box. Seeded 3 **placeholder** tiers (Starter/Business/Pro, ₹149/₹299/₹549) with `icsdc_node_fe/push_webh_plans.py` (client DOCX gave no prices) — live on the shared DB; replace with real plans in the admin.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
