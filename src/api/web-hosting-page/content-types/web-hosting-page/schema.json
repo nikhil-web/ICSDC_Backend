@@ -95,6 +95,15 @@
     "compareTitle": {
       "type": "string"
     },
+    "compareHeadFeature": {
+      "type": "string"
+    },
+    "compareHeadIcsdc": {
+      "type": "string"
+    },
+    "compareHeadOthers": {
+      "type": "string"
+    },
     "compareRows": {
       "type": "component",
       "component": "ds.icon-card",
@@ -135,6 +144,12 @@
       "repeatable": true
     },
     "compareTitle2": {
+      "type": "string"
+    },
+    "compare2HeadFeature": {
+      "type": "string"
+    },
+    "compare2HeadIcsdc": {
       "type": "string"
     },
     "compareRows2": {

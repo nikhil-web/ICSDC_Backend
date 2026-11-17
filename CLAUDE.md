@@ -271,3 +271,4 @@ node import-pages.js "<Page Name>"
 ## Web Hosting pricing plans (2026-11-17)
 - `web-hosting-page.plans` (repeatable `ds.pricing-plan`) added after `plansSubtitle` — the page showed a hardcoded "Pricing table coming soon" box. Seeded 3 **placeholder** tiers (Starter/Business/Pro, ₹149/₹299/₹549) with `icsdc_node_fe/push_webh_plans.py` (client DOCX gave no prices) — live on the shared DB; replace with real plans in the admin.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+- **Table headers (2026-11-17):** `compareHeadFeature`, `compareHeadIcsdc`, `compareHeadOthers` (after `compareTitle`) and `compare2HeadFeature`, `compare2HeadIcsdc` (after `compareTitle2`) — the column headers of the two comparison tables were hardcoded. Seeded verbatim (Feature / ICSDC Web Hosting / Typical Providers; Feature / ICSDC Web Hosting). Empty → the page keeps that default wording.
