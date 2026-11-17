@@ -135,6 +135,41 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key: vpcKey, value: vpc });
   }
+
+  // Tick/cross table rows (Web Hosting "What's included" table).
+  const checkKey = 'configuration_components::ds.check-row';
+  const check = await store.get({ key: checkKey });
+  if (check && check.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      feature: ['Feature', 'Text shown in the first column.'],
+      included: ['Included', 'On = tick (✔). Off = cross (✘).'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = check.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (!m.edit.description) { m.edit.description = description; changed = true; }
+      if (m.list && m.list.label === field) { m.list.label = label; changed = true; }
+    }
+    if (changed) await store.set({ key: checkKey, value: check });
+  }
+  const whKey = 'configuration_content_types::api::web-hosting-page.web-hosting-page';
+  const wh = await store.get({ key: whKey });
+  if (wh && wh.metadatas) {
+    let changed = false;
+    const labels: Record<string, string> = {
+      compareTitle2: "What's included table — heading",
+      compare2HeadFeature: "What's included table — first column header",
+      compare2HeadIcsdc: "What's included table — second column header",
+      compareRows2: "What's included table — rows",
+    };
+    for (const [field, label] of Object.entries(labels)) {
+      const m = wh.metadatas[field];
+      if (m && m.edit.label === field) { m.edit.label = label; changed = true; }
+    }
+    if (changed) await store.set({ key: whKey, value: wh });
+  }
 }
 
 export default {

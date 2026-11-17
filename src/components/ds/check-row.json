@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ds_check_rows",
+  "info": {
+    "displayName": "Check Row",
+    "icon": "check",
+    "description": "One table row: a feature and whether it is included (tick or cross)."
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true
+    },
+    "included": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

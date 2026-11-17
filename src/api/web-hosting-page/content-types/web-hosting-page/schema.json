@@ -154,7 +154,7 @@
     },
     "compareRows2": {
       "type": "component",
-      "component": "ds.icon-card",
+      "component": "ds.check-row",
       "repeatable": true
     },
     "pamPromoTitle": {
