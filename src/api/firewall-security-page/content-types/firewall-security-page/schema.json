@@ -55,6 +55,9 @@
     "strengthTitle": {
       "type": "string"
     },
+    "strengthSubtitle": {
+      "type": "text"
+    },
     "strengthCards": {
       "type": "component",
       "repeatable": true,
