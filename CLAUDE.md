@@ -266,3 +266,4 @@ node import-pages.js "<Page Name>"
 ## Firewall Security "strength" section subtext (2026-11-17)
 - `firewall-security-page.strengthSubtitle` (text) added after `strengthTitle` — the line under the #fw-features heading was hardcoded. Seeded verbatim ("Purpose-built firewall management that delivers protection, clarity, and control across your entire network."). Empty → hidden.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+- `firewall-security-page.adaptsSubtitle` (text) added after `adaptsTitle` (2026-11-17) — the #fw-adapts subtext was hardcoded. Seeded verbatim ("Built for modern networks — context-aware, performance-optimized, and ready to scale."). Empty → hidden.
