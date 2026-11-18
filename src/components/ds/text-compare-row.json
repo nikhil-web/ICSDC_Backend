@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ds_text_compare_rows",
+  "info": {
+    "displayName": "Text Compare Row",
+    "icon": "layout",
+    "description": "One comparison table row: a feature, the ICSDC value and the other providers' value."
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true
+    },
+    "icsdc": {
+      "type": "text"
+    },
+    "others": {
+      "type": "text"
+    }
+  }
+}

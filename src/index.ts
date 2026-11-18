@@ -154,11 +154,35 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key: checkKey, value: check });
   }
+  // Text comparison rows (Web Hosting "vs Typical Shared Hosting" table).
+  const tcrKey = 'configuration_components::ds.text-compare-row';
+  const tcr = await store.get({ key: tcrKey });
+  if (tcr && tcr.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      feature: ['Feature', 'Text shown in the first column.'],
+      icsdc: ['ICSDC value', 'Second column. Shown with a tick in front.'],
+      others: ['Other providers value', 'Third column.'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = tcr.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (!m.edit.description) { m.edit.description = description; changed = true; }
+      if (m.list && m.list.label === field) { m.list.label = label; changed = true; }
+    }
+    if (changed) await store.set({ key: tcrKey, value: tcr });
+  }
   const whKey = 'configuration_content_types::api::web-hosting-page.web-hosting-page';
   const wh = await store.get({ key: whKey });
   if (wh && wh.metadatas) {
     let changed = false;
     const labels: Record<string, string> = {
+      compareTitle: 'Comparison table — heading',
+      compareHeadFeature: 'Comparison table — first column header',
+      compareHeadIcsdc: 'Comparison table — second column header',
+      compareHeadOthers: 'Comparison table — third column header',
+      compareRows: 'Comparison table — rows',
       compareTitle2: "What's included table — heading",
       compare2HeadFeature: "What's included table — first column header",
       compare2HeadIcsdc: "What's included table — second column header",

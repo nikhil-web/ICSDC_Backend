@@ -106,7 +106,7 @@
     },
     "compareRows": {
       "type": "component",
-      "component": "ds.icon-card",
+      "component": "ds.text-compare-row",
       "repeatable": true
     },
     "whyLabel": {
