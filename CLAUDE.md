@@ -276,3 +276,10 @@ node import-pages.js "<Page Name>"
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts (on the old schema the field turns back into icon cards and the rows vanish).
 - **Comparison table rows (2026-11-18):** `compareRows` (the "vs Typical Shared Hosting" table) changed from `ds.icon-card` (title + "ICSDC value | Typical value" typed into one rich-text desc) to new repeatable **`ds.text-compare-row`** (`feature` string, `icsdc` text, `others` text). The 8 rows were split and copied in the same order (draft + published verified). Backup: `/Users/nikhil/Desktop/ICDSC/backups/web-hosting-compareRows-2026-11-18.json`. Editor labels in `labelRelatedCardFields()`.
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+
+## Homepage sale banner — `promoHero` (2026-11-26)
+- New component **`sections.promo-hero`** (`src/components/sections/promo-hero.json`) on `home-page` as `promoHero` (placed before `heroEyebrow`): `enabled` (boolean, default false — the on/off switch), `headlineTop`, `headlineScript`, `headlineBottom`, `tagline`, `taglineHighlight`, `offerHighlight`, `offerText`, `offerNote`, `description` (CKEditor), `cta` (`ds.cta-link`), `finePrint` (parts separated by `|`), `image` (optional media; empty = the artwork built into the website).
+- Seeded with the client's Black Friday banner wording, **enabled = true**, button → `contact-popup`.
+- Editor labels + help text set in `labelRelatedCardFields()` (src/index.ts); the field shows as "Sale banner (replaces the hero while on)".
+- Upload any replacement artwork on the **production** admin — local uploads aren't served on prod (see the frontend CLAUDE.md).
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts.

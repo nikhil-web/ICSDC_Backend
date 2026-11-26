@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_sections_promo_heroes",
+  "info": {
+    "displayName": "Promo Hero",
+    "icon": "star",
+    "description": "Sale banner shown in place of the homepage hero while switched on (e.g. Black Friday)."
+  },
+  "options": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "headlineTop": {
+      "type": "string"
+    },
+    "headlineScript": {
+      "type": "string"
+    },
+    "headlineBottom": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "taglineHighlight": {
+      "type": "string"
+    },
+    "offerHighlight": {
+      "type": "string"
+    },
+    "offerText": {
+      "type": "string"
+    },
+    "offerNote": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "cta": {
+      "type": "component",
+      "component": "ds.cta-link",
+      "repeatable": false
+    },
+    "finePrint": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

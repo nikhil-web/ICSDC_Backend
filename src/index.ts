@@ -173,6 +173,40 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key: tcrKey, value: tcr });
   }
+  // Homepage sale banner (sections.promo-hero).
+  const promoKey = 'configuration_components::sections.promo-hero';
+  const promo = await store.get({ key: promoKey });
+  if (promo && promo.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      enabled: ['Show sale banner', 'On = this banner replaces the normal homepage hero. Off = the normal hero comes back.'],
+      headlineTop: ['Headline — first line', 'e.g. BLACK'],
+      headlineScript: ['Headline — script word', 'Red handwritten word across the headline, e.g. Friday'],
+      headlineBottom: ['Headline — second line', 'e.g. SALE'],
+      tagline: ['Tagline', 'White part, e.g. Power Your Business.'],
+      taglineHighlight: ['Tagline — red part', 'e.g. Save 25%.'],
+      offerHighlight: ['Offer box — red part', 'e.g. 25%'],
+      offerText: ['Offer box — white part', 'e.g. OFF'],
+      offerNote: ['Offer box — small line', 'e.g. On New Orders & Advance Annual Payments'],
+      description: ['Description', 'Bold words show bold on the page.'],
+      cta: ['Button', 'Link contact-popup opens the contact form.'],
+      finePrint: ['Small print', 'Line under the button. Use | to separate parts.'],
+      image: ['Artwork (optional)', 'Right-hand picture. Upload on the live admin (admin.icsdc.com). Empty = the built-in Black Friday artwork.'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = promo.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (!m.edit.description) { m.edit.description = description; changed = true; }
+    }
+    if (changed) await store.set({ key: promoKey, value: promo });
+  }
+  const homeKey = 'configuration_content_types::api::home-page.home-page';
+  const home = await store.get({ key: homeKey });
+  if (home && home.metadatas && home.metadatas.promoHero && home.metadatas.promoHero.edit.label === 'promoHero') {
+    home.metadatas.promoHero.edit.label = 'Sale banner (replaces the hero while on)';
+    await store.set({ key: homeKey, value: home });
+  }
   const whKey = 'configuration_content_types::api::web-hosting-page.web-hosting-page';
   const wh = await store.get({ key: whKey });
   if (wh && wh.metadatas) {

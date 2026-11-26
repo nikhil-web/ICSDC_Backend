@@ -16,6 +16,11 @@
       "component": "ds.seo-meta",
       "repeatable": false
     },
+    "promoHero": {
+      "type": "component",
+      "component": "sections.promo-hero",
+      "repeatable": false
+    },
     "heroEyebrow": {
       "type": "string"
     },
