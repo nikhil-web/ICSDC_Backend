@@ -27,6 +27,9 @@
     "ctaText": {
       "type": "string"
     },
+    "ctaLink": {
+      "type": "string"
+    },
     "ctaStyle": {
       "type": "string"
     },

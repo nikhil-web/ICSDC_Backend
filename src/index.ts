@@ -173,6 +173,25 @@ async function labelRelatedCardFields(strapi: any) {
     }
     if (changed) await store.set({ key: tcrKey, value: tcr });
   }
+  // Solution cards (Email Hosting "Choose the right email hosting partner").
+  const solKey = 'configuration_components::shared.solution-card';
+  const sol = await store.get({ key: solKey });
+  if (sol && sol.metadatas) {
+    let changed = false;
+    const labels: Record<string, [string, string]> = {
+      ctaText: ['Button text', 'Leave empty to hide the button.'],
+      ctaLink: ['Button link', 'A page like /google-workspace#gws-plans, a full URL, or contact-popup to open the contact form. Empty = plain button.'],
+      ctaStyle: ['Button style', 'primary = filled, outline = outlined.'],
+    };
+    for (const [field, [label, description]] of Object.entries(labels)) {
+      const m = sol.metadatas[field];
+      if (!m) continue;
+      if (m.edit.label === field) { m.edit.label = label; changed = true; }
+      if (!m.edit.description) { m.edit.description = description; changed = true; }
+    }
+    if (changed) await store.set({ key: solKey, value: sol });
+  }
+
   // Homepage sale banner (sections.promo-hero).
   const promoKey = 'configuration_components::sections.promo-hero';
   const promo = await store.get({ key: promoKey });

@@ -283,3 +283,7 @@ node import-pages.js "<Page Name>"
 - Editor labels + help text set in `labelRelatedCardFields()` (src/index.ts); the field shows as "Sale banner (replaces the hero while on)".
 - Upload any replacement artwork on the **production** admin — local uploads aren't served on prod (see the frontend CLAUDE.md).
 - ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
+
+## Email Hosting solution card links (2026-11-26)
+- `shared.solution-card` (used only by `email-hosting-page.solutions`) gained **`ctaLink`** (string, after `ctaText`) — the "See Google Workspace / Microsoft 365 / Zimbra Hosting Plans" buttons had no link. Seeded `/google-workspace#gws-plans`, `/microsoft-365#m365-plans`, `/zimbra-hosting#zim-plans` (draft + published verified). Editor labels (Button text / Button link / Button style) in `labelRelatedCardFields()`.
+- ⚠️ Deploy this schema to production BEFORE production Strapi restarts.
